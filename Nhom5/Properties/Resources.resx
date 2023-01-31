@@ -121,4 +121,7 @@
   <data name="icons8-anotherlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Login\icons8-anotherlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="abstract-pastel-holographic-textured-background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\abstract-pastel-holographic-textured-background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

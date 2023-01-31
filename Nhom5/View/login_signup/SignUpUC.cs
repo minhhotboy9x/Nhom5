@@ -82,6 +82,10 @@ namespace Nhom5.View.login_signup
                 var startScreenForm = this.Parent as StartScreen;
                 startScreenForm.changeToLogin();
                 //
+            }
+            else
+            {
+
             }    
         }
 

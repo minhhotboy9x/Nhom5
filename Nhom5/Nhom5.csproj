@@ -125,6 +125,7 @@
     <Content Include="Image\Login\icons8-customer-60.png" />
     <Content Include="Image\Login\icons8-lock-64.png" />
     <Content Include="Image\Login\icons8-verified-check-circle-for-approved-valid-content-48.png" />
+    <None Include="Resources\abstract-pastel-holographic-textured-background.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

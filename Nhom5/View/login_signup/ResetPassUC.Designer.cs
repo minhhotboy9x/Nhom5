@@ -57,6 +57,7 @@ namespace Nhom5.View.login_signup
             this.newPassText = new System.Windows.Forms.TextBox();
             this.newPassLabel = new System.Windows.Forms.Label();
             this.backLabel = new System.Windows.Forms.Label();
+            this.announcementLabel = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel6.SuspendLayout();
@@ -77,7 +78,7 @@ namespace Nhom5.View.login_signup
             this.resetLabel.BackColor = System.Drawing.Color.Transparent;
             this.resetLabel.Font = new System.Drawing.Font("Century Gothic", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resetLabel.ForeColor = System.Drawing.Color.White;
-            this.resetLabel.Location = new System.Drawing.Point(274, 34);
+            this.resetLabel.Location = new System.Drawing.Point(274, 60);
             this.resetLabel.Name = "resetLabel";
             this.resetLabel.Size = new System.Drawing.Size(341, 49);
             this.resetLabel.TabIndex = 2;
@@ -88,16 +89,16 @@ namespace Nhom5.View.login_signup
             this.panel5.Controls.Add(this.pictureBox2);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.passwordLabel);
-            this.panel5.Location = new System.Drawing.Point(142, 212);
+            this.panel5.Location = new System.Drawing.Point(142, 208);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(617, 103);
+            this.panel5.Size = new System.Drawing.Size(617, 75);
             this.panel5.TabIndex = 9;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(20, 30);
+            this.pictureBox2.Location = new System.Drawing.Point(20, 21);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(40, 40);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -110,14 +111,14 @@ namespace Nhom5.View.login_signup
             this.panel6.Controls.Add(this.passwordText);
             this.panel6.Location = new System.Drawing.Point(238, 7);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(367, 83);
+            this.panel6.Size = new System.Drawing.Size(367, 56);
             this.panel6.TabIndex = 3;
             // 
             // panel7
             // 
             this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Location = new System.Drawing.Point(26, 60);
+            this.panel7.Location = new System.Drawing.Point(26, 47);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(300, 1);
             this.panel7.TabIndex = 4;
@@ -129,7 +130,7 @@ namespace Nhom5.View.login_signup
             this.passwordText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.passwordText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordText.ForeColor = System.Drawing.Color.Gray;
-            this.passwordText.Location = new System.Drawing.Point(26, 27);
+            this.passwordText.Location = new System.Drawing.Point(26, 14);
             this.passwordText.Name = "passwordText";
             this.passwordText.Size = new System.Drawing.Size(300, 27);
             this.passwordText.TabIndex = 3;
@@ -140,7 +141,7 @@ namespace Nhom5.View.login_signup
             this.passwordLabel.AutoSize = true;
             this.passwordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordLabel.ForeColor = System.Drawing.Color.White;
-            this.passwordLabel.Location = new System.Drawing.Point(66, 39);
+            this.passwordLabel.Location = new System.Drawing.Point(66, 26);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(126, 24);
             this.passwordLabel.TabIndex = 2;
@@ -151,16 +152,16 @@ namespace Nhom5.View.login_signup
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Controls.Add(this.panel2);
             this.panel4.Controls.Add(this.userLabel);
-            this.panel4.Location = new System.Drawing.Point(142, 103);
+            this.panel4.Location = new System.Drawing.Point(142, 127);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(617, 103);
+            this.panel4.Size = new System.Drawing.Size(617, 75);
             this.panel4.TabIndex = 8;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(20, 30);
+            this.pictureBox1.Location = new System.Drawing.Point(20, 21);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 40);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -173,14 +174,14 @@ namespace Nhom5.View.login_signup
             this.panel2.Controls.Add(this.userNameText);
             this.panel2.Location = new System.Drawing.Point(238, 7);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(367, 83);
+            this.panel2.Size = new System.Drawing.Size(367, 56);
             this.panel2.TabIndex = 3;
             // 
             // panel3
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(26, 60);
+            this.panel3.Location = new System.Drawing.Point(26, 47);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(300, 1);
             this.panel3.TabIndex = 4;
@@ -192,7 +193,7 @@ namespace Nhom5.View.login_signup
             this.userNameText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.userNameText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userNameText.ForeColor = System.Drawing.Color.Gray;
-            this.userNameText.Location = new System.Drawing.Point(26, 27);
+            this.userNameText.Location = new System.Drawing.Point(26, 14);
             this.userNameText.Name = "userNameText";
             this.userNameText.Size = new System.Drawing.Size(300, 27);
             this.userNameText.TabIndex = 3;
@@ -203,7 +204,7 @@ namespace Nhom5.View.login_signup
             this.userLabel.AutoSize = true;
             this.userLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userLabel.ForeColor = System.Drawing.Color.White;
-            this.userLabel.Location = new System.Drawing.Point(66, 39);
+            this.userLabel.Location = new System.Drawing.Point(66, 26);
             this.userLabel.Name = "userLabel";
             this.userLabel.Size = new System.Drawing.Size(102, 24);
             this.userLabel.TabIndex = 2;
@@ -214,16 +215,16 @@ namespace Nhom5.View.login_signup
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.repeatPasswordLabel);
-            this.panel1.Location = new System.Drawing.Point(142, 425);
+            this.panel1.Location = new System.Drawing.Point(142, 370);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(617, 103);
+            this.panel1.Size = new System.Drawing.Size(617, 75);
             this.panel1.TabIndex = 10;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(20, 30);
+            this.pictureBox3.Location = new System.Drawing.Point(20, 21);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(40, 40);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -236,14 +237,14 @@ namespace Nhom5.View.login_signup
             this.panel8.Controls.Add(this.repeatPasswordText);
             this.panel8.Location = new System.Drawing.Point(238, 7);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(367, 83);
+            this.panel8.Size = new System.Drawing.Size(367, 56);
             this.panel8.TabIndex = 3;
             // 
             // panel9
             // 
             this.panel9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.Location = new System.Drawing.Point(26, 60);
+            this.panel9.Location = new System.Drawing.Point(26, 47);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(300, 1);
             this.panel9.TabIndex = 4;
@@ -255,7 +256,7 @@ namespace Nhom5.View.login_signup
             this.repeatPasswordText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.repeatPasswordText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.repeatPasswordText.ForeColor = System.Drawing.Color.Gray;
-            this.repeatPasswordText.Location = new System.Drawing.Point(26, 27);
+            this.repeatPasswordText.Location = new System.Drawing.Point(26, 14);
             this.repeatPasswordText.Name = "repeatPasswordText";
             this.repeatPasswordText.Size = new System.Drawing.Size(300, 27);
             this.repeatPasswordText.TabIndex = 3;
@@ -266,7 +267,7 @@ namespace Nhom5.View.login_signup
             this.repeatPasswordLabel.AutoSize = true;
             this.repeatPasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.repeatPasswordLabel.ForeColor = System.Drawing.Color.White;
-            this.repeatPasswordLabel.Location = new System.Drawing.Point(66, 39);
+            this.repeatPasswordLabel.Location = new System.Drawing.Point(66, 26);
             this.repeatPasswordLabel.Name = "repeatPasswordLabel";
             this.repeatPasswordLabel.Size = new System.Drawing.Size(157, 24);
             this.repeatPasswordLabel.TabIndex = 2;
@@ -282,7 +283,7 @@ namespace Nhom5.View.login_signup
             this.signUpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.signUpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUpButton.ForeColor = System.Drawing.Color.White;
-            this.signUpButton.Location = new System.Drawing.Point(318, 558);
+            this.signUpButton.Location = new System.Drawing.Point(325, 540);
             this.signUpButton.Name = "signUpButton";
             this.signUpButton.Size = new System.Drawing.Size(251, 59);
             this.signUpButton.TabIndex = 15;
@@ -295,16 +296,16 @@ namespace Nhom5.View.login_signup
             this.panel10.Controls.Add(this.pictureBox4);
             this.panel10.Controls.Add(this.panel11);
             this.panel10.Controls.Add(this.newPassLabel);
-            this.panel10.Location = new System.Drawing.Point(142, 316);
+            this.panel10.Location = new System.Drawing.Point(142, 289);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(617, 103);
+            this.panel10.Size = new System.Drawing.Size(617, 75);
             this.panel10.TabIndex = 10;
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox4.Image = global::Nhom5.Properties.Resources.icons8_anotherlock;
-            this.pictureBox4.Location = new System.Drawing.Point(20, 30);
+            this.pictureBox4.Location = new System.Drawing.Point(20, 21);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(40, 40);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -317,14 +318,14 @@ namespace Nhom5.View.login_signup
             this.panel11.Controls.Add(this.newPassText);
             this.panel11.Location = new System.Drawing.Point(238, 7);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(367, 83);
+            this.panel11.Size = new System.Drawing.Size(367, 56);
             this.panel11.TabIndex = 3;
             // 
             // panel12
             // 
             this.panel12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel12.BackColor = System.Drawing.Color.White;
-            this.panel12.Location = new System.Drawing.Point(26, 60);
+            this.panel12.Location = new System.Drawing.Point(26, 47);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(300, 1);
             this.panel12.TabIndex = 4;
@@ -336,7 +337,7 @@ namespace Nhom5.View.login_signup
             this.newPassText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.newPassText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newPassText.ForeColor = System.Drawing.Color.Gray;
-            this.newPassText.Location = new System.Drawing.Point(26, 27);
+            this.newPassText.Location = new System.Drawing.Point(26, 14);
             this.newPassText.Name = "newPassText";
             this.newPassText.Size = new System.Drawing.Size(300, 27);
             this.newPassText.TabIndex = 3;
@@ -347,7 +348,7 @@ namespace Nhom5.View.login_signup
             this.newPassLabel.AutoSize = true;
             this.newPassLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newPassLabel.ForeColor = System.Drawing.Color.White;
-            this.newPassLabel.Location = new System.Drawing.Point(66, 39);
+            this.newPassLabel.Location = new System.Drawing.Point(66, 26);
             this.newPassLabel.Name = "newPassLabel";
             this.newPassLabel.Size = new System.Drawing.Size(135, 24);
             this.newPassLabel.TabIndex = 2;
@@ -366,11 +367,25 @@ namespace Nhom5.View.login_signup
             this.backLabel.Text = "back";
             this.backLabel.Click += new System.EventHandler(this.backLabel_Click);
             // 
+            // announcementLabel
+            // 
+            this.announcementLabel.AutoSize = true;
+            this.announcementLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.announcementLabel.ForeColor = System.Drawing.Color.Firebrick;
+            this.announcementLabel.Location = new System.Drawing.Point(294, 457);
+            this.announcementLabel.Name = "announcementLabel";
+            this.announcementLabel.Size = new System.Drawing.Size(312, 60);
+            this.announcementLabel.TabIndex = 17;
+            this.announcementLabel.Text = "Username đã tồn tại hoặc không hợp lệ.\r\nCác kí tự của username và password chỉ\r\ng" +
+    "ồm các kí tự chữ và số.\r\n";
+            this.announcementLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ResetPassUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.Controls.Add(this.announcementLabel);
             this.Controls.Add(this.backLabel);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.signUpButton);
@@ -434,5 +449,6 @@ namespace Nhom5.View.login_signup
         private System.Windows.Forms.TextBox newPassText;
         private System.Windows.Forms.Label newPassLabel;
         private System.Windows.Forms.Label backLabel;
+        private System.Windows.Forms.Label announcementLabel;
     }
 }
