@@ -54,6 +54,30 @@
     <Compile Include="StartScreen.Designer.cs">
       <DependentUpon>StartScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\login_signup\ResetPassUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\login_signup\ResetPassUC.Designer.cs">
+      <DependentUpon>ResetPassUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\login_signup\LoginUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\login_signup\LoginUC.Designer.cs">
+      <DependentUpon>LoginUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\login_signup\ForgetPassUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\login_signup\ForgetPassUC.Designer.cs">
+      <DependentUpon>ForgetPassUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\login_signup\SignUpUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\login_signup\SignUpUC.Designer.cs">
+      <DependentUpon>SignUpUC.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +86,23 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="StartScreen.resx">
+      <DependentUpon>StartScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\login_signup\ResetPassUC.resx">
+      <DependentUpon>ResetPassUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\login_signup\LoginUC.resx">
+      <DependentUpon>LoginUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\login_signup\ForgetPassUC.resx">
+      <DependentUpon>ForgetPassUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\login_signup\SignUpUC.resx">
+      <DependentUpon>SignUpUC.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -79,7 +119,12 @@
   <ItemGroup>
     <Folder Include="Controller\" />
     <Folder Include="Utility\" />
-    <Folder Include="View\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\Login\icons8-anotherlock.png" />
+    <Content Include="Image\Login\icons8-customer-60.png" />
+    <Content Include="Image\Login\icons8-lock-64.png" />
+    <Content Include="Image\Login\icons8-verified-check-circle-for-approved-valid-content-48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
