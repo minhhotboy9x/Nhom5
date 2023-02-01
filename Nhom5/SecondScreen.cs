@@ -17,9 +17,13 @@ namespace Nhom5
         private Button currentButton;
         private Random random;
         private int tempIndex;
+
+        public Button CurrentButton { get => currentButton; set => currentButton = value; }
+
         public SecondScreen()
         {
             InitializeComponent();
+            hideAllUC();
             random = new Random();
         }
         private Color SelectThemeColor()
@@ -67,22 +71,38 @@ namespace Nhom5
 
         private void homeBtn_Click(object sender, EventArgs e)
         {
+            hideAllUC();
             ActivateButton(sender);
+            homeUC1.Show();
         }
 
         private void nhanKhauBtn_Click(object sender, EventArgs e)
         {
+            hideAllUC();
             ActivateButton(sender);
         }
 
         private void hoKhauBtn_Click(object sender, EventArgs e)
         {
+            hideAllUC();
             ActivateButton(sender);
         }
 
         private void thongKeBtn_Click(object sender, EventArgs e)
         {
+            hideAllUC();
             ActivateButton(sender);
+        }
+
+        private void hideAllUC()
+        {
+            foreach (Control UC in this.Controls)
+            {
+                if (UC.GetType().BaseType == typeof(UserControl))
+                {
+                    UC.Hide();
+                }
+            }
         }
     }
 }
