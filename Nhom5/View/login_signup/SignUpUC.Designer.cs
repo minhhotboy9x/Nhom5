@@ -52,6 +52,7 @@ namespace Nhom5.View.login_signup
             this.signUpButton = new System.Windows.Forms.Button();
             this.backLabel = new System.Windows.Forms.Label();
             this.announcementLabel = new System.Windows.Forms.Label();
+            this.validateLabel = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel6.SuspendLayout();
@@ -203,6 +204,7 @@ namespace Nhom5.View.login_signup
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.validateLabel);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.repeatPasswordLabel);
@@ -274,7 +276,7 @@ namespace Nhom5.View.login_signup
             this.signUpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.signUpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUpButton.ForeColor = System.Drawing.Color.White;
-            this.signUpButton.Location = new System.Drawing.Point(325, 523);
+            this.signUpButton.Location = new System.Drawing.Point(325, 539);
             this.signUpButton.Name = "signUpButton";
             this.signUpButton.Size = new System.Drawing.Size(251, 59);
             this.signUpButton.TabIndex = 15;
@@ -300,13 +302,24 @@ namespace Nhom5.View.login_signup
             this.announcementLabel.AutoSize = true;
             this.announcementLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.announcementLabel.ForeColor = System.Drawing.Color.Firebrick;
-            this.announcementLabel.Location = new System.Drawing.Point(247, 451);
+            this.announcementLabel.Location = new System.Drawing.Point(207, 465);
             this.announcementLabel.Name = "announcementLabel";
-            this.announcementLabel.Size = new System.Drawing.Size(406, 60);
+            this.announcementLabel.Size = new System.Drawing.Size(487, 60);
             this.announcementLabel.TabIndex = 18;
             this.announcementLabel.Text = "Username đã tồn tại hoặc không hợp lệ.\r\nCác kí tự của username và password chỉ\r\ng" +
-    "ồm các kí tự chữ và số với độ dài không quá 20 kí tự.\r\n";
+    "ồm các kí tự chữ và số không dấu với độ dài không quá 20 kí tự.\r\n";
             this.announcementLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // validateLabel
+            // 
+            this.validateLabel.AutoSize = true;
+            this.validateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.validateLabel.ForeColor = System.Drawing.Color.Firebrick;
+            this.validateLabel.Location = new System.Drawing.Point(260, 71);
+            this.validateLabel.Name = "validateLabel";
+            this.validateLabel.Size = new System.Drawing.Size(195, 20);
+            this.validateLabel.TabIndex = 21;
+            this.validateLabel.Text = "Nhập lại không chính xác";
             // 
             // SignUpUC
             // 
@@ -366,5 +379,6 @@ namespace Nhom5.View.login_signup
         private System.Windows.Forms.Button signUpButton;
         private System.Windows.Forms.Label backLabel;
         private System.Windows.Forms.Label announcementLabel;
+        private System.Windows.Forms.Label validateLabel;
     }
 }

@@ -28,7 +28,7 @@ namespace Nhom5.View.login_signup
         {
             if (this.repeatPasswordText.Text == "Enter password")
                 this.repeatPasswordText.Text = "";
-            repeatPasswordText.PasswordChar = (char)0x2022;
+            repeatPasswordText.PasswordChar = '\u25CF';
         }
 
         private void repeatPasswordText_LostFocus(object sender, EventArgs e)
@@ -44,7 +44,7 @@ namespace Nhom5.View.login_signup
         {
             if (this.passwordText.Text == "Enter password")
                 this.passwordText.Text = "";
-            passwordText.PasswordChar = (char)0x2022;
+            passwordText.PasswordChar = '\u25CF';
         }
 
         private void PasswordText_LostFocus(object sender, EventArgs e)

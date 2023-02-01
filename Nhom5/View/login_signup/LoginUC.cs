@@ -25,7 +25,7 @@ namespace Nhom5.View.login
         {
             if (this.passwordText.Text == "Enter password")
                 this.passwordText.Text = "";
-            passwordText.PasswordChar = (char)0x2022;
+            passwordText.PasswordChar = '\u25CF';
         }
 
         private void PasswordText_LostFocus(object sender, EventArgs e)
