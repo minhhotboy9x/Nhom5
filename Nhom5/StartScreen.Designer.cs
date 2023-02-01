@@ -29,27 +29,11 @@ namespace Nhom5
         /// </summary>
         private void InitializeComponent()
         {
-            this.resetPassUC1 = new Nhom5.View.login_signup.ResetPassUC();
-            this.forgetPassUC1 = new Nhom5.View.login_signup.forgetPassUC();
             this.signUpUC1 = new Nhom5.View.login_signup.SignUpUC();
             this.loginUC1 = new Nhom5.View.login.LoginUC();
+            this.resetPassUC1 = new Nhom5.View.login_signup.ResetPassUC();
+            this.forgetPassUC1 = new Nhom5.View.login_signup.forgetPassUC();
             this.SuspendLayout();
-            // 
-            // resetPassUC1
-            // 
-            this.resetPassUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(16)))), ((int)(((byte)(28)))));
-            this.resetPassUC1.Location = new System.Drawing.Point(362, 0);
-            this.resetPassUC1.Name = "resetPassUC1";
-            this.resetPassUC1.Size = new System.Drawing.Size(900, 673);
-            this.resetPassUC1.TabIndex = 3;
-            // 
-            // forgetPassUC1
-            // 
-            this.forgetPassUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(16)))), ((int)(((byte)(28)))));
-            this.forgetPassUC1.Location = new System.Drawing.Point(362, 0);
-            this.forgetPassUC1.Name = "forgetPassUC1";
-            this.forgetPassUC1.Size = new System.Drawing.Size(900, 673);
-            this.forgetPassUC1.TabIndex = 2;
             // 
             // signUpUC1
             // 
@@ -69,6 +53,22 @@ namespace Nhom5
             this.loginUC1.Size = new System.Drawing.Size(900, 673);
             this.loginUC1.TabIndex = 0;
             // 
+            // resetPassUC1
+            // 
+            this.resetPassUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(16)))), ((int)(((byte)(28)))));
+            this.resetPassUC1.Location = new System.Drawing.Point(362, 0);
+            this.resetPassUC1.Name = "resetPassUC1";
+            this.resetPassUC1.Size = new System.Drawing.Size(900, 673);
+            this.resetPassUC1.TabIndex = 3;
+            // 
+            // forgetPassUC1
+            // 
+            this.forgetPassUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(16)))), ((int)(((byte)(28)))));
+            this.forgetPassUC1.Location = new System.Drawing.Point(362, 0);
+            this.forgetPassUC1.Name = "forgetPassUC1";
+            this.forgetPassUC1.Size = new System.Drawing.Size(900, 673);
+            this.forgetPassUC1.TabIndex = 2;
+            // 
             // StartScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -80,6 +80,7 @@ namespace Nhom5
             this.Controls.Add(this.resetPassUC1);
             this.Controls.Add(this.forgetPassUC1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "StartScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý nhân khẩu";

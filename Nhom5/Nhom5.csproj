@@ -60,7 +60,17 @@
     <Compile Include="StartScreen.Designer.cs">
       <DependentUpon>StartScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utility\GraphicsExtension.cs" />
+    <Compile Include="Utility\SPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Utility\ThemeColor.cs" />
+    <Compile Include="View\hokhau_nhankhau\HomeUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\hokhau_nhankhau\HomeUC.Designer.cs">
+      <DependentUpon>HomeUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\login_signup\ResetPassUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -100,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StartScreen.resx">
       <DependentUpon>StartScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\hokhau_nhankhau\HomeUC.resx">
+      <DependentUpon>HomeUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\login_signup\ResetPassUC.resx">
       <DependentUpon>ResetPassUC.cs</DependentUpon>

@@ -28,144 +28,163 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.thongKeBtn = new System.Windows.Forms.Button();
+            this.hoKhauBtn = new System.Windows.Forms.Button();
+            this.nhanKhauBtn = new System.Windows.Forms.Button();
+            this.homeBtn = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
+            this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.homeUC1 = new Nhom5.View.hokhau_nhankhau.HomeUC();
+            this.panelMenu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelMenu
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(52)))), ((int)(((byte)(77)))));
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(220, 673);
-            this.panel1.TabIndex = 0;
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(52)))), ((int)(((byte)(77)))));
+            this.panelMenu.Controls.Add(this.thongKeBtn);
+            this.panelMenu.Controls.Add(this.hoKhauBtn);
+            this.panelMenu.Controls.Add(this.nhanKhauBtn);
+            this.panelMenu.Controls.Add(this.homeBtn);
+            this.panelMenu.Controls.Add(this.panelLogo);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(214, 673);
+            this.panelMenu.TabIndex = 0;
             // 
-            // panel2
+            // thongKeBtn
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(59)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(220, 75);
-            this.panel2.TabIndex = 0;
+            this.thongKeBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.thongKeBtn.FlatAppearance.BorderSize = 0;
+            this.thongKeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.thongKeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thongKeBtn.ForeColor = System.Drawing.Color.Gainsboro;
+            this.thongKeBtn.Image = global::Nhom5.Properties.Resources.icons8_analytics_601;
+            this.thongKeBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.thongKeBtn.Location = new System.Drawing.Point(0, 255);
+            this.thongKeBtn.Name = "thongKeBtn";
+            this.thongKeBtn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.thongKeBtn.Size = new System.Drawing.Size(214, 60);
+            this.thongKeBtn.TabIndex = 4;
+            this.thongKeBtn.Text = " Thống kê";
+            this.thongKeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.thongKeBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.thongKeBtn.UseVisualStyleBackColor = true;
+            this.thongKeBtn.Click += new System.EventHandler(this.thongKeBtn_Click);
             // 
-            // panel3
+            // hoKhauBtn
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(52)))), ((int)(((byte)(77)))));
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(220, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1042, 75);
-            this.panel3.TabIndex = 1;
+            this.hoKhauBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.hoKhauBtn.FlatAppearance.BorderSize = 0;
+            this.hoKhauBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hoKhauBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hoKhauBtn.ForeColor = System.Drawing.Color.Gainsboro;
+            this.hoKhauBtn.Image = global::Nhom5.Properties.Resources.icons8_exterior_96;
+            this.hoKhauBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.hoKhauBtn.Location = new System.Drawing.Point(0, 195);
+            this.hoKhauBtn.Name = "hoKhauBtn";
+            this.hoKhauBtn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.hoKhauBtn.Size = new System.Drawing.Size(214, 60);
+            this.hoKhauBtn.TabIndex = 3;
+            this.hoKhauBtn.Text = " Hộ khẩu";
+            this.hoKhauBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.hoKhauBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.hoKhauBtn.UseVisualStyleBackColor = true;
+            this.hoKhauBtn.Click += new System.EventHandler(this.hoKhauBtn_Click);
             // 
-            // button4
+            // nhanKhauBtn
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button4.Image = global::Nhom5.Properties.Resources.icons8_adventures_96;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 75);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(220, 60);
-            this.button4.TabIndex = 5;
-            this.button4.Text = " Trang chủ";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = true;
+            this.nhanKhauBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.nhanKhauBtn.FlatAppearance.BorderSize = 0;
+            this.nhanKhauBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.nhanKhauBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nhanKhauBtn.ForeColor = System.Drawing.Color.Gainsboro;
+            this.nhanKhauBtn.Image = global::Nhom5.Properties.Resources.icons8_man_100;
+            this.nhanKhauBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.nhanKhauBtn.Location = new System.Drawing.Point(0, 135);
+            this.nhanKhauBtn.Name = "nhanKhauBtn";
+            this.nhanKhauBtn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.nhanKhauBtn.Size = new System.Drawing.Size(214, 60);
+            this.nhanKhauBtn.TabIndex = 2;
+            this.nhanKhauBtn.Text = " Nhân khẩu";
+            this.nhanKhauBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.nhanKhauBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.nhanKhauBtn.UseVisualStyleBackColor = true;
+            this.nhanKhauBtn.Click += new System.EventHandler(this.nhanKhauBtn_Click);
             // 
-            // button3
+            // homeBtn
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button3.Image = global::Nhom5.Properties.Resources.icons8_analytics_601;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 255);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(220, 60);
-            this.button3.TabIndex = 4;
-            this.button3.Text = " Thống kê";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
+            this.homeBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.homeBtn.FlatAppearance.BorderSize = 0;
+            this.homeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.homeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeBtn.ForeColor = System.Drawing.Color.Gainsboro;
+            this.homeBtn.Image = global::Nhom5.Properties.Resources.icons8_adventures_96;
+            this.homeBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.homeBtn.Location = new System.Drawing.Point(0, 75);
+            this.homeBtn.Name = "homeBtn";
+            this.homeBtn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.homeBtn.Size = new System.Drawing.Size(214, 60);
+            this.homeBtn.TabIndex = 5;
+            this.homeBtn.Text = " Trang chủ";
+            this.homeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.homeBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.homeBtn.UseVisualStyleBackColor = true;
+            this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
             // 
-            // button2
+            // panelLogo
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button2.Image = global::Nhom5.Properties.Resources.icons8_exterior_96;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 195);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(220, 60);
-            this.button2.TabIndex = 3;
-            this.button2.Text = " Hộ khẩu";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(59)))));
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(214, 75);
+            this.panelLogo.TabIndex = 0;
             // 
-            // button1
+            // panelTitleBar
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button1.Image = global::Nhom5.Properties.Resources.icons8_man_100;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 135);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(220, 60);
-            this.button1.TabIndex = 2;
-            this.button1.Text = " Nhân khẩu";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(52)))), ((int)(((byte)(77)))));
+            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitleBar.Location = new System.Drawing.Point(214, 0);
+            this.panelTitleBar.Name = "panelTitleBar";
+            this.panelTitleBar.Size = new System.Drawing.Size(1048, 75);
+            this.panelTitleBar.TabIndex = 1;
+            // 
+            // homeUC1
+            // 
+            this.homeUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.homeUC1.Location = new System.Drawing.Point(214, 75);
+            this.homeUC1.Name = "homeUC1";
+            this.homeUC1.Size = new System.Drawing.Size(1048, 598);
+            this.homeUC1.TabIndex = 2;
             // 
             // SecondScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 673);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
-            this.MinimizeBox = false;
+            this.Controls.Add(this.homeUC1);
+            this.Controls.Add(this.panelTitleBar);
+            this.Controls.Add(this.panelMenu);
+            this.MaximizeBox = false;
             this.Name = "SecondScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý nhân khẩu";
-            this.panel1.ResumeLayout(false);
+            this.panelMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel panelMenu;
+        private System.Windows.Forms.Panel panelLogo;
+        private System.Windows.Forms.Panel panelTitleBar;
+        private System.Windows.Forms.Button nhanKhauBtn;
+        private System.Windows.Forms.Button thongKeBtn;
+        private System.Windows.Forms.Button hoKhauBtn;
+        private System.Windows.Forms.Button homeBtn;
+        private View.hokhau_nhankhau.HomeUC homeUC1;
     }
 }
