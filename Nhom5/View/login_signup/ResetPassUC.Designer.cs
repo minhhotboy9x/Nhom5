@@ -126,7 +126,7 @@ namespace Nhom5.View.login_signup
             // passwordText
             // 
             this.passwordText.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.passwordText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.passwordText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(16)))), ((int)(((byte)(28)))));
             this.passwordText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.passwordText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordText.ForeColor = System.Drawing.Color.Gray;
@@ -189,7 +189,7 @@ namespace Nhom5.View.login_signup
             // userNameText
             // 
             this.userNameText.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.userNameText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.userNameText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(16)))), ((int)(((byte)(28)))));
             this.userNameText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.userNameText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userNameText.ForeColor = System.Drawing.Color.Gray;
@@ -252,7 +252,7 @@ namespace Nhom5.View.login_signup
             // repeatPasswordText
             // 
             this.repeatPasswordText.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.repeatPasswordText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.repeatPasswordText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(16)))), ((int)(((byte)(28)))));
             this.repeatPasswordText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.repeatPasswordText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.repeatPasswordText.ForeColor = System.Drawing.Color.Gray;
@@ -275,10 +275,10 @@ namespace Nhom5.View.login_signup
             // 
             // signUpButton
             // 
-            this.signUpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(68)))), ((int)(((byte)(83)))));
+            this.signUpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(72)))), ((int)(((byte)(0)))));
             this.signUpButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.signUpButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(68)))), ((int)(((byte)(83)))));
-            this.signUpButton.FlatAppearance.BorderSize = 2;
+            this.signUpButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.signUpButton.FlatAppearance.BorderSize = 0;
             this.signUpButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveBorder;
             this.signUpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.signUpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -333,7 +333,7 @@ namespace Nhom5.View.login_signup
             // newPassText
             // 
             this.newPassText.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.newPassText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.newPassText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(16)))), ((int)(((byte)(28)))));
             this.newPassText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.newPassText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newPassText.ForeColor = System.Drawing.Color.Gray;
@@ -384,7 +384,7 @@ namespace Nhom5.View.login_signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(16)))), ((int)(((byte)(28)))));
             this.Controls.Add(this.announcementLabel);
             this.Controls.Add(this.backLabel);
             this.Controls.Add(this.panel10);

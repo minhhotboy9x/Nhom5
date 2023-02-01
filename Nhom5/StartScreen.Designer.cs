@@ -29,15 +29,23 @@ namespace Nhom5
         /// </summary>
         private void InitializeComponent()
         {
+            this.resetPassUC1 = new Nhom5.View.login_signup.ResetPassUC();
             this.forgetPassUC1 = new Nhom5.View.login_signup.forgetPassUC();
             this.signUpUC1 = new Nhom5.View.login_signup.SignUpUC();
             this.loginUC1 = new Nhom5.View.login.LoginUC();
-            this.resetPassUC1 = new Nhom5.View.login_signup.ResetPassUC();
             this.SuspendLayout();
+            // 
+            // resetPassUC1
+            // 
+            this.resetPassUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(16)))), ((int)(((byte)(28)))));
+            this.resetPassUC1.Location = new System.Drawing.Point(362, 0);
+            this.resetPassUC1.Name = "resetPassUC1";
+            this.resetPassUC1.Size = new System.Drawing.Size(900, 673);
+            this.resetPassUC1.TabIndex = 3;
             // 
             // forgetPassUC1
             // 
-            this.forgetPassUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.forgetPassUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(16)))), ((int)(((byte)(28)))));
             this.forgetPassUC1.Location = new System.Drawing.Point(362, 0);
             this.forgetPassUC1.Name = "forgetPassUC1";
             this.forgetPassUC1.Size = new System.Drawing.Size(900, 673);
@@ -45,7 +53,7 @@ namespace Nhom5
             // 
             // signUpUC1
             // 
-            this.signUpUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.signUpUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(16)))), ((int)(((byte)(28)))));
             this.signUpUC1.Location = new System.Drawing.Point(362, 0);
             this.signUpUC1.Name = "signUpUC1";
             this.signUpUC1.Size = new System.Drawing.Size(900, 673);
@@ -53,7 +61,7 @@ namespace Nhom5
             // 
             // loginUC1
             // 
-            this.loginUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.loginUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(16)))), ((int)(((byte)(28)))));
             this.loginUC1.Dock = System.Windows.Forms.DockStyle.Right;
             this.loginUC1.ForeColor = System.Drawing.Color.White;
             this.loginUC1.Location = new System.Drawing.Point(362, 0);
@@ -61,24 +69,16 @@ namespace Nhom5
             this.loginUC1.Size = new System.Drawing.Size(900, 673);
             this.loginUC1.TabIndex = 0;
             // 
-            // resetPassUC1
-            // 
-            this.resetPassUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.resetPassUC1.Location = new System.Drawing.Point(362, 0);
-            this.resetPassUC1.Name = "resetPassUC1";
-            this.resetPassUC1.Size = new System.Drawing.Size(900, 673);
-            this.resetPassUC1.TabIndex = 3;
-            // 
             // StartScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(68)))), ((int)(((byte)(83)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.signUpUC1);
             this.Controls.Add(this.loginUC1);
             this.Controls.Add(this.resetPassUC1);
             this.Controls.Add(this.forgetPassUC1);
-            this.Controls.Add(this.signUpUC1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "StartScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

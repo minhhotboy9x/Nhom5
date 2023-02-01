@@ -100,7 +100,7 @@ namespace Nhom5.View.login
             // userNameText
             // 
             this.userNameText.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.userNameText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.userNameText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(16)))), ((int)(((byte)(28)))));
             this.userNameText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.userNameText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userNameText.ForeColor = System.Drawing.Color.Gray;
@@ -173,7 +173,7 @@ namespace Nhom5.View.login
             // passwordText
             // 
             this.passwordText.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.passwordText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.passwordText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(16)))), ((int)(((byte)(28)))));
             this.passwordText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.passwordText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordText.ForeColor = System.Drawing.Color.Gray;
@@ -207,10 +207,10 @@ namespace Nhom5.View.login
             // 
             // loginButton
             // 
-            this.loginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(68)))), ((int)(((byte)(83)))));
+            this.loginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(72)))), ((int)(((byte)(0)))));
             this.loginButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.loginButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(68)))), ((int)(((byte)(83)))));
-            this.loginButton.FlatAppearance.BorderSize = 2;
+            this.loginButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.loginButton.FlatAppearance.BorderSize = 0;
             this.loginButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveBorder;
             this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -263,7 +263,7 @@ namespace Nhom5.View.login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(16)))), ((int)(((byte)(28)))));
             this.Controls.Add(this.resetPassLabel);
             this.Controls.Add(this.signUpLabel);
             this.Controls.Add(this.forgetPassLabel);
