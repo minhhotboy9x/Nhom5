@@ -60,6 +60,7 @@
     <Compile Include="StartScreen.Designer.cs">
       <DependentUpon>StartScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utility\ThemeColor.cs" />
     <Compile Include="View\login_signup\ResetPassUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -127,13 +128,20 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controller\" />
-    <Folder Include="Utility\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Image\Login\icons8-anotherlock.png" />
     <Content Include="Image\Login\icons8-customer-60.png" />
     <Content Include="Image\Login\icons8-lock-64.png" />
     <Content Include="Image\Login\icons8-verified-check-circle-for-approved-valid-content-48.png" />
+    <Content Include="Image\SecondScreen\icons8-adventures-96.png" />
+    <Content Include="Image\SecondScreen\icons8-analytics-60.png" />
+    <Content Include="Image\SecondScreen\icons8-caretaker-60.png" />
+    <Content Include="Image\SecondScreen\icons8-exterior-96.png" />
+    <Content Include="Image\SecondScreen\icons8-man-100.png" />
+    <Content Include="Image\SecondScreen\icons8-prize-50.png" />
+    <Content Include="Image\SecondScreen\icons8-summary-list-50.png" />
+    <None Include="Resources\icons8-analytics-60.png" />
     <None Include="Resources\abstract-pastel-holographic-textured-background.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
