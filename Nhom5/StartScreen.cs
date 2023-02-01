@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace Nhom5
 {
     public partial class StartScreen : Form
     {
+        Thread th;
         public StartScreen()
         {
             InitializeComponent();
@@ -52,6 +54,17 @@ namespace Nhom5
             loginUC1.Hide();
             forgetPassUC1.Hide();
             resetPassUC1.Show();
+        }
+        public void runSecondScreen()
+        {
+            Application.Run(new SecondScreen());
+        }
+        public void openSecondScreen()
+        {
+            this.Close();
+            th = new Thread(runSecondScreen);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
         }
     }
 }

@@ -49,9 +49,9 @@ namespace Nhom5.View.login_signup
             this.panel9 = new System.Windows.Forms.Panel();
             this.repeatPasswordText = new System.Windows.Forms.TextBox();
             this.repeatPasswordLabel = new System.Windows.Forms.Label();
-            this.announcementLabel = new System.Windows.Forms.Label();
             this.signUpButton = new System.Windows.Forms.Button();
             this.backLabel = new System.Windows.Forms.Label();
+            this.announcementLabel = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel6.SuspendLayout();
@@ -264,19 +264,6 @@ namespace Nhom5.View.login_signup
             this.repeatPasswordLabel.TabIndex = 2;
             this.repeatPasswordLabel.Text = "Repeat Password";
             // 
-            // announcementLabel
-            // 
-            this.announcementLabel.AutoSize = true;
-            this.announcementLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.announcementLabel.ForeColor = System.Drawing.Color.Firebrick;
-            this.announcementLabel.Location = new System.Drawing.Point(294, 451);
-            this.announcementLabel.Name = "announcementLabel";
-            this.announcementLabel.Size = new System.Drawing.Size(312, 60);
-            this.announcementLabel.TabIndex = 14;
-            this.announcementLabel.Text = "Username đã tồn tại hoặc không hợp lệ.\r\nCác kí tự của username và password chỉ\r\ng" +
-    "ồm các kí tự chữ và số.\r\n";
-            this.announcementLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // signUpButton
             // 
             this.signUpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(68)))), ((int)(((byte)(83)))));
@@ -308,14 +295,27 @@ namespace Nhom5.View.login_signup
             this.backLabel.Text = "back";
             this.backLabel.Click += new System.EventHandler(this.backLabel_Click);
             // 
+            // announcementLabel
+            // 
+            this.announcementLabel.AutoSize = true;
+            this.announcementLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.announcementLabel.ForeColor = System.Drawing.Color.Firebrick;
+            this.announcementLabel.Location = new System.Drawing.Point(247, 451);
+            this.announcementLabel.Name = "announcementLabel";
+            this.announcementLabel.Size = new System.Drawing.Size(406, 60);
+            this.announcementLabel.TabIndex = 18;
+            this.announcementLabel.Text = "Username đã tồn tại hoặc không hợp lệ.\r\nCác kí tự của username và password chỉ\r\ng" +
+    "ồm các kí tự chữ và số với độ dài không quá 20 kí tự.\r\n";
+            this.announcementLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // SignUpUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.Controls.Add(this.announcementLabel);
             this.Controls.Add(this.backLabel);
             this.Controls.Add(this.signUpButton);
-            this.Controls.Add(this.announcementLabel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.signUpLabel);
             this.Controls.Add(this.panel5);
@@ -363,8 +363,8 @@ namespace Nhom5.View.login_signup
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.TextBox repeatPasswordText;
         private System.Windows.Forms.Label repeatPasswordLabel;
-        private System.Windows.Forms.Label announcementLabel;
         private System.Windows.Forms.Button signUpButton;
         private System.Windows.Forms.Label backLabel;
+        private System.Windows.Forms.Label announcementLabel;
     }
 }

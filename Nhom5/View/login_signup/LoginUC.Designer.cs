@@ -221,6 +221,7 @@ namespace Nhom5.View.login
             this.loginButton.TabIndex = 14;
             this.loginButton.Text = "Login";
             this.loginButton.UseVisualStyleBackColor = false;
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
             // forgetPassLabel
             // 

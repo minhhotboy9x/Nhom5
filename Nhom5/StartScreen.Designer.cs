@@ -75,10 +75,10 @@ namespace Nhom5
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(68)))), ((int)(((byte)(83)))));
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.loginUC1);
             this.Controls.Add(this.resetPassUC1);
             this.Controls.Add(this.forgetPassUC1);
             this.Controls.Add(this.signUpUC1);
-            this.Controls.Add(this.loginUC1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "StartScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

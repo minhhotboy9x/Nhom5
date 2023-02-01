@@ -66,5 +66,21 @@ namespace Nhom5.View.login
             var startScreenForm = this.Parent as StartScreen;
             startScreenForm.changeToReset();
         }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+            bool ok = true;
+
+            if(ok) // đăng nhập hợp lệ
+            {
+                var startScreenForm = this.Parent as StartScreen;
+                startScreenForm.openSecondScreen();
+            } 
+            else
+            {
+
+            }    
+
+        }
     }
 }

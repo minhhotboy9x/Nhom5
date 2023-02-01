@@ -283,7 +283,7 @@ namespace Nhom5.View.login_signup
             this.signUpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.signUpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUpButton.ForeColor = System.Drawing.Color.White;
-            this.signUpButton.Location = new System.Drawing.Point(325, 540);
+            this.signUpButton.Location = new System.Drawing.Point(325, 527);
             this.signUpButton.Name = "signUpButton";
             this.signUpButton.Size = new System.Drawing.Size(251, 59);
             this.signUpButton.TabIndex = 15;
@@ -372,12 +372,12 @@ namespace Nhom5.View.login_signup
             this.announcementLabel.AutoSize = true;
             this.announcementLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.announcementLabel.ForeColor = System.Drawing.Color.Firebrick;
-            this.announcementLabel.Location = new System.Drawing.Point(294, 457);
+            this.announcementLabel.Location = new System.Drawing.Point(247, 448);
             this.announcementLabel.Name = "announcementLabel";
-            this.announcementLabel.Size = new System.Drawing.Size(312, 60);
+            this.announcementLabel.Size = new System.Drawing.Size(406, 60);
             this.announcementLabel.TabIndex = 17;
             this.announcementLabel.Text = "Username đã tồn tại hoặc không hợp lệ.\r\nCác kí tự của username và password chỉ\r\ng" +
-    "ồm các kí tự chữ và số.\r\n";
+    "ồm các kí tự chữ và số với độ dài không quá 20 kí tự.\r\n";
             this.announcementLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ResetPassUC
