@@ -151,16 +151,22 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controller\" />
+    <Folder Include="Image\HomeUC\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Image\Login\icons8-anotherlock.png" />
     <Content Include="Image\Login\icons8-customer-60.png" />
     <Content Include="Image\Login\icons8-lock-64.png" />
     <Content Include="Image\Login\icons8-verified-check-circle-for-approved-valid-content-48.png" />
+    <Content Include="Image\SecondScreen\HomeUC\icons8-maintenance-house-timer-isolated-on-a-white-background-96.png" />
+    <Content Include="Image\SecondScreen\HomeUC\icons8-move-left-100.png" />
+    <Content Include="Image\SecondScreen\HomeUC\icons8-salary-male-100.png" />
+    <Content Include="Image\SecondScreen\HomeUC\icons8-smart-home-checked-100.png" />
     <Content Include="Image\SecondScreen\icons8-adventures-96.png" />
     <Content Include="Image\SecondScreen\icons8-analytics-60.png" />
     <Content Include="Image\SecondScreen\icons8-caretaker-60.png" />
     <Content Include="Image\SecondScreen\icons8-exterior-96.png" />
+    <Content Include="Image\SecondScreen\icons8-logout-58.png" />
     <Content Include="Image\SecondScreen\icons8-maintenance-house-timer-isolated-on-a-white-background-96.png" />
     <Content Include="Image\SecondScreen\icons8-man-100.png" />
     <Content Include="Image\SecondScreen\icons8-move-left-100.png" />

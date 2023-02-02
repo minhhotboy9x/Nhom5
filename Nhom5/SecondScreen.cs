@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -108,6 +109,18 @@ namespace Nhom5
                     UC.Hide();
                 }
             }
+        }
+
+        private void logOutBtn_Click(object sender, EventArgs e)
+        {
+            void runStartScreen()
+            {
+                Application.Run(new StartScreen());
+            }
+            this.Close();
+            Thread th = new Thread(runStartScreen);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
         }
     }
 }

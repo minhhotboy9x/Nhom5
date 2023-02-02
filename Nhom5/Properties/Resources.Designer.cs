@@ -133,9 +133,29 @@ namespace Nhom5.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_logout_58 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-logout-58", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_maintenance_house_timer_isolated_on_a_white_background_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-maintenance-house-timer-isolated-on-a-white-background-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_maintenance_house_timer_isolated_on_a_white_background_961 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-maintenance-house-timer-isolated-on-a-white-background-961", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,6 +193,16 @@ namespace Nhom5.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_move_left_1001 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-move-left-1001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_salary_male_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-salary-male-100", resourceCulture);
@@ -183,9 +213,29 @@ namespace Nhom5.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_salary_male_1001 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-salary-male-1001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_smart_home_checked_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-smart-home-checked-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_smart_home_checked_1001 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-smart-home-checked-1001", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

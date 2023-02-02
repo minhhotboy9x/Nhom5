@@ -13,7 +13,6 @@ namespace Nhom5
 {
     public partial class StartScreen : Form
     {
-        Thread th;
         public StartScreen()
         {
             InitializeComponent();
@@ -55,14 +54,15 @@ namespace Nhom5
             forgetPassUC1.Hide();
             resetPassUC1.Show();
         }
-        public void runSecondScreen()
-        {
-            Application.Run(new SecondScreen());
-        }
+        
         public void openSecondScreen()
         {
+            void runSecondScreen()
+            {
+                Application.Run(new SecondScreen());
+            }
             this.Close();
-            th = new Thread(runSecondScreen);
+            Thread th = new Thread(runSecondScreen);
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
         }
