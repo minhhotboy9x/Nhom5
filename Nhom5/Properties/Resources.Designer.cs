@@ -133,9 +133,59 @@ namespace Nhom5.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_maintenance_house_timer_isolated_on_a_white_background_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-maintenance-house-timer-isolated-on-a-white-background-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_man_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-man-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_man_1001 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-man-1001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_move_left_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-move-left-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_salary_male_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-salary-male-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_smart_home_checked_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-smart-home-checked-100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

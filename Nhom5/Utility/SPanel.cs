@@ -34,7 +34,7 @@ namespace Nhom5.Utility
             //Console.WriteLine("11" + color);
             Graphics g = this.CreateGraphics();
             g.SmoothingMode = SmoothingMode.AntiAlias;
-            g.FillRoundedRectangle(new SolidBrush(color), 0, 0, this.Width, this.Height, 10);
+            g.FillRoundedRectangle(new SolidBrush(color), 0, 0, this.Width, this.Height, 30);
         }
     }
 }

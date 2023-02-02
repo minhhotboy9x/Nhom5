@@ -84,6 +84,7 @@ namespace Nhom5
         {
             hideAllUC();
             ActivateButton(sender);
+            nhanKhauUC1.Show();
         }
 
         private void hoKhauBtn_Click(object sender, EventArgs e)

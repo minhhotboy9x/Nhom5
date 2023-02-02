@@ -37,6 +37,7 @@
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.homeUC1 = new Nhom5.View.hokhau_nhankhau.HomeUC();
+            this.nhanKhauUC1 = new Nhom5.View.hokhau_nhankhau.NhanKhauUC();
             this.panelMenu.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
             this.SuspendLayout();
@@ -174,14 +175,23 @@
             this.homeUC1.Size = new System.Drawing.Size(1048, 598);
             this.homeUC1.TabIndex = 2;
             // 
+            // nhanKhauUC1
+            // 
+            this.nhanKhauUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.nhanKhauUC1.Location = new System.Drawing.Point(214, 72);
+            this.nhanKhauUC1.Name = "nhanKhauUC1";
+            this.nhanKhauUC1.Size = new System.Drawing.Size(1048, 598);
+            this.nhanKhauUC1.TabIndex = 3;
+            // 
             // SecondScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1262, 673);
-            this.Controls.Add(this.homeUC1);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.nhanKhauUC1);
+            this.Controls.Add(this.homeUC1);
             this.MaximizeBox = false;
             this.Name = "SecondScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -204,5 +214,6 @@
         private System.Windows.Forms.Button homeBtn;
         private View.hokhau_nhankhau.HomeUC homeUC1;
         private System.Windows.Forms.Label lblTitle;
+        private View.hokhau_nhankhau.NhanKhauUC nhanKhauUC1;
     }
 }

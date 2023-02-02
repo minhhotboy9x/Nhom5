@@ -23,9 +23,9 @@ namespace Nhom5.View.hokhau_nhankhau
             foreach (Control label in sPanel.Controls)
             {
                 //Console.WriteLine(label.GetType());
-                if (label.GetType() == typeof(Label))
+                // change all item color in spanel of homeUC
+                if (label.GetType() == typeof(Label) || label.GetType() == typeof(PictureBox))
                 {
-                    
                     label.BackColor = color;
                 }
             }
