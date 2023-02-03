@@ -55,7 +55,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(214, 669);
+            this.panelMenu.Size = new System.Drawing.Size(214, 673);
             this.panelMenu.TabIndex = 0;
             // 
             // logOutBtn
@@ -191,9 +191,9 @@
             // nhanKhauUC1
             // 
             this.nhanKhauUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.nhanKhauUC1.Location = new System.Drawing.Point(214, 72);
+            this.nhanKhauUC1.Location = new System.Drawing.Point(214, 75);
             this.nhanKhauUC1.Name = "nhanKhauUC1";
-            this.nhanKhauUC1.Size = new System.Drawing.Size(1048, 597);
+            this.nhanKhauUC1.Size = new System.Drawing.Size(1048, 598);
             this.nhanKhauUC1.TabIndex = 3;
             // 
             // homeUC1
@@ -202,19 +202,19 @@
             this.homeUC1.ForeColor = System.Drawing.Color.DimGray;
             this.homeUC1.Location = new System.Drawing.Point(214, 75);
             this.homeUC1.Name = "homeUC1";
-            this.homeUC1.Size = new System.Drawing.Size(1048, 594);
+            this.homeUC1.Size = new System.Drawing.Size(1048, 595);
             this.homeUC1.TabIndex = 2;
             // 
             // SecondScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1262, 669);
+            this.ClientSize = new System.Drawing.Size(1262, 673);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
-            this.Controls.Add(this.homeUC1);
             this.Controls.Add(this.nhanKhauUC1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Controls.Add(this.homeUC1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "SecondScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

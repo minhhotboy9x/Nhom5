@@ -176,7 +176,7 @@ namespace Nhom5.View.hokhau_nhankhau
             this.Controls.Add(this.themMoiBtn);
             this.Controls.Add(this.dataGridView1);
             this.Name = "NhanKhauUC";
-            this.Size = new System.Drawing.Size(1048, 598);
+            this.Size = new System.Drawing.Size(1048, 595);
             this.VisibleChanged += new System.EventHandler(this.NhanKhauUC_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.sPanel1.ResumeLayout(false);

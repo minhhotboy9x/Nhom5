@@ -30,6 +30,7 @@ namespace Nhom5.View.hokhau_nhankhau
         private void InitializeComponent()
         {
             this.sPanel5 = new Nhom5.Utility.SPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sPanel4 = new Nhom5.Utility.SPanel();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -43,24 +44,23 @@ namespace Nhom5.View.hokhau_nhankhau
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.sPanel6 = new Nhom5.Utility.SPanel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.sPanel7 = new Nhom5.Utility.SPanel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.sPanel8 = new Nhom5.Utility.SPanel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.sPanel4.SuspendLayout();
             this.sPanel3.SuspendLayout();
             this.sPanel2.SuspendLayout();
             this.sPanel1.SuspendLayout();
             this.sPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.sPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.sPanel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // sPanel5
@@ -70,6 +70,17 @@ namespace Nhom5.View.hokhau_nhankhau
             this.sPanel5.Name = "sPanel5";
             this.sPanel5.Size = new System.Drawing.Size(112, 112);
             this.sPanel5.TabIndex = 8;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.pictureBox1.Image = global::Nhom5.Properties.Resources.icons8_salary_male_1001;
+            this.pictureBox1.Location = new System.Drawing.Point(11, 11);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(90, 90);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // sPanel4
             // 
@@ -204,6 +215,17 @@ namespace Nhom5.View.hokhau_nhankhau
             this.sPanel6.Size = new System.Drawing.Size(112, 112);
             this.sPanel6.TabIndex = 9;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.pictureBox2.Image = global::Nhom5.Properties.Resources.icons8_smart_home_checked_1001;
+            this.pictureBox2.Location = new System.Drawing.Point(11, 11);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(90, 90);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // sPanel7
             // 
             this.sPanel7.Controls.Add(this.pictureBox5);
@@ -211,6 +233,17 @@ namespace Nhom5.View.hokhau_nhankhau
             this.sPanel7.Name = "sPanel7";
             this.sPanel7.Size = new System.Drawing.Size(112, 112);
             this.sPanel7.TabIndex = 10;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.pictureBox5.Image = global::Nhom5.Properties.Resources.icons8_maintenance_house_timer_isolated_on_a_white_background_961;
+            this.pictureBox5.Location = new System.Drawing.Point(11, 11);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(90, 90);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
             // 
             // sPanel8
             // 
@@ -231,39 +264,6 @@ namespace Nhom5.View.hokhau_nhankhau
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.pictureBox5.Image = global::Nhom5.Properties.Resources.icons8_maintenance_house_timer_isolated_on_a_white_background_961;
-            this.pictureBox5.Location = new System.Drawing.Point(11, 11);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(90, 90);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.pictureBox2.Image = global::Nhom5.Properties.Resources.icons8_smart_home_checked_1001;
-            this.pictureBox2.Location = new System.Drawing.Point(11, 11);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(90, 90);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.pictureBox1.Image = global::Nhom5.Properties.Resources.icons8_salary_male_1001;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 11);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(90, 90);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // HomeUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -279,9 +279,10 @@ namespace Nhom5.View.hokhau_nhankhau
             this.Controls.Add(this.sPanel1);
             this.ForeColor = System.Drawing.Color.DimGray;
             this.Name = "HomeUC";
-            this.Size = new System.Drawing.Size(1048, 598);
+            this.Size = new System.Drawing.Size(1048, 595);
             this.VisibleChanged += new System.EventHandler(this.HomeUC_VisibleChanged);
             this.sPanel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.sPanel4.ResumeLayout(false);
             this.sPanel4.PerformLayout();
             this.sPanel3.ResumeLayout(false);
@@ -291,12 +292,11 @@ namespace Nhom5.View.hokhau_nhankhau
             this.sPanel1.ResumeLayout(false);
             this.sPanel1.PerformLayout();
             this.sPanel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.sPanel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.sPanel8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
