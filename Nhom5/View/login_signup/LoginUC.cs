@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Nhom5.Utility;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -74,7 +75,7 @@ namespace Nhom5.View.login
             if(ok) // đăng nhập hợp lệ
             {
                 var startScreenForm = this.Parent as StartScreen;
-                startScreenForm.openSecondScreen();
+                OpenScreen.openAnotherScreen(startScreenForm, new SecondScreen(), 0); // đóng form start, mở form second
             } 
             else
             {

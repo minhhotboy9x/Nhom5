@@ -113,14 +113,7 @@ namespace Nhom5
 
         private void logOutBtn_Click(object sender, EventArgs e)
         {
-            void runStartScreen()
-            {
-                Application.Run(new StartScreen());
-            }
-            this.Close();
-            Thread th = new Thread(runStartScreen);
-            th.SetApartmentState(ApartmentState.STA);
-            th.Start();
+            OpenScreen.openAnotherScreen(this, new StartScreen());
         }
     }
 }

@@ -35,7 +35,7 @@ namespace Nhom5.View.hokhau_nhankhau
             this.dKTamTruBtn = new System.Windows.Forms.Button();
             this.khaiTuBtn = new System.Windows.Forms.Button();
             this.xemChiTietBtn = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.materialComboBox1 = new MaterialSkin.Controls.MaterialComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,6 +62,7 @@ namespace Nhom5.View.hokhau_nhankhau
             this.themMoiBtn.TabIndex = 1;
             this.themMoiBtn.Text = "Thêm mới";
             this.themMoiBtn.UseVisualStyleBackColor = false;
+            this.themMoiBtn.Click += new System.EventHandler(this.themMoiBtn_Click);
             // 
             // dKTamVangBtn
             // 
@@ -70,7 +71,7 @@ namespace Nhom5.View.hokhau_nhankhau
             this.dKTamVangBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dKTamVangBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dKTamVangBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dKTamVangBtn.Location = new System.Drawing.Point(830, 260);
+            this.dKTamVangBtn.Location = new System.Drawing.Point(830, 308);
             this.dKTamVangBtn.Name = "dKTamVangBtn";
             this.dKTamVangBtn.Size = new System.Drawing.Size(172, 59);
             this.dKTamVangBtn.TabIndex = 2;
@@ -84,7 +85,7 @@ namespace Nhom5.View.hokhau_nhankhau
             this.dKTamTruBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dKTamTruBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dKTamTruBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dKTamTruBtn.Location = new System.Drawing.Point(830, 325);
+            this.dKTamTruBtn.Location = new System.Drawing.Point(830, 400);
             this.dKTamTruBtn.Name = "dKTamTruBtn";
             this.dKTamTruBtn.Size = new System.Drawing.Size(172, 59);
             this.dKTamTruBtn.TabIndex = 3;
@@ -98,7 +99,7 @@ namespace Nhom5.View.hokhau_nhankhau
             this.khaiTuBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.khaiTuBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.khaiTuBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.khaiTuBtn.Location = new System.Drawing.Point(830, 390);
+            this.khaiTuBtn.Location = new System.Drawing.Point(830, 492);
             this.khaiTuBtn.Name = "khaiTuBtn";
             this.khaiTuBtn.Size = new System.Drawing.Size(172, 59);
             this.khaiTuBtn.TabIndex = 4;
@@ -112,30 +113,42 @@ namespace Nhom5.View.hokhau_nhankhau
             this.xemChiTietBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.xemChiTietBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xemChiTietBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.xemChiTietBtn.Location = new System.Drawing.Point(830, 195);
+            this.xemChiTietBtn.Location = new System.Drawing.Point(830, 216);
             this.xemChiTietBtn.Name = "xemChiTietBtn";
             this.xemChiTietBtn.Size = new System.Drawing.Size(172, 59);
             this.xemChiTietBtn.TabIndex = 4;
             this.xemChiTietBtn.Text = "Xem chi tiết";
             this.xemChiTietBtn.UseVisualStyleBackColor = false;
             // 
-            // comboBox1
+            // materialComboBox1
             // 
-            this.comboBox1.AllowDrop = true;
-            this.comboBox1.BackColor = System.Drawing.Color.White;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(675, 80);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(120, 28);
-            this.comboBox1.TabIndex = 5;
+            this.materialComboBox1.AutoResize = false;
+            this.materialComboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialComboBox1.Depth = 0;
+            this.materialComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.materialComboBox1.DropDownHeight = 118;
+            this.materialComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.materialComboBox1.DropDownWidth = 121;
+            this.materialComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.materialComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialComboBox1.FormattingEnabled = true;
+            this.materialComboBox1.IntegralHeight = false;
+            this.materialComboBox1.ItemHeight = 29;
+            this.materialComboBox1.Location = new System.Drawing.Point(636, 67);
+            this.materialComboBox1.MaxDropDownItems = 4;
+            this.materialComboBox1.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialComboBox1.Name = "materialComboBox1";
+            this.materialComboBox1.Size = new System.Drawing.Size(159, 35);
+            this.materialComboBox1.StartIndex = 0;
+            this.materialComboBox1.TabIndex = 6;
+            this.materialComboBox1.UseTallSize = false;
             // 
             // NhanKhauUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.materialComboBox1);
             this.Controls.Add(this.xemChiTietBtn);
             this.Controls.Add(this.khaiTuBtn);
             this.Controls.Add(this.dKTamTruBtn);
@@ -158,6 +171,6 @@ namespace Nhom5.View.hokhau_nhankhau
         private System.Windows.Forms.Button dKTamTruBtn;
         private System.Windows.Forms.Button khaiTuBtn;
         private System.Windows.Forms.Button xemChiTietBtn;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private MaterialSkin.Controls.MaterialComboBox materialComboBox1;
     }
 }

@@ -55,16 +55,5 @@ namespace Nhom5
             resetPassUC1.Show();
         }
         
-        public void openSecondScreen()
-        {
-            void runSecondScreen()
-            {
-                Application.Run(new SecondScreen());
-            }
-            this.Close();
-            Thread th = new Thread(runSecondScreen);
-            th.SetApartmentState(ApartmentState.STA);
-            th.Start();
-        }
     }
 }
