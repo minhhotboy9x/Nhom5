@@ -749,7 +749,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1030, 669);
+            this.ClientSize = new System.Drawing.Size(1030, 673);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.themMoiBtn);
             this.Controls.Add(this.label20);
@@ -757,7 +757,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.Controls.Add(this.sPanel9);
             this.Controls.Add(this.sPanel2);
             this.Controls.Add(this.panelTitleBar);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "ThemMoiScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
