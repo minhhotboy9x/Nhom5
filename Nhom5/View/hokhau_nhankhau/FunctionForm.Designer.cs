@@ -39,6 +39,7 @@ namespace Nhom5.View.hokhau_nhankhau
             this.Name = "FunctionForm";
             this.Text = "FunctionForm";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FunctionForm_FormClosed);
+            this.VisibleChanged += new System.EventHandler(this.FunctionForm_VisibleChanged);
             this.ResumeLayout(false);
 
         }

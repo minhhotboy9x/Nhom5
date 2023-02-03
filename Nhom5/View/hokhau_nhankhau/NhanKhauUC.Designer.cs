@@ -35,8 +35,11 @@ namespace Nhom5.View.hokhau_nhankhau
             this.dKTamTruBtn = new System.Windows.Forms.Button();
             this.khaiTuBtn = new System.Windows.Forms.Button();
             this.xemChiTietBtn = new System.Windows.Forms.Button();
-            this.materialComboBox1 = new MaterialSkin.Controls.MaterialComboBox();
+            this.sPanel1 = new Nhom5.Utility.SPanel();
+            this.searchTextBox1 = new Nhom5.Utility.WaterMarkTextBox();
+            this.featureSearchBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.sPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -120,35 +123,51 @@ namespace Nhom5.View.hokhau_nhankhau
             this.xemChiTietBtn.Text = "Xem chi tiết";
             this.xemChiTietBtn.UseVisualStyleBackColor = false;
             // 
-            // materialComboBox1
+            // sPanel1
             // 
-            this.materialComboBox1.AutoResize = false;
-            this.materialComboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialComboBox1.Depth = 0;
-            this.materialComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.materialComboBox1.DropDownHeight = 118;
-            this.materialComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.materialComboBox1.DropDownWidth = 121;
-            this.materialComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.materialComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialComboBox1.FormattingEnabled = true;
-            this.materialComboBox1.IntegralHeight = false;
-            this.materialComboBox1.ItemHeight = 29;
-            this.materialComboBox1.Location = new System.Drawing.Point(636, 67);
-            this.materialComboBox1.MaxDropDownItems = 4;
-            this.materialComboBox1.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialComboBox1.Name = "materialComboBox1";
-            this.materialComboBox1.Size = new System.Drawing.Size(159, 35);
-            this.materialComboBox1.StartIndex = 0;
-            this.materialComboBox1.TabIndex = 6;
-            this.materialComboBox1.UseTallSize = false;
+            this.sPanel1.BackColor = System.Drawing.Color.White;
+            this.sPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sPanel1.Controls.Add(this.searchTextBox1);
+            this.sPanel1.Controls.Add(this.featureSearchBox);
+            this.sPanel1.Location = new System.Drawing.Point(242, 82);
+            this.sPanel1.Name = "sPanel1";
+            this.sPanel1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.sPanel1.Size = new System.Drawing.Size(397, 29);
+            this.sPanel1.TabIndex = 7;
+            // 
+            // searchTextBox1
+            // 
+            this.searchTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.searchTextBox1.BackColor = System.Drawing.Color.White;
+            this.searchTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.searchTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchTextBox1.Location = new System.Drawing.Point(10, 4);
+            this.searchTextBox1.Name = "searchTextBox1";
+            this.searchTextBox1.Size = new System.Drawing.Size(236, 20);
+            this.searchTextBox1.TabIndex = 5;
+            this.searchTextBox1.WaterMarkColor = System.Drawing.Color.DimGray;
+            this.searchTextBox1.WaterMarkText = "Nhập dữ liệu tra cứu";
+            // 
+            // featureSearchBox
+            // 
+            this.featureSearchBox.Dock = System.Windows.Forms.DockStyle.Right;
+            this.featureSearchBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.featureSearchBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.featureSearchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.featureSearchBox.FormattingEnabled = true;
+            this.featureSearchBox.Items.AddRange(new object[] {
+            "(none)"});
+            this.featureSearchBox.Location = new System.Drawing.Point(265, 0);
+            this.featureSearchBox.Name = "featureSearchBox";
+            this.featureSearchBox.Size = new System.Drawing.Size(130, 26);
+            this.featureSearchBox.TabIndex = 6;
             // 
             // NhanKhauUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.Controls.Add(this.materialComboBox1);
+            this.Controls.Add(this.sPanel1);
             this.Controls.Add(this.xemChiTietBtn);
             this.Controls.Add(this.khaiTuBtn);
             this.Controls.Add(this.dKTamTruBtn);
@@ -159,6 +178,8 @@ namespace Nhom5.View.hokhau_nhankhau
             this.Size = new System.Drawing.Size(1048, 598);
             this.VisibleChanged += new System.EventHandler(this.NhanKhauUC_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.sPanel1.ResumeLayout(false);
+            this.sPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -171,6 +192,8 @@ namespace Nhom5.View.hokhau_nhankhau
         private System.Windows.Forms.Button dKTamTruBtn;
         private System.Windows.Forms.Button khaiTuBtn;
         private System.Windows.Forms.Button xemChiTietBtn;
-        private MaterialSkin.Controls.MaterialComboBox materialComboBox1;
+        private Utility.WaterMarkTextBox searchTextBox1;
+        private System.Windows.Forms.ComboBox featureSearchBox;
+        private Utility.SPanel sPanel1;
     }
 }

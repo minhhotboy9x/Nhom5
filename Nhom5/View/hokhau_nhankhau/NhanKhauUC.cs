@@ -17,7 +17,7 @@ namespace Nhom5.View.hokhau_nhankhau
         public NhanKhauUC()
         {
             InitializeComponent();
-            
+            featureSearchBox.SelectedIndex = 0;
         }
 
         private void NhanKhauUC_VisibleChanged(object sender, EventArgs e)

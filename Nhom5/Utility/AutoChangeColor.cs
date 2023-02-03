@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Nhom5.View.hokhau_nhankhau;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -10,6 +11,7 @@ namespace Nhom5.Utility
 {
     public static class AutoChangeColor
     {
+        //change color of usercontrol in secondScreen
         public static void changeColorScreen2(object sender, EventArgs e, List<String> list_type)
         {
             UserControl This_UC = sender as UserControl;
@@ -35,6 +37,34 @@ namespace Nhom5.Utility
                 }
 
             }
+        }
+        // change color of second form function in second screen 
+        public static void changeColorFuncScreen(object sender, EventArgs e, List<String> list_type)
+        {
+            FunctionForm this_Form = sender as FunctionForm;
+            if (this_Form.Visible)
+            {
+                try
+                {
+                    var secondScreenForm = this_Form.parent_Form as SecondScreen;
+                    Button currentBtn = secondScreenForm.CurrentButton;
+                    Color currentColor = currentBtn.BackColor;
+                    foreach (Control btn in this_Form.Controls)
+                    {
+                        //Console.WriteLine(list_type.Contains("Button"));
+                        if (list_type.Contains(btn.GetType().Name.ToString()))
+                        {
+                            btn.BackColor = currentColor;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+
+            }
+
         }
     }
 }

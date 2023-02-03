@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Nhom5.Utility;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,14 +19,21 @@ namespace Nhom5.View.hokhau_nhankhau
             InitializeComponent();
         }
 
+        public Form parent_Form { get => parentForm; set => parentForm = value; }
+
         public void getFormRef(Form parentForm)
         {
-            this.parentForm = parentForm;
+            this.parent_Form = parentForm;
         }
 
         private void FunctionForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.parentForm.Invoke((MethodInvoker)(() => this.parentForm.Enabled = true));
+            this.parent_Form.Invoke((MethodInvoker)(() => this.parent_Form.Enabled = true));
+        }
+
+        private void FunctionForm_VisibleChanged(object sender, EventArgs e)
+        {
+            AutoChangeColor.changeColorFuncScreen(sender, e, new List<String>() { "Button", "Panel" });
         }
     }
 }
