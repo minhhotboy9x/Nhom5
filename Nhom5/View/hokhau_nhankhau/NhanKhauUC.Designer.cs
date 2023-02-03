@@ -122,6 +122,7 @@ namespace Nhom5.View.hokhau_nhankhau
             this.xemChiTietBtn.TabIndex = 4;
             this.xemChiTietBtn.Text = "Xem chi tiết";
             this.xemChiTietBtn.UseVisualStyleBackColor = false;
+            this.xemChiTietBtn.Click += new System.EventHandler(this.xemChiTietBtn_Click);
             // 
             // sPanel1
             // 

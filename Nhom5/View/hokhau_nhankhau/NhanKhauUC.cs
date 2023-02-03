@@ -32,5 +32,13 @@ namespace Nhom5.View.hokhau_nhankhau
             themMoiScreen.getFormRef(startScreenForm);
             OpenScreen.openAnotherScreen(startScreenForm, themMoiScreen, 1);
         }
+
+        private void xemChiTietBtn_Click(object sender, EventArgs e)
+        {
+            var startScreenForm = this.Parent as SecondScreen;
+            XemChiTiet xemChiTietScreen = new XemChiTiet();
+            xemChiTietScreen.getFormRef(startScreenForm);
+            OpenScreen.openAnotherScreen(startScreenForm, xemChiTietScreen, 1);
+        }
     }
 }

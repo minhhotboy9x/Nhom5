@@ -102,6 +102,12 @@
     <Compile Include="View\hokhau_nhankhau\nhankhau_function\ThemMoiScreen.Designer.cs">
       <DependentUpon>ThemMoiScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\hokhau_nhankhau\nhankhau_function\XemChiTiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\hokhau_nhankhau\nhankhau_function\XemChiTiet.Designer.cs">
+      <DependentUpon>XemChiTiet.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\login_signup\ResetPassUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -153,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\hokhau_nhankhau\nhankhau_function\ThemMoiScreen.resx">
       <DependentUpon>ThemMoiScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\hokhau_nhankhau\nhankhau_function\XemChiTiet.resx">
+      <DependentUpon>XemChiTiet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\login_signup\ResetPassUC.resx">
       <DependentUpon>ResetPassUC.cs</DependentUpon>

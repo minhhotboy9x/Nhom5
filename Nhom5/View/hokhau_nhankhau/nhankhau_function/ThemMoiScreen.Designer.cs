@@ -680,7 +680,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             this.sPanel17.Controls.Add(this.label18);
             this.sPanel17.Controls.Add(this.textBox4);
-            this.sPanel17.Location = new System.Drawing.Point(50, 504);
+            this.sPanel17.Location = new System.Drawing.Point(50, 493);
             this.sPanel17.Name = "sPanel17";
             this.sPanel17.Size = new System.Drawing.Size(938, 55);
             this.sPanel17.TabIndex = 11;
@@ -749,7 +749,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1030, 673);
+            this.ClientSize = new System.Drawing.Size(1030, 669);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.themMoiBtn);
             this.Controls.Add(this.label20);
@@ -757,6 +757,8 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.Controls.Add(this.sPanel9);
             this.Controls.Add(this.sPanel2);
             this.Controls.Add(this.panelTitleBar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "ThemMoiScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThemMoiScreen";
