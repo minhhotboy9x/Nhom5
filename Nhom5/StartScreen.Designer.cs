@@ -85,6 +85,7 @@ namespace Nhom5
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý nhân khẩu";
             this.Load += new System.EventHandler(this.StartScreen_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.StartScreen_MouseDown);
             this.ResumeLayout(false);
 
         }

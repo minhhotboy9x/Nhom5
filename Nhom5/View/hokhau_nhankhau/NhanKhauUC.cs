@@ -40,5 +40,10 @@ namespace Nhom5.View.hokhau_nhankhau
             xemChiTietScreen.getFormRef(startScreenForm);
             OpenScreen.openAnotherScreen(startScreenForm, xemChiTietScreen, 1);
         }
+
+        private void NhanKhauUC_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.ActiveControl = null; 
+        }
     }
 }

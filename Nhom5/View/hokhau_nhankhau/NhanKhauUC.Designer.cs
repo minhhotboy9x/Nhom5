@@ -178,6 +178,7 @@ namespace Nhom5.View.hokhau_nhankhau
             this.Name = "NhanKhauUC";
             this.Size = new System.Drawing.Size(1048, 595);
             this.VisibleChanged += new System.EventHandler(this.NhanKhauUC_VisibleChanged);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NhanKhauUC_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.sPanel1.ResumeLayout(false);
             this.sPanel1.PerformLayout();

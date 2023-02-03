@@ -95,5 +95,10 @@ namespace Nhom5.View.login_signup
             var startScreenForm = this.Parent as StartScreen;
             startScreenForm.changeToLogin();
         }
+
+        private void ResetPassUC_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.ActiveControl = null;
+        }
     }
 }

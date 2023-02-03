@@ -44,6 +44,7 @@ namespace Nhom5.View.login_signup
             this.userNameText = new System.Windows.Forms.TextBox();
             this.userLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.validateLabel = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -58,7 +59,6 @@ namespace Nhom5.View.login_signup
             this.newPassLabel = new System.Windows.Forms.Label();
             this.backLabel = new System.Windows.Forms.Label();
             this.announcementLabel = new System.Windows.Forms.Label();
-            this.validateLabel = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel6.SuspendLayout();
@@ -222,6 +222,17 @@ namespace Nhom5.View.login_signup
             this.panel1.Size = new System.Drawing.Size(617, 91);
             this.panel1.TabIndex = 10;
             // 
+            // validateLabel
+            // 
+            this.validateLabel.AutoSize = true;
+            this.validateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.validateLabel.ForeColor = System.Drawing.Color.Firebrick;
+            this.validateLabel.Location = new System.Drawing.Point(260, 58);
+            this.validateLabel.Name = "validateLabel";
+            this.validateLabel.Size = new System.Drawing.Size(195, 20);
+            this.validateLabel.TabIndex = 19;
+            this.validateLabel.Text = "Nhập lại không chính xác";
+            // 
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -381,17 +392,6 @@ namespace Nhom5.View.login_signup
             this.announcementLabel.Text = "Username đã tồn tại hoặc không hợp lệ.\r\nCác kí tự của username và password chỉ\r\ng" +
     "ồm các kí tự chữ và số không dấu với độ dài không quá 20 kí tự.\r\n";
             this.announcementLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // validateLabel
-            // 
-            this.validateLabel.AutoSize = true;
-            this.validateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.validateLabel.ForeColor = System.Drawing.Color.Firebrick;
-            this.validateLabel.Location = new System.Drawing.Point(260, 58);
-            this.validateLabel.Name = "validateLabel";
-            this.validateLabel.Size = new System.Drawing.Size(195, 20);
-            this.validateLabel.TabIndex = 19;
-            this.validateLabel.Text = "Nhập lại không chính xác";
             // 
             // ResetPassUC
             // 

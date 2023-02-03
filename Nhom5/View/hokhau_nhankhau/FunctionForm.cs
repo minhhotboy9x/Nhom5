@@ -35,5 +35,10 @@ namespace Nhom5.View.hokhau_nhankhau
         {
             AutoChangeColor.changeColorFuncScreen(sender, e, new List<String>() { "Button", "Panel" });
         }
+
+        private void FunctionForm_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.ActiveControl = null;
+        }
     }
 }

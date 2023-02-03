@@ -54,6 +54,10 @@ namespace Nhom5
             forgetPassUC1.Hide();
             resetPassUC1.Show();
         }
-        
+
+        private void StartScreen_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.ActiveControl = null;
+        }
     }
 }
