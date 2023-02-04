@@ -111,6 +111,7 @@ namespace Nhom5.View.hokhau_nhankhau
             this.khaiTuBtn.TabIndex = 4;
             this.khaiTuBtn.Text = "Khai tử";
             this.khaiTuBtn.UseVisualStyleBackColor = false;
+            this.khaiTuBtn.Click += new System.EventHandler(this.khaiTuBtn_Click);
             // 
             // xemChiTietBtn
             // 

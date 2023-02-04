@@ -69,5 +69,13 @@ namespace Nhom5.View.hokhau_nhankhau
             dKTamTru.getFormRef(startScreenForm);
             OpenScreen.openAnotherScreen(startScreenForm, dKTamTru, 1);
         }
+
+        private void khaiTuBtn_Click(object sender, EventArgs e)
+        {
+            var startScreenForm = this.Parent as SecondScreen;
+            KhaiTu dKKhaiTu = new KhaiTu();
+            dKKhaiTu.getFormRef(startScreenForm);
+            OpenScreen.openAnotherScreen(startScreenForm, dKKhaiTu, 1);
+        }
     }
 }

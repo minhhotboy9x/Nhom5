@@ -114,6 +114,12 @@
     <Compile Include="View\hokhau_nhankhau\nhankhau_function\DKTamVang.Designer.cs">
       <DependentUpon>DKTamVang.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\hokhau_nhankhau\nhankhau_function\KhaiTu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\hokhau_nhankhau\nhankhau_function\KhaiTu.Designer.cs">
+      <DependentUpon>KhaiTu.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\hokhau_nhankhau\nhankhau_function\ThemMoiScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\hokhau_nhankhau\nhankhau_function\DKTamVang.resx">
       <DependentUpon>DKTamVang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\hokhau_nhankhau\nhankhau_function\KhaiTu.resx">
+      <DependentUpon>KhaiTu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\hokhau_nhankhau\nhankhau_function\ThemMoiScreen.resx">
       <DependentUpon>ThemMoiScreen.cs</DependentUpon>
