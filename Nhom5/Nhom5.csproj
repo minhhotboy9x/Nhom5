@@ -96,6 +96,24 @@
     <Compile Include="View\hokhau_nhankhau\NhanKhauUC.Designer.cs">
       <DependentUpon>NhanKhauUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\hokhau_nhankhau\nhankhau_function\ChinhSua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\hokhau_nhankhau\nhankhau_function\ChinhSua.Designer.cs">
+      <DependentUpon>ChinhSua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\hokhau_nhankhau\nhankhau_function\DKTamTru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\hokhau_nhankhau\nhankhau_function\DKTamTru.Designer.cs">
+      <DependentUpon>DKTamTru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\hokhau_nhankhau\nhankhau_function\DKTamVang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\hokhau_nhankhau\nhankhau_function\DKTamVang.Designer.cs">
+      <DependentUpon>DKTamVang.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\hokhau_nhankhau\nhankhau_function\ThemMoiScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +174,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\hokhau_nhankhau\NhanKhauUC.resx">
       <DependentUpon>NhanKhauUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\hokhau_nhankhau\nhankhau_function\ChinhSua.resx">
+      <DependentUpon>ChinhSua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\hokhau_nhankhau\nhankhau_function\DKTamTru.resx">
+      <DependentUpon>DKTamTru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\hokhau_nhankhau\nhankhau_function\DKTamVang.resx">
+      <DependentUpon>DKTamVang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\hokhau_nhankhau\nhankhau_function\ThemMoiScreen.resx">
       <DependentUpon>ThemMoiScreen.cs</DependentUpon>

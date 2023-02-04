@@ -35,6 +35,7 @@ namespace Nhom5.View.hokhau_nhankhau
             this.dKTamTruBtn = new System.Windows.Forms.Button();
             this.khaiTuBtn = new System.Windows.Forms.Button();
             this.xemChiTietBtn = new System.Windows.Forms.Button();
+            this.chinhSuaBtn = new System.Windows.Forms.Button();
             this.sPanel1 = new Nhom5.Utility.SPanel();
             this.searchTextBox1 = new Nhom5.Utility.WaterMarkTextBox();
             this.featureSearchBox = new System.Windows.Forms.ComboBox();
@@ -59,7 +60,7 @@ namespace Nhom5.View.hokhau_nhankhau
             this.themMoiBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.themMoiBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.themMoiBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.themMoiBtn.Location = new System.Drawing.Point(830, 130);
+            this.themMoiBtn.Location = new System.Drawing.Point(829, 130);
             this.themMoiBtn.Name = "themMoiBtn";
             this.themMoiBtn.Size = new System.Drawing.Size(172, 59);
             this.themMoiBtn.TabIndex = 1;
@@ -74,12 +75,13 @@ namespace Nhom5.View.hokhau_nhankhau
             this.dKTamVangBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dKTamVangBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dKTamVangBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dKTamVangBtn.Location = new System.Drawing.Point(830, 308);
+            this.dKTamVangBtn.Location = new System.Drawing.Point(829, 325);
             this.dKTamVangBtn.Name = "dKTamVangBtn";
             this.dKTamVangBtn.Size = new System.Drawing.Size(172, 59);
             this.dKTamVangBtn.TabIndex = 2;
             this.dKTamVangBtn.Text = "DK tạm vắng";
             this.dKTamVangBtn.UseVisualStyleBackColor = false;
+            this.dKTamVangBtn.Click += new System.EventHandler(this.dKTamVangBtn_Click);
             // 
             // dKTamTruBtn
             // 
@@ -88,12 +90,13 @@ namespace Nhom5.View.hokhau_nhankhau
             this.dKTamTruBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dKTamTruBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dKTamTruBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dKTamTruBtn.Location = new System.Drawing.Point(830, 400);
+            this.dKTamTruBtn.Location = new System.Drawing.Point(829, 390);
             this.dKTamTruBtn.Name = "dKTamTruBtn";
             this.dKTamTruBtn.Size = new System.Drawing.Size(172, 59);
             this.dKTamTruBtn.TabIndex = 3;
             this.dKTamTruBtn.Text = "DK tạm trú";
             this.dKTamTruBtn.UseVisualStyleBackColor = false;
+            this.dKTamTruBtn.Click += new System.EventHandler(this.dKTamTruBtn_Click);
             // 
             // khaiTuBtn
             // 
@@ -102,7 +105,7 @@ namespace Nhom5.View.hokhau_nhankhau
             this.khaiTuBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.khaiTuBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.khaiTuBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.khaiTuBtn.Location = new System.Drawing.Point(830, 492);
+            this.khaiTuBtn.Location = new System.Drawing.Point(829, 455);
             this.khaiTuBtn.Name = "khaiTuBtn";
             this.khaiTuBtn.Size = new System.Drawing.Size(172, 59);
             this.khaiTuBtn.TabIndex = 4;
@@ -116,13 +119,28 @@ namespace Nhom5.View.hokhau_nhankhau
             this.xemChiTietBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.xemChiTietBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xemChiTietBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.xemChiTietBtn.Location = new System.Drawing.Point(830, 216);
+            this.xemChiTietBtn.Location = new System.Drawing.Point(829, 195);
             this.xemChiTietBtn.Name = "xemChiTietBtn";
             this.xemChiTietBtn.Size = new System.Drawing.Size(172, 59);
             this.xemChiTietBtn.TabIndex = 4;
             this.xemChiTietBtn.Text = "Xem chi tiết";
             this.xemChiTietBtn.UseVisualStyleBackColor = false;
             this.xemChiTietBtn.Click += new System.EventHandler(this.xemChiTietBtn_Click);
+            // 
+            // chinhSuaBtn
+            // 
+            this.chinhSuaBtn.BackColor = System.Drawing.Color.Gray;
+            this.chinhSuaBtn.FlatAppearance.BorderSize = 0;
+            this.chinhSuaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chinhSuaBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chinhSuaBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.chinhSuaBtn.Location = new System.Drawing.Point(829, 260);
+            this.chinhSuaBtn.Name = "chinhSuaBtn";
+            this.chinhSuaBtn.Size = new System.Drawing.Size(172, 59);
+            this.chinhSuaBtn.TabIndex = 5;
+            this.chinhSuaBtn.Text = "Chỉnh sửa";
+            this.chinhSuaBtn.UseVisualStyleBackColor = false;
+            this.chinhSuaBtn.Click += new System.EventHandler(this.chinhSuaBtn_Click);
             // 
             // sPanel1
             // 
@@ -168,13 +186,14 @@ namespace Nhom5.View.hokhau_nhankhau
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.Controls.Add(this.sPanel1);
-            this.Controls.Add(this.xemChiTietBtn);
             this.Controls.Add(this.khaiTuBtn);
             this.Controls.Add(this.dKTamTruBtn);
+            this.Controls.Add(this.sPanel1);
             this.Controls.Add(this.dKTamVangBtn);
-            this.Controls.Add(this.themMoiBtn);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.chinhSuaBtn);
+            this.Controls.Add(this.xemChiTietBtn);
+            this.Controls.Add(this.themMoiBtn);
             this.Name = "NhanKhauUC";
             this.Size = new System.Drawing.Size(1048, 595);
             this.VisibleChanged += new System.EventHandler(this.NhanKhauUC_VisibleChanged);
@@ -197,5 +216,6 @@ namespace Nhom5.View.hokhau_nhankhau
         private Utility.WaterMarkTextBox searchTextBox1;
         private System.Windows.Forms.ComboBox featureSearchBox;
         private Utility.SPanel sPanel1;
+        private System.Windows.Forms.Button chinhSuaBtn;
     }
 }

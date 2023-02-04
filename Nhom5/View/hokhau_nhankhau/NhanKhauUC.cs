@@ -45,5 +45,29 @@ namespace Nhom5.View.hokhau_nhankhau
         {
             this.ActiveControl = null; 
         }
+
+        private void chinhSuaBtn_Click(object sender, EventArgs e)
+        {
+            var startScreenForm = this.Parent as SecondScreen;
+            ChinhSua chinhSua = new ChinhSua();
+            chinhSua.getFormRef(startScreenForm);
+            OpenScreen.openAnotherScreen(startScreenForm, chinhSua, 1);
+        }
+
+        private void dKTamVangBtn_Click(object sender, EventArgs e)
+        {
+            var startScreenForm = this.Parent as SecondScreen;
+            DKTamVang dKTamVang = new DKTamVang();
+            dKTamVang.getFormRef(startScreenForm);
+            OpenScreen.openAnotherScreen(startScreenForm, dKTamVang, 1);
+        }
+
+        private void dKTamTruBtn_Click(object sender, EventArgs e)
+        {
+            var startScreenForm = this.Parent as SecondScreen;
+            DKTamTru dKTamTru = new DKTamTru();
+            dKTamTru.getFormRef(startScreenForm);
+            OpenScreen.openAnotherScreen(startScreenForm, dKTamTru, 1);
+        }
     }
 }
