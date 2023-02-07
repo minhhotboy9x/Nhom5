@@ -102,6 +102,12 @@
     <Compile Include="View\hokhau_nhankhau\hokhau_function\ChuyenHoKhau.Designer.cs">
       <DependentUpon>ChuyenHoKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\hokhau_nhankhau\hokhau_function\LichSuChuyenDi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\hokhau_nhankhau\hokhau_function\LichSuChuyenDi.Designer.cs">
+      <DependentUpon>LichSuChuyenDi.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\hokhau_nhankhau\hokhau_function\TachHoKhau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +198,25 @@
     <Compile Include="View\login_signup\SignUpUC.Designer.cs">
       <DependentUpon>SignUpUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\phanthuong\HocSinhGioiUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\phanthuong\HocSinhGioiUC.Designer.cs">
+      <DependentUpon>HocSinhGioiUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\phanthuong\hocsinhgioi_function\TaoDipTraoThuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\phanthuong\hocsinhgioi_function\.Designer.cs">
+      <DependentUpon>TaoDipTraoThuong.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\phanthuong\QuanLyPhanThuong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\phanthuong\QuanLyPhanThuong.Designer.cs">
+      <DependentUpon>QuanLyPhanThuong.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -219,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\hokhau_nhankhau\hokhau_function\ChuyenHoKhau.resx">
       <DependentUpon>ChuyenHoKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\hokhau_nhankhau\hokhau_function\LichSuChuyenDi.resx">
+      <DependentUpon>LichSuChuyenDi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\hokhau_nhankhau\hokhau_function\TachHoKhau.resx">
       <DependentUpon>TachHoKhau.cs</DependentUpon>
@@ -265,6 +293,15 @@
     <EmbeddedResource Include="View\login_signup\SignUpUC.resx">
       <DependentUpon>SignUpUC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\phanthuong\HocSinhGioiUC.resx">
+      <DependentUpon>HocSinhGioiUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\phanthuong\hocsinhgioi_function\TaoDipTraoThuong.resx">
+      <DependentUpon>TaoDipTraoThuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\phanthuong\QuanLyPhanThuong.resx">
+      <DependentUpon>QuanLyPhanThuong.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -281,13 +318,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controller\" />
-    <Folder Include="Image\HomeUC\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Image\Login\icons8-anotherlock.png" />
     <Content Include="Image\Login\icons8-customer-60.png" />
     <Content Include="Image\Login\icons8-lock-64.png" />
     <Content Include="Image\Login\icons8-verified-check-circle-for-approved-valid-content-48.png" />
+    <Content Include="Image\PhanThuong\icons8-event-accepted-tentatively-100.png" />
+    <Content Include="Image\PhanThuong\icons8-student-center-100.png" />
     <Content Include="Image\SecondScreen\HomeUC\icons8-maintenance-house-timer-isolated-on-a-white-background-96.png" />
     <Content Include="Image\SecondScreen\HomeUC\icons8-move-left-100.png" />
     <Content Include="Image\SecondScreen\HomeUC\icons8-salary-male-100.png" />

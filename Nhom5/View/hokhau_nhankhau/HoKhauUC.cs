@@ -21,7 +21,7 @@ namespace Nhom5.View.hokhau_nhankhau
             featureSearchBox.SelectedIndex = 0;
         }
         #region change sPanel color
-        private void HoKhauUC_VisibleChanged(object sender, EventArgs e)
+        public void HoKhauUC_VisibleChanged(object sender, EventArgs e)
         {
             AutoChangeColor.changeColorScreen2(sender, e, new List<String>() { "Button" });
             AutoChangeColor.changeSPanelScreen2(sender, searchSPanel);
@@ -83,10 +83,34 @@ namespace Nhom5.View.hokhau_nhankhau
             OpenScreen.openFunctionForm(this, new TachHoKhau(), 1);
         }
         
-
         private void chuyenKhauBtn_Click(object sender, EventArgs e)
         {
             OpenScreen.openFunctionForm(this, new ChuyenHoKhau(), 1);
+        }
+
+        private void lichSuBtn_Click(object sender, EventArgs e)
+        {
+            OpenScreen.openFunctionForm(this, new LichSuChuyenDi(), 1);
+        }
+
+        private void reLoadSPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void searchSPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void sPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

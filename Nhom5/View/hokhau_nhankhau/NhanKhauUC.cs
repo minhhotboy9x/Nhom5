@@ -20,7 +20,7 @@ namespace Nhom5.View.hokhau_nhankhau
             featureSearchBox.SelectedIndex = 0;
         }
         #region change sPanel Color
-        private void NhanKhauUC_VisibleChanged(object sender, EventArgs e)
+        public void NhanKhauUC_VisibleChanged(object sender, EventArgs e)
         {
             AutoChangeColor.changeColorScreen2(sender, e, new List<String>() {"Button"});
             AutoChangeColor.changeSPanelScreen2(sender, searchSPanel);

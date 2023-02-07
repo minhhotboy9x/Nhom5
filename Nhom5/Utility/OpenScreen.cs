@@ -34,5 +34,6 @@ namespace Nhom5.Utility
             formScreen.getFormRef(startScreenForm);
             openAnotherScreen(startScreenForm, formScreen, 1);
         }
+        
     }
 }

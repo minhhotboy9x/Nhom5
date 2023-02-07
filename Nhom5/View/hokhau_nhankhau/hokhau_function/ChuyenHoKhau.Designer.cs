@@ -538,6 +538,8 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.Controls.Add(this.sPanel9);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.panelTitleBar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "ChuyenHoKhau";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChuyenHoKhau";

@@ -31,15 +31,18 @@
             this.panelMenu = new System.Windows.Forms.Panel();
             this.logOutBtn = new System.Windows.Forms.Button();
             this.thongKeBtn = new System.Windows.Forms.Button();
+            this.phanThuongBtn = new System.Windows.Forms.Button();
             this.hoKhauBtn = new System.Windows.Forms.Button();
             this.nhanKhauBtn = new System.Windows.Forms.Button();
             this.homeBtn = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.hoKhauUC1 = new Nhom5.View.hokhau_nhankhau.HoKhauUC();
             this.nhanKhauUC1 = new Nhom5.View.hokhau_nhankhau.NhanKhauUC();
             this.homeUC1 = new Nhom5.View.hokhau_nhankhau.HomeUC();
-            this.hoKhauUC1 = new Nhom5.View.hokhau_nhankhau.HoKhauUC();
+            this.quanLyPhanThuong1 = new Nhom5.View.phanthuong.QuanLyPhanThuong();
+            this.hocSinhGioiUC1 = new Nhom5.View.phanthuong.HocSinhGioiUC();
             this.panelMenu.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
             this.SuspendLayout();
@@ -49,6 +52,7 @@
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(52)))), ((int)(((byte)(77)))));
             this.panelMenu.Controls.Add(this.logOutBtn);
             this.panelMenu.Controls.Add(this.thongKeBtn);
+            this.panelMenu.Controls.Add(this.phanThuongBtn);
             this.panelMenu.Controls.Add(this.hoKhauBtn);
             this.panelMenu.Controls.Add(this.nhanKhauBtn);
             this.panelMenu.Controls.Add(this.homeBtn);
@@ -68,7 +72,7 @@
             this.logOutBtn.ForeColor = System.Drawing.Color.Gainsboro;
             this.logOutBtn.Image = global::Nhom5.Properties.Resources.icons8_logout_58;
             this.logOutBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.logOutBtn.Location = new System.Drawing.Point(0, 315);
+            this.logOutBtn.Location = new System.Drawing.Point(0, 375);
             this.logOutBtn.Name = "logOutBtn";
             this.logOutBtn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.logOutBtn.Size = new System.Drawing.Size(214, 60);
@@ -88,7 +92,7 @@
             this.thongKeBtn.ForeColor = System.Drawing.Color.Gainsboro;
             this.thongKeBtn.Image = global::Nhom5.Properties.Resources.icons8_analytics_601;
             this.thongKeBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.thongKeBtn.Location = new System.Drawing.Point(0, 255);
+            this.thongKeBtn.Location = new System.Drawing.Point(0, 315);
             this.thongKeBtn.Name = "thongKeBtn";
             this.thongKeBtn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.thongKeBtn.Size = new System.Drawing.Size(214, 60);
@@ -98,6 +102,26 @@
             this.thongKeBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.thongKeBtn.UseVisualStyleBackColor = true;
             this.thongKeBtn.Click += new System.EventHandler(this.thongKeBtn_Click);
+            // 
+            // phanThuongBtn
+            // 
+            this.phanThuongBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.phanThuongBtn.FlatAppearance.BorderSize = 0;
+            this.phanThuongBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.phanThuongBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phanThuongBtn.ForeColor = System.Drawing.Color.Gainsboro;
+            this.phanThuongBtn.Image = global::Nhom5.Properties.Resources.icons8_prize_50;
+            this.phanThuongBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.phanThuongBtn.Location = new System.Drawing.Point(0, 255);
+            this.phanThuongBtn.Name = "phanThuongBtn";
+            this.phanThuongBtn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.phanThuongBtn.Size = new System.Drawing.Size(214, 60);
+            this.phanThuongBtn.TabIndex = 7;
+            this.phanThuongBtn.Text = " Phần thưởng";
+            this.phanThuongBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.phanThuongBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.phanThuongBtn.UseVisualStyleBackColor = true;
+            this.phanThuongBtn.Click += new System.EventHandler(this.phanThuongBtn_Click);
             // 
             // hoKhauBtn
             // 
@@ -189,6 +213,14 @@
             this.lblTitle.Size = new System.Drawing.Size(0, 32);
             this.lblTitle.TabIndex = 3;
             // 
+            // hoKhauUC1
+            // 
+            this.hoKhauUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.hoKhauUC1.Location = new System.Drawing.Point(214, 75);
+            this.hoKhauUC1.Name = "hoKhauUC1";
+            this.hoKhauUC1.Size = new System.Drawing.Size(1048, 595);
+            this.hoKhauUC1.TabIndex = 4;
+            // 
             // nhanKhauUC1
             // 
             this.nhanKhauUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
@@ -206,21 +238,30 @@
             this.homeUC1.Size = new System.Drawing.Size(1048, 595);
             this.homeUC1.TabIndex = 2;
             // 
-            // hoKhauUC1
+            // quanLyPhanThuong1
             // 
-            this.hoKhauUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.hoKhauUC1.Location = new System.Drawing.Point(214, 75);
-            this.hoKhauUC1.Name = "hoKhauUC1";
-            this.hoKhauUC1.Size = new System.Drawing.Size(1048, 595);
-            this.hoKhauUC1.TabIndex = 4;
+            this.quanLyPhanThuong1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.quanLyPhanThuong1.Location = new System.Drawing.Point(214, 75);
+            this.quanLyPhanThuong1.Name = "quanLyPhanThuong1";
+            this.quanLyPhanThuong1.Size = new System.Drawing.Size(1048, 595);
+            this.quanLyPhanThuong1.TabIndex = 5;
+            // 
+            // hocSinhGioiUC1
+            // 
+            this.hocSinhGioiUC1.Location = new System.Drawing.Point(214, 75);
+            this.hocSinhGioiUC1.Name = "hocSinhGioiUC1";
+            this.hocSinhGioiUC1.Size = new System.Drawing.Size(1048, 595);
+            this.hocSinhGioiUC1.TabIndex = 6;
             // 
             // SecondScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.hocSinhGioiUC1);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.quanLyPhanThuong1);
             this.Controls.Add(this.hoKhauUC1);
             this.Controls.Add(this.nhanKhauUC1);
             this.Controls.Add(this.homeUC1);
@@ -250,5 +291,8 @@
         private View.hokhau_nhankhau.NhanKhauUC nhanKhauUC1;
         private System.Windows.Forms.Button logOutBtn;
         private View.hokhau_nhankhau.HoKhauUC hoKhauUC1;
+        private System.Windows.Forms.Button phanThuongBtn;
+        private View.phanthuong.QuanLyPhanThuong quanLyPhanThuong1;
+        private View.phanthuong.HocSinhGioiUC hocSinhGioiUC1;
     }
 }

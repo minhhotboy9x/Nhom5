@@ -18,43 +18,19 @@ namespace Nhom5.View.hokhau_nhankhau
             InitializeComponent();
            
         }
-        private void changeLabelColor(SPanel sPanel, Color color)
-        {
-            foreach (Control label in sPanel.Controls)
-            {
-                //Console.WriteLine(label.GetType());
-                // change all item color in spanel of homeUC
-                if (label.GetType() == typeof(Label) || label.GetType() == typeof(PictureBox))
-                {
-                    label.BackColor = color;
-                }
-            }
-        }
-        private void HomeUC_VisibleChanged(object sender, EventArgs e)
+        public void HomeUC_VisibleChanged(object sender, EventArgs e)
         {
             if(this.Visible)
             {
-                try
+                foreach (Control panel in this.Controls)
                 {
-                    var secondScreenForm = this.Parent as SecondScreen;
-                    Button currentBtn = secondScreenForm.CurrentButton;
-                    Color currentColor = currentBtn.BackColor;
-                    foreach (Control panel in this.Controls)
+                    if (panel.GetType() == typeof(SPanel))
                     {
-                        if (panel.GetType() == typeof(SPanel))
-                        {
-                            SPanel sPanel = panel as SPanel;
-                            sPanel.setFillColor(currentColor);
-                            changeLabelColor(sPanel, currentColor);
-                        }
+                        AutoChangeColor.changeSPanelScreen2(sender, panel as SPanel);
                     }
                 }
-                catch(Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-                
-            }       
+            }    
         }
+        
     }
 }

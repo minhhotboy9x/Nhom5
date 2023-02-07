@@ -26,7 +26,17 @@ namespace Nhom5
             InitializeComponent();
             hideAllUC();
             random = new Random();
+            this.Activated += SecondScreen_Activated;
         }
+
+        private void SecondScreen_Activated(object sender, EventArgs e)
+        {
+            homeUC1.HomeUC_VisibleChanged(homeUC1, e);
+            hoKhauUC1.HoKhauUC_VisibleChanged(hoKhauUC1, e);
+            nhanKhauUC1.NhanKhauUC_VisibleChanged(nhanKhauUC1, e);
+            hocSinhGioiUC1.HocSinhGioiUC_VisibleChanged(hocSinhGioiUC1, e);
+        }
+
         private Color SelectThemeColor()
         {
             int index = random.Next(ThemeColor.ColorList.Count);
@@ -73,7 +83,7 @@ namespace Nhom5
                 }
             }
         }
-
+        #region button click
         private void homeBtn_Click(object sender, EventArgs e)
         {
             hideAllUC();
@@ -94,13 +104,19 @@ namespace Nhom5
             ActivateButton(sender);
             hoKhauUC1.Show();
         }
-
+        private void phanThuongBtn_Click(object sender, EventArgs e)
+        {
+            hideAllUC();
+            ActivateButton(sender);
+            quanLyPhanThuong1.Show();
+        }
         private void thongKeBtn_Click(object sender, EventArgs e)
         {
             hideAllUC();
             ActivateButton(sender);
         }
-
+        
+        #endregion
         private void hideAllUC()
         {
             foreach (Control UC in this.Controls)
@@ -115,6 +131,12 @@ namespace Nhom5
         private void logOutBtn_Click(object sender, EventArgs e)
         {
             OpenScreen.openAnotherScreen(this, new StartScreen());
+        }
+
+        public void open_HocSinhGioiUC()
+        {
+            hideAllUC();
+            this.hocSinhGioiUC1.Show();
         }
     }
 }

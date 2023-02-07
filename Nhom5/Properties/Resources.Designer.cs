@@ -123,6 +123,16 @@ namespace Nhom5.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_event_accepted_tentatively_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-event-accepted-tentatively-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_exterior_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-exterior-96", resourceCulture);
@@ -213,6 +223,16 @@ namespace Nhom5.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_prize_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-prize-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_salary_male_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-salary-male-100", resourceCulture);
@@ -246,6 +266,16 @@ namespace Nhom5.Properties {
         internal static System.Drawing.Bitmap icons8_smart_home_checked_1001 {
             get {
                 object obj = ResourceManager.GetObject("icons8-smart-home-checked-1001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_student_center_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-student-center-100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
