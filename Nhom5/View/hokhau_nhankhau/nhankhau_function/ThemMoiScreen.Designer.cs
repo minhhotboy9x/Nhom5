@@ -87,8 +87,8 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label18 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.themMoiBtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.huyBtn = new System.Windows.Forms.Button();
+            this.xacNhanBtn = new System.Windows.Forms.Button();
             this.panelTitleBar.SuspendLayout();
             this.sPanel9.SuspendLayout();
             this.sPanel10.SuspendLayout();
@@ -717,41 +717,41 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label20.Text = "Ghi chú: (*) là các trường bắt buộc phải nhập\r\n              CCCD là căn cước côn" +
     "g dân\r\n              CMND là chứng minh nhân dân\r\n";
             // 
-            // themMoiBtn
+            // huyBtn
             // 
-            this.themMoiBtn.BackColor = System.Drawing.Color.Gray;
-            this.themMoiBtn.FlatAppearance.BorderSize = 0;
-            this.themMoiBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.themMoiBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.themMoiBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.themMoiBtn.Location = new System.Drawing.Point(534, 573);
-            this.themMoiBtn.Name = "themMoiBtn";
-            this.themMoiBtn.Size = new System.Drawing.Size(135, 45);
-            this.themMoiBtn.TabIndex = 13;
-            this.themMoiBtn.Text = "Xác nhận";
-            this.themMoiBtn.UseVisualStyleBackColor = false;
+            this.huyBtn.BackColor = System.Drawing.Color.Gray;
+            this.huyBtn.FlatAppearance.BorderSize = 0;
+            this.huyBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.huyBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.huyBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.huyBtn.Location = new System.Drawing.Point(776, 577);
+            this.huyBtn.Name = "huyBtn";
+            this.huyBtn.Size = new System.Drawing.Size(140, 55);
+            this.huyBtn.TabIndex = 16;
+            this.huyBtn.Text = "Huỷ";
+            this.huyBtn.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // xacNhanBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.Gray;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button1.Location = new System.Drawing.Point(755, 573);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 45);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Huỷ";
-            this.button1.UseVisualStyleBackColor = false;
+            this.xacNhanBtn.BackColor = System.Drawing.Color.Gray;
+            this.xacNhanBtn.FlatAppearance.BorderSize = 0;
+            this.xacNhanBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.xacNhanBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xacNhanBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.xacNhanBtn.Location = new System.Drawing.Point(552, 577);
+            this.xacNhanBtn.Name = "xacNhanBtn";
+            this.xacNhanBtn.Size = new System.Drawing.Size(140, 55);
+            this.xacNhanBtn.TabIndex = 15;
+            this.xacNhanBtn.Text = "Xác nhận";
+            this.xacNhanBtn.UseVisualStyleBackColor = false;
             // 
             // ThemMoiScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1030, 673);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.themMoiBtn);
+            this.Controls.Add(this.huyBtn);
+            this.Controls.Add(this.xacNhanBtn);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.sPanel17);
             this.Controls.Add(this.sPanel9);
@@ -861,7 +861,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Button themMoiBtn;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button huyBtn;
+        private System.Windows.Forms.Button xacNhanBtn;
     }
 }

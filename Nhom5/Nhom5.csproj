@@ -96,6 +96,12 @@
     <Compile Include="View\hokhau_nhankhau\hokhau_function\ChinhSuaHoKhau.Designer.cs">
       <DependentUpon>ChinhSuaHoKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\hokhau_nhankhau\hokhau_function\ChuyenHoKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\hokhau_nhankhau\hokhau_function\ChuyenHoKhau.Designer.cs">
+      <DependentUpon>ChuyenHoKhau.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\hokhau_nhankhau\hokhau_function\TachHoKhau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\hokhau_nhankhau\hokhau_function\ChinhSuaHoKhau.resx">
       <DependentUpon>ChinhSuaHoKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\hokhau_nhankhau\hokhau_function\ChuyenHoKhau.resx">
+      <DependentUpon>ChuyenHoKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\hokhau_nhankhau\hokhau_function\TachHoKhau.resx">
       <DependentUpon>TachHoKhau.cs</DependentUpon>
