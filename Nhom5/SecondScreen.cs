@@ -92,6 +92,7 @@ namespace Nhom5
         {
             hideAllUC();
             ActivateButton(sender);
+            hoKhauUC1.Show();
         }
 
         private void thongKeBtn_Click(object sender, EventArgs e)

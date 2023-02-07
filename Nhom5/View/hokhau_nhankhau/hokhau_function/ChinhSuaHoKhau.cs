@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
 {
-    public partial class XemChiTiet : FunctionForm
+    public partial class ChinhSuaHoKhau: FunctionForm
     {
-        public XemChiTiet()
+        public ChinhSuaHoKhau()
         {
             InitializeComponent();
-        }
-
-        private void dongBtn_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

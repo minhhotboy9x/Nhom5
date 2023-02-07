@@ -84,6 +84,30 @@
     <Compile Include="View\hokhau_nhankhau\FunctionForm.Designer.cs">
       <DependentUpon>FunctionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\hokhau_nhankhau\HoKhauUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\hokhau_nhankhau\HoKhauUC.Designer.cs">
+      <DependentUpon>HoKhauUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\hokhau_nhankhau\hokhau_function\ChinhSuaHoKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\hokhau_nhankhau\hokhau_function\ChinhSuaHoKhau.Designer.cs">
+      <DependentUpon>ChinhSuaHoKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\hokhau_nhankhau\hokhau_function\ThemMoiHoKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\hokhau_nhankhau\hokhau_function\ThemMoiHoKhau.Designer.cs">
+      <DependentUpon>ThemMoiHoKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\hokhau_nhankhau\hokhau_function\XemHoKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\hokhau_nhankhau\hokhau_function\XemHoKhau.Designer.cs">
+      <DependentUpon>XemHoKhau.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\hokhau_nhankhau\HomeUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -174,6 +198,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\hokhau_nhankhau\FunctionForm.resx">
       <DependentUpon>FunctionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\hokhau_nhankhau\HoKhauUC.resx">
+      <DependentUpon>HoKhauUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\hokhau_nhankhau\hokhau_function\ChinhSuaHoKhau.resx">
+      <DependentUpon>ChinhSuaHoKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\hokhau_nhankhau\hokhau_function\ThemMoiHoKhau.resx">
+      <DependentUpon>ThemMoiHoKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\hokhau_nhankhau\hokhau_function\XemHoKhau.resx">
+      <DependentUpon>XemHoKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\hokhau_nhankhau\HomeUC.resx">
       <DependentUpon>HomeUC.cs</DependentUpon>

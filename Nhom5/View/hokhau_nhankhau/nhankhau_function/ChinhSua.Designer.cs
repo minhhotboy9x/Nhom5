@@ -747,8 +747,8 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             // ChinhSua
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1030, 673);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.themMoiBtn);
@@ -831,7 +831,6 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
         private Utility.SPanel sPanel3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox comboBox1;
         private Utility.SPanel sPanel9;
@@ -863,5 +862,6 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button themMoiBtn;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
+namespace Nhom5.View.hokhau_nhankhau.hokhau_function
 {
-    public partial class XemChiTiet : FunctionForm
+    public partial class XemHoKhau : FunctionForm
     {
-        public XemChiTiet()
+        public XemHoKhau()
         {
             InitializeComponent();
         }

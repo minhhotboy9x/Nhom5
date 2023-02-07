@@ -79,7 +79,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label20 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.xacNhanBtn = new System.Windows.Forms.Button();
+            this.dongBtn = new System.Windows.Forms.Button();
             this.panelTitleBar.SuspendLayout();
             this.sPanel17.SuspendLayout();
             this.sPanel9.SuspendLayout();
@@ -611,27 +611,27 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label2.TabIndex = 15;
             this.label2.Text = "Ghi chú: CCCD là căn cước công dân\r\n              CMND là chứng minh nhân dân\r\n";
             // 
-            // xacNhanBtn
+            // dongBtn
             // 
-            this.xacNhanBtn.BackColor = System.Drawing.Color.Gray;
-            this.xacNhanBtn.FlatAppearance.BorderSize = 0;
-            this.xacNhanBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.xacNhanBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xacNhanBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.xacNhanBtn.Location = new System.Drawing.Point(448, 594);
-            this.xacNhanBtn.Name = "xacNhanBtn";
-            this.xacNhanBtn.Size = new System.Drawing.Size(135, 45);
-            this.xacNhanBtn.TabIndex = 16;
-            this.xacNhanBtn.Text = "Xác nhận";
-            this.xacNhanBtn.UseVisualStyleBackColor = false;
-            this.xacNhanBtn.Click += new System.EventHandler(this.xacNhanBtn_Click);
+            this.dongBtn.BackColor = System.Drawing.Color.Gray;
+            this.dongBtn.FlatAppearance.BorderSize = 0;
+            this.dongBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dongBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dongBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dongBtn.Location = new System.Drawing.Point(448, 594);
+            this.dongBtn.Name = "dongBtn";
+            this.dongBtn.Size = new System.Drawing.Size(135, 45);
+            this.dongBtn.TabIndex = 16;
+            this.dongBtn.Text = "Đóng";
+            this.dongBtn.UseVisualStyleBackColor = false;
+            this.dongBtn.Click += new System.EventHandler(this.dongBtn_Click);
             // 
             // XemChiTiet
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1030, 673);
-            this.Controls.Add(this.xacNhanBtn);
+            this.Controls.Add(this.dongBtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.sPanel17);
             this.Controls.Add(this.sPanel9);
@@ -733,6 +733,6 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button xacNhanBtn;
+        private System.Windows.Forms.Button dongBtn;
     }
 }

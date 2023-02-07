@@ -39,6 +39,7 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.nhanKhauUC1 = new Nhom5.View.hokhau_nhankhau.NhanKhauUC();
             this.homeUC1 = new Nhom5.View.hokhau_nhankhau.HomeUC();
+            this.hoKhauUC1 = new Nhom5.View.hokhau_nhankhau.HoKhauUC();
             this.panelMenu.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
             this.SuspendLayout();
@@ -193,7 +194,7 @@
             this.nhanKhauUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.nhanKhauUC1.Location = new System.Drawing.Point(214, 75);
             this.nhanKhauUC1.Name = "nhanKhauUC1";
-            this.nhanKhauUC1.Size = new System.Drawing.Size(1048, 598);
+            this.nhanKhauUC1.Size = new System.Drawing.Size(1048, 595);
             this.nhanKhauUC1.TabIndex = 3;
             // 
             // homeUC1
@@ -205,6 +206,14 @@
             this.homeUC1.Size = new System.Drawing.Size(1048, 595);
             this.homeUC1.TabIndex = 2;
             // 
+            // hoKhauUC1
+            // 
+            this.hoKhauUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.hoKhauUC1.Location = new System.Drawing.Point(214, 75);
+            this.hoKhauUC1.Name = "hoKhauUC1";
+            this.hoKhauUC1.Size = new System.Drawing.Size(1048, 595);
+            this.hoKhauUC1.TabIndex = 4;
+            // 
             // SecondScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -212,6 +221,7 @@
             this.ClientSize = new System.Drawing.Size(1262, 673);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.hoKhauUC1);
             this.Controls.Add(this.nhanKhauUC1);
             this.Controls.Add(this.homeUC1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -239,5 +249,6 @@
         private System.Windows.Forms.Label lblTitle;
         private View.hokhau_nhankhau.NhanKhauUC nhanKhauUC1;
         private System.Windows.Forms.Button logOutBtn;
+        private View.hokhau_nhankhau.HoKhauUC hoKhauUC1;
     }
 }

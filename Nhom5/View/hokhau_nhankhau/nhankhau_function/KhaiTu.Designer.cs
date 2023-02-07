@@ -49,6 +49,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.sPanel3 = new Nhom5.Utility.SPanel();
+            this.label10 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.themMoiBtn = new System.Windows.Forms.Button();
@@ -68,7 +69,6 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel10 = new Nhom5.Utility.SPanel();
             this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.panelTitleBar.SuspendLayout();
             this.sPanel9.SuspendLayout();
             this.sPanel7.SuspendLayout();
@@ -295,6 +295,16 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel3.Size = new System.Drawing.Size(436, 57);
             this.sPanel3.TabIndex = 8;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(151, 18);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(89, 20);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "Adof Hitler";
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -504,16 +514,6 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label14.Size = new System.Drawing.Size(124, 20);
             this.label14.TabIndex = 4;
             this.label14.Text = "Người khai báo:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(151, 18);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(89, 20);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "Adof Hitler";
             // 
             // KhaiTu
             // 
