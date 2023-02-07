@@ -96,6 +96,12 @@
     <Compile Include="View\hokhau_nhankhau\hokhau_function\ChinhSuaHoKhau.Designer.cs">
       <DependentUpon>ChinhSuaHoKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\hokhau_nhankhau\hokhau_function\TachHoKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\hokhau_nhankhau\hokhau_function\TachHoKhau.Designer.cs">
+      <DependentUpon>TachHoKhau.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\hokhau_nhankhau\hokhau_function\ThemMoiHoKhau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +211,9 @@
     <EmbeddedResource Include="View\hokhau_nhankhau\hokhau_function\ChinhSuaHoKhau.resx">
       <DependentUpon>ChinhSuaHoKhau.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\hokhau_nhankhau\hokhau_function\TachHoKhau.resx">
+      <DependentUpon>TachHoKhau.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\hokhau_nhankhau\hokhau_function\ThemMoiHoKhau.resx">
       <DependentUpon>ThemMoiHoKhau.cs</DependentUpon>
     </EmbeddedResource>
@@ -284,6 +293,8 @@
     <Content Include="Image\SecondScreen\icons8-move-left-100.png" />
     <Content Include="Image\SecondScreen\icons8-prize-50.png" />
     <Content Include="Image\SecondScreen\icons8-summary-list-50.png" />
+    <Content Include="Image\UC\icons8-magnifying-glass-64.png" />
+    <Content Include="Image\UC\icons8-update-left-rotation-50.png" />
     <None Include="Resources\icons8-smart-home-checked-100.png" />
     <None Include="Resources\icons8-salary-male-100.png" />
     <None Include="Resources\icons8-analytics-60.png" />

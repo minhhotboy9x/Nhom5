@@ -38,6 +38,28 @@ namespace Nhom5.Utility
 
             }
         }
+        public static void changeSPanelScreen2(object sender, SPanel sPanel)
+        {
+            UserControl This_UC = sender as UserControl;
+            if (This_UC.Visible)
+            {
+                try
+                {
+                    var secondScreenForm = This_UC.Parent as SecondScreen;
+                    Button currentBtn = secondScreenForm.CurrentButton;
+                    Color currentColor = currentBtn.BackColor;
+                    sPanel.setFillColor(currentColor);
+                    foreach (Control label in sPanel.Controls)
+                    {
+                        label.BackColor = currentColor;
+                    }    
+                } 
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+        }
         // change color of second form function in second screen 
         public static void changeColorFuncScreen(object sender, EventArgs e, List<String> list_type)
         {

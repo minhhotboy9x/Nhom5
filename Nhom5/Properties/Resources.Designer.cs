@@ -143,6 +143,16 @@ namespace Nhom5.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_magnifying_glass_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-magnifying-glass-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_maintenance_house_timer_isolated_on_a_white_background_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-maintenance-house-timer-isolated-on-a-white-background-96", resourceCulture);
@@ -246,6 +256,16 @@ namespace Nhom5.Properties {
         internal static System.Drawing.Bitmap icons8_summary_list_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-summary-list-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_update_left_rotation_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-update-left-rotation-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -36,10 +36,18 @@ namespace Nhom5.View.hokhau_nhankhau
             this.lichSuBtn = new System.Windows.Forms.Button();
             this.xemChiTietBtn = new System.Windows.Forms.Button();
             this.chinhSuaBtn = new System.Windows.Forms.Button();
+            this.reLoadSPanel = new Nhom5.Utility.SPanel();
+            this.reLoadPic = new System.Windows.Forms.PictureBox();
+            this.searchSPanel = new Nhom5.Utility.SPanel();
+            this.searchPic = new System.Windows.Forms.PictureBox();
             this.sPanel1 = new Nhom5.Utility.SPanel();
             this.searchTextBox1 = new Nhom5.Utility.WaterMarkTextBox();
             this.featureSearchBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.reLoadSPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.reLoadPic)).BeginInit();
+            this.searchSPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.searchPic)).BeginInit();
             this.sPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,6 +89,7 @@ namespace Nhom5.View.hokhau_nhankhau
             this.tachHoKhauBtn.TabIndex = 2;
             this.tachHoKhauBtn.Text = "Tách hộ khẩu";
             this.tachHoKhauBtn.UseVisualStyleBackColor = false;
+            this.tachHoKhauBtn.Click += new System.EventHandler(this.tachHoKhauBtn_Click);
             // 
             // chuyenKhauBtn
             // 
@@ -140,13 +149,55 @@ namespace Nhom5.View.hokhau_nhankhau
             this.chinhSuaBtn.UseVisualStyleBackColor = false;
             this.chinhSuaBtn.Click += new System.EventHandler(this.chinhSuaBtn_Click);
             // 
+            // reLoadSPanel
+            // 
+            this.reLoadSPanel.Controls.Add(this.reLoadPic);
+            this.reLoadSPanel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.reLoadSPanel.Location = new System.Drawing.Point(46, 70);
+            this.reLoadSPanel.Name = "reLoadSPanel";
+            this.reLoadSPanel.Size = new System.Drawing.Size(50, 50);
+            this.reLoadSPanel.TabIndex = 11;
+            this.reLoadSPanel.Click += new System.EventHandler(this.reLoadSPanel_Click);
+            // 
+            // reLoadPic
+            // 
+            this.reLoadPic.Image = global::Nhom5.Properties.Resources.icons8_update_left_rotation_50;
+            this.reLoadPic.Location = new System.Drawing.Point(10, 10);
+            this.reLoadPic.Name = "reLoadPic";
+            this.reLoadPic.Size = new System.Drawing.Size(30, 30);
+            this.reLoadPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.reLoadPic.TabIndex = 0;
+            this.reLoadPic.TabStop = false;
+            this.reLoadPic.Click += new System.EventHandler(this.reLoadPic_Click);
+            // 
+            // searchSPanel
+            // 
+            this.searchSPanel.Controls.Add(this.searchPic);
+            this.searchSPanel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.searchSPanel.Location = new System.Drawing.Point(686, 70);
+            this.searchSPanel.Name = "searchSPanel";
+            this.searchSPanel.Size = new System.Drawing.Size(50, 50);
+            this.searchSPanel.TabIndex = 10;
+            this.searchSPanel.Click += new System.EventHandler(this.searchSPanel_Click);
+            // 
+            // searchPic
+            // 
+            this.searchPic.Image = global::Nhom5.Properties.Resources.icons8_magnifying_glass_64;
+            this.searchPic.Location = new System.Drawing.Point(10, 10);
+            this.searchPic.Name = "searchPic";
+            this.searchPic.Size = new System.Drawing.Size(30, 30);
+            this.searchPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.searchPic.TabIndex = 0;
+            this.searchPic.TabStop = false;
+            this.searchPic.Click += new System.EventHandler(this.searchPic_Click);
+            // 
             // sPanel1
             // 
             this.sPanel1.BackColor = System.Drawing.Color.White;
             this.sPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sPanel1.Controls.Add(this.searchTextBox1);
             this.sPanel1.Controls.Add(this.featureSearchBox);
-            this.sPanel1.Location = new System.Drawing.Point(242, 82);
+            this.sPanel1.Location = new System.Drawing.Point(283, 82);
             this.sPanel1.Name = "sPanel1";
             this.sPanel1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.sPanel1.Size = new System.Drawing.Size(397, 29);
@@ -184,6 +235,8 @@ namespace Nhom5.View.hokhau_nhankhau
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.Controls.Add(this.reLoadSPanel);
+            this.Controls.Add(this.searchSPanel);
             this.Controls.Add(this.lichSuBtn);
             this.Controls.Add(this.chuyenKhauBtn);
             this.Controls.Add(this.sPanel1);
@@ -197,6 +250,10 @@ namespace Nhom5.View.hokhau_nhankhau
             this.VisibleChanged += new System.EventHandler(this.HoKhauUC_VisibleChanged);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.HoKhauUC_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.reLoadSPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.reLoadPic)).EndInit();
+            this.searchSPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.searchPic)).EndInit();
             this.sPanel1.ResumeLayout(false);
             this.sPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -215,5 +272,9 @@ namespace Nhom5.View.hokhau_nhankhau
         private System.Windows.Forms.ComboBox featureSearchBox;
         private Utility.SPanel sPanel1;
         private System.Windows.Forms.Button chinhSuaBtn;
+        private Utility.SPanel searchSPanel;
+        private System.Windows.Forms.PictureBox searchPic;
+        private Utility.SPanel reLoadSPanel;
+        private System.Windows.Forms.PictureBox reLoadPic;
     }
 }

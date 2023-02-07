@@ -124,8 +124,14 @@
   <data name="icons8-smart-home-checked-1001" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\SecondScreen\HomeUC\icons8-smart-home-checked-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-magnifying-glass-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\UC\icons8-magnifying-glass-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-maintenance-house-timer-isolated-on-a-white-background-961" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\SecondScreen\HomeUC\icons8-maintenance-house-timer-isolated-on-a-white-background-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-move-left-1001" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\SecondScreen\HomeUC\icons8-move-left-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-man-1001" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\SecondScreen\icons8-man-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,7 +178,7 @@
   <data name="icons8-analytics-60" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-analytics-60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-move-left-1001" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\SecondScreen\HomeUC\icons8-move-left-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-update-left-rotation-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\UC\icons8-update-left-rotation-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
