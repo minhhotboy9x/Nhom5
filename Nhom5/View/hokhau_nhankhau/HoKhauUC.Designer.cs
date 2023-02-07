@@ -74,6 +74,7 @@ namespace Nhom5.View.hokhau_nhankhau
             this.themMoiBtn.TabIndex = 1;
             this.themMoiBtn.Text = "Thêm mới";
             this.themMoiBtn.UseVisualStyleBackColor = false;
+            this.themMoiBtn.EnabledChanged += new System.EventHandler(this.themMoiBtn_EnabledChanged);
             this.themMoiBtn.Click += new System.EventHandler(this.themMoiBtn_Click);
             // 
             // tachHoKhauBtn
@@ -104,6 +105,7 @@ namespace Nhom5.View.hokhau_nhankhau
             this.chuyenKhauBtn.TabIndex = 3;
             this.chuyenKhauBtn.Text = "Chuyển khẩu";
             this.chuyenKhauBtn.UseVisualStyleBackColor = false;
+            this.chuyenKhauBtn.Click += new System.EventHandler(this.chuyenKhauBtn_Click);
             // 
             // lichSuBtn
             // 

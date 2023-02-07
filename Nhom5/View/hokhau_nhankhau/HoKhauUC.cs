@@ -20,49 +20,19 @@ namespace Nhom5.View.hokhau_nhankhau
             InitializeComponent();
             featureSearchBox.SelectedIndex = 0;
         }
+        #region change sPanel color
         private void HoKhauUC_VisibleChanged(object sender, EventArgs e)
         {
             AutoChangeColor.changeColorScreen2(sender, e, new List<String>() { "Button" });
             AutoChangeColor.changeSPanelScreen2(sender, searchSPanel);
             AutoChangeColor.changeSPanelScreen2(sender, reLoadSPanel);
         }
-
-        private void HoKhauUC_MouseDown(object sender, MouseEventArgs e)
+        private void themMoiBtn_EnabledChanged(object sender, EventArgs e)
         {
-            this.ActiveControl = null;
+            AutoChangeColor.changeSPanelScreen2(this, searchSPanel);
+            AutoChangeColor.changeSPanelScreen2(this, reLoadSPanel);
         }
-
-        private void themMoiBtn_Click(object sender, EventArgs e)
-        {
-            var startScreenForm = this.Parent as SecondScreen;
-            ThemMoiHoKhau themMoiScreen = new ThemMoiHoKhau();
-            themMoiScreen.getFormRef(startScreenForm);
-            OpenScreen.openAnotherScreen(startScreenForm, themMoiScreen, 1);
-        }
-
-        private void xemChiTietBtn_Click(object sender, EventArgs e)
-        {
-            var startScreenForm = this.Parent as SecondScreen;
-            XemHoKhau xemHoKhauScreen = new XemHoKhau();
-            xemHoKhauScreen.getFormRef(startScreenForm);
-            OpenScreen.openAnotherScreen(startScreenForm, xemHoKhauScreen, 1);
-        }
-
-        private void chinhSuaBtn_Click(object sender, EventArgs e)
-        {
-            var startScreenForm = this.Parent as SecondScreen;
-            ChinhSuaHoKhau chinhSuaHoKhauScreen = new ChinhSuaHoKhau();
-            chinhSuaHoKhauScreen.getFormRef(startScreenForm);
-            OpenScreen.openAnotherScreen(startScreenForm, chinhSuaHoKhauScreen, 1);
-        }
-
-        private void tachHoKhauBtn_Click(object sender, EventArgs e)
-        {
-            var startScreenForm = this.Parent as SecondScreen;
-            TachHoKhau tachHoKhauScreen = new TachHoKhau();
-            tachHoKhauScreen.getFormRef(startScreenForm);
-            OpenScreen.openAnotherScreen(startScreenForm, tachHoKhauScreen, 1);
-        }
+        #endregion
         #region SPanel click
         private void searchSPanel_Click(object sender, EventArgs e)
         {
@@ -86,8 +56,37 @@ namespace Nhom5.View.hokhau_nhankhau
             SPanel sPanel = pic.Parent as SPanel;
             reLoadSPanel_Click(sPanel, e);
         }
+
         #endregion
+        private void HoKhauUC_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.ActiveControl = null;
+        }
 
+        private void themMoiBtn_Click(object sender, EventArgs e)
+        {
+            OpenScreen.openFunctionForm(this, new ThemMoiHoKhau(), 1);
+        }
 
+        private void xemChiTietBtn_Click(object sender, EventArgs e)
+        {
+            OpenScreen.openFunctionForm(this, new XemHoKhau(), 1);
+        }
+
+        private void chinhSuaBtn_Click(object sender, EventArgs e)
+        {
+            OpenScreen.openFunctionForm(this, new ChinhSuaHoKhau(), 1);
+        }
+
+        private void tachHoKhauBtn_Click(object sender, EventArgs e)
+        {
+            OpenScreen.openFunctionForm(this, new TachHoKhau(), 1);
+        }
+        
+
+        private void chuyenKhauBtn_Click(object sender, EventArgs e)
+        {
+            OpenScreen.openFunctionForm(this, new ChuyenHoKhau(), 1);
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Nhom5.View.hokhau_nhankhau;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,6 +26,13 @@ namespace Nhom5.Utility
             Thread th = new Thread(runSecondScreen);
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
+        }
+
+        public static void openFunctionForm(UserControl sender, FunctionForm formScreen, int dis_cls = 0)
+        {
+            var startScreenForm = sender.Parent as SecondScreen;
+            formScreen.getFormRef(startScreenForm);
+            openAnotherScreen(startScreenForm, formScreen, 1);
         }
     }
 }

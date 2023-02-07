@@ -19,14 +19,42 @@ namespace Nhom5.View.hokhau_nhankhau
             InitializeComponent();
             featureSearchBox.SelectedIndex = 0;
         }
-
+        #region change sPanel Color
         private void NhanKhauUC_VisibleChanged(object sender, EventArgs e)
         {
             AutoChangeColor.changeColorScreen2(sender, e, new List<String>() {"Button"});
             AutoChangeColor.changeSPanelScreen2(sender, searchSPanel);
             AutoChangeColor.changeSPanelScreen2(sender, reLoadSPanel);
         }
+        private void themMoiBtn_EnabledChanged(object sender, EventArgs e)
+        {
+            AutoChangeColor.changeSPanelScreen2(this, searchSPanel);
+            AutoChangeColor.changeSPanelScreen2(this, reLoadSPanel);
+        }
+        #endregion
+        #region SPanel click
+        private void searchSPanel_Click(object sender, EventArgs e)
+        {
+             Console.WriteLine("click");
+        }
+        private void searchPic_Click(object sender, EventArgs e)
+        {
+             PictureBox pic = sender as PictureBox;
+             SPanel sPanel = pic.Parent as SPanel;
+             searchSPanel_Click(sPanel, e);
+        }
+        private void reLoadSPanel_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("click");
+        }
 
+        private void reLoadPic_Click(object sender, EventArgs e)
+        {
+            PictureBox pic = sender as PictureBox;
+            SPanel sPanel = pic.Parent as SPanel;
+            reLoadSPanel_Click(sPanel, e);
+        }
+        #endregion
         private void themMoiBtn_Click(object sender, EventArgs e)
         {
             var startScreenForm = this.Parent as SecondScreen;
@@ -34,7 +62,7 @@ namespace Nhom5.View.hokhau_nhankhau
             themMoiScreen.getFormRef(startScreenForm);
             OpenScreen.openAnotherScreen(startScreenForm, themMoiScreen, 1);
         }
-
+        
         private void xemChiTietBtn_Click(object sender, EventArgs e)
         {
             var startScreenForm = this.Parent as SecondScreen;
@@ -79,30 +107,6 @@ namespace Nhom5.View.hokhau_nhankhau
             dKKhaiTu.getFormRef(startScreenForm);
             OpenScreen.openAnotherScreen(startScreenForm, dKKhaiTu, 1);
         }
-
-        #region SPanel click
-        private void searchSPanel_Click(object sender, EventArgs e)
-        {
-            Console.WriteLine("click");
-        }
-
-        private void searchPic_Click(object sender, EventArgs e)
-        {
-            PictureBox pic = sender as PictureBox;
-            SPanel sPanel = pic.Parent as SPanel;
-            searchSPanel_Click(sPanel, e);
-        }
-        private void reLoadSPanel_Click(object sender, EventArgs e)
-        {
-            Console.WriteLine("click");
-        }
-
-        private void reLoadPic_Click(object sender, EventArgs e)
-        {
-            PictureBox pic = sender as PictureBox;
-            SPanel sPanel = pic.Parent as SPanel;
-            reLoadSPanel_Click(sPanel, e);
-        }
-        #endregion
+        
     }
 }

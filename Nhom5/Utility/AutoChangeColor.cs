@@ -49,6 +49,7 @@ namespace Nhom5.Utility
                     Button currentBtn = secondScreenForm.CurrentButton;
                     Color currentColor = currentBtn.BackColor;
                     sPanel.setFillColor(currentColor);
+                    //Console.WriteLine(sPanel.Name+" "+currentColor);
                     foreach (Control label in sPanel.Controls)
                     {
                         label.BackColor = currentColor;
@@ -76,6 +77,7 @@ namespace Nhom5.Utility
                         //Console.WriteLine(list_type.Contains("Button"));
                         if (list_type.Contains(btn.GetType().Name.ToString()))
                         {
+                            //Console.WriteLine(btn.Name);
                             btn.BackColor = currentColor;
                         }
                     }
