@@ -45,6 +45,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
                 Image image = Image.FromFile(selectedFile);
                 // Tiếp tục xử lý tập tin hình ảnh đã chọn
                 //Console.WriteLine(image);
+                
             }
         }
     }
