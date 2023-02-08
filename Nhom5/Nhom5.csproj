@@ -70,6 +70,7 @@
     </Compile>
     <Compile Include="Utility\AutoChangeColor.cs" />
     <Compile Include="Utility\GraphicsExtension.cs" />
+    <Compile Include="Utility\HandleTextBox.cs" />
     <Compile Include="Utility\OpenScreen.cs" />
     <Compile Include="Utility\SPanel.cs">
       <SubType>Component</SubType>

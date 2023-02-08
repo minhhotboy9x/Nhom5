@@ -28,7 +28,10 @@ namespace Nhom5
             random = new Random();
             this.Activated += SecondScreen_Activated;
         }
-
+        private void SecondScreen_Load(object sender, EventArgs e)
+        {
+            HandleTextBox.HandleTextBox_Load(this);
+        }
         private void SecondScreen_Activated(object sender, EventArgs e)
         {
             homeUC1.HomeUC_VisibleChanged(homeUC1, e);
@@ -153,5 +156,7 @@ namespace Nhom5
             hideAllUC();
             this.dipDacBiet1.Show();
         }
+
+        
     }
 }

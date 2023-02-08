@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Text.RegularExpressions;
+using Nhom5.Utility;
 
 namespace Nhom5
 {
@@ -16,12 +18,12 @@ namespace Nhom5
         public StartScreen()
         {
             InitializeComponent();
-
+            
         }
-
         private void StartScreen_Load(object sender, EventArgs e)
         {
             changeToLogin();
+            HandleTextBox.HandleTextBox_Load(this);
         }
 
         public void changeToLogin()

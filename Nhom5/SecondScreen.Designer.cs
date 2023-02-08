@@ -279,6 +279,7 @@
             this.Name = "SecondScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý nhân khẩu";
+            this.Load += new System.EventHandler(this.SecondScreen_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
