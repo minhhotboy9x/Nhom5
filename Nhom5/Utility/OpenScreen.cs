@@ -12,7 +12,7 @@ namespace Nhom5.Utility
     public static class OpenScreen
     {
         // dis_cls: 0 đóng form, !=0 disable form
-        public static void openAnotherScreen(Object sender, Form formScreen, int dis_cls = 0)
+        public static void openAnotherScreen(Object sender, Form formScreen, int dis_cls = 1)
         {
             void runSecondScreen()
             {
@@ -28,12 +28,17 @@ namespace Nhom5.Utility
             th.Start();
         }
 
-        public static void openFunctionForm(UserControl sender, FunctionForm formScreen, int dis_cls = 0)
+        public static void openFunctionForm(UserControl sender, FunctionForm formScreen, int dis_cls = 1)
         {
             var startScreenForm = sender.Parent as SecondScreen;
             formScreen.getFormRef(startScreenForm);
-            openAnotherScreen(startScreenForm, formScreen, 1);
+            openAnotherScreen(startScreenForm, formScreen, dis_cls);
         }
-        
+
+        public static void openFunctionForm2(Form sender, Form formScreen, int dis_cls = 1)
+        {
+            openAnotherScreen(sender, formScreen, dis_cls);
+        }
+
     }
 }

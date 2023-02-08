@@ -206,6 +206,13 @@
     <Compile Include="View\phanthuong\DipDacBiet.Designer.cs">
       <DependentUpon>DipDacBiet.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\phanthuong\dipdacbiet_function\.Designer.cs">
+      <DependentUpon>TaoDipDacBiet.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\phanthuong\dipdacbiet_function\TaoDipDacBiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="View\phanthuong\HocSinhGioiUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -220,8 +227,15 @@
       <DependentUpon>DanhSachHSG.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="View\phanthuong\hocsinhgioi_function\.Designer - Copy - Copy.cs">
+      <DependentUpon>MinhChungHSG.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="View\phanthuong\hocsinhgioi_function\.Designer - Copy.cs">
       <DependentUpon>ChiTietPhanThuong.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\phanthuong\hocsinhgioi_function\MinhChungHSG.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\phanthuong\hocsinhgioi_function\ChiTietPhanThuong.cs">
@@ -325,8 +339,14 @@
     <EmbeddedResource Include="View\phanthuong\DipDacBiet.resx">
       <DependentUpon>DipDacBiet.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\phanthuong\dipdacbiet_function\TaoDipDacBiet.resx">
+      <DependentUpon>TaoDipDacBiet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\phanthuong\HocSinhGioiUC.resx">
       <DependentUpon>HocSinhGioiUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\phanthuong\hocsinhgioi_function\MinhChungHSG.resx">
+      <DependentUpon>MinhChungHSG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\phanthuong\hocsinhgioi_function\ChiTietPhanThuong.resx">
       <DependentUpon>ChiTietPhanThuong.cs</DependentUpon>

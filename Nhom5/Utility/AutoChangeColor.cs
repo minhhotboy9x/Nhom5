@@ -88,7 +88,31 @@ namespace Nhom5.Utility
                 }
 
             }
+        }
 
+        public static void changeColorFuncScreen2(Form sender, Color currentColor, List<String> list_type)
+        {
+            Form this_Form = sender;
+            if (this_Form.Visible)
+            {
+                try
+                {
+                    foreach (Control btn in this_Form.Controls)
+                    {
+                        //Console.WriteLine(list_type.Contains("Button"));
+                        if (list_type.Contains(btn.GetType().Name.ToString()))
+                        {
+                            //Console.WriteLine(btn.Name);
+                            btn.BackColor = currentColor;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+
+            }
         }
     }
 }

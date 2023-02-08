@@ -27,7 +27,7 @@ namespace Nhom5.View.phanthuong
         }
         private void taoDipBtn_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

@@ -41,6 +41,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label2 = new System.Windows.Forms.Label();
             this.searchBtn = new System.Windows.Forms.Button();
             this.reloadBtn = new System.Windows.Forms.Button();
+            this.themMinhChungBtn = new System.Windows.Forms.Button();
             this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.sPanel1.SuspendLayout();
@@ -75,7 +76,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.dongBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dongBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dongBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dongBtn.Location = new System.Drawing.Point(631, 581);
+            this.dongBtn.Location = new System.Drawing.Point(542, 570);
             this.dongBtn.Name = "dongBtn";
             this.dongBtn.Size = new System.Drawing.Size(140, 55);
             this.dongBtn.TabIndex = 16;
@@ -90,7 +91,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(770, 346);
+            this.dataGridView1.Size = new System.Drawing.Size(770, 327);
             this.dataGridView1.TabIndex = 17;
             // 
             // sPanel1
@@ -192,11 +193,27 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.reloadBtn.TabIndex = 23;
             this.reloadBtn.UseVisualStyleBackColor = false;
             // 
+            // themMinhChungBtn
+            // 
+            this.themMinhChungBtn.BackColor = System.Drawing.Color.Gray;
+            this.themMinhChungBtn.FlatAppearance.BorderSize = 0;
+            this.themMinhChungBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.themMinhChungBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.themMinhChungBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.themMinhChungBtn.Location = new System.Drawing.Point(220, 570);
+            this.themMinhChungBtn.Name = "themMinhChungBtn";
+            this.themMinhChungBtn.Size = new System.Drawing.Size(172, 59);
+            this.themMinhChungBtn.TabIndex = 24;
+            this.themMinhChungBtn.Text = "Thêm minh chứng";
+            this.themMinhChungBtn.UseVisualStyleBackColor = false;
+            this.themMinhChungBtn.Click += new System.EventHandler(this.themMinhChungBtn_Click);
+            // 
             // DanhSachHSG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(902, 673);
+            this.Controls.Add(this.themMinhChungBtn);
             this.Controls.Add(this.reloadBtn);
             this.Controls.Add(this.searchBtn);
             this.Controls.Add(this.label2);
@@ -235,5 +252,6 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button searchBtn;
         private System.Windows.Forms.Button reloadBtn;
+        private System.Windows.Forms.Button themMinhChungBtn;
     }
 }
