@@ -106,14 +106,12 @@ namespace Nhom5
             ActivateButton(sender);
             homeUC1.Show();
         }
-
         private void nhanKhauBtn_Click(object sender, EventArgs e)
         {
             hideAllUC();
             ActivateButton(sender);
             nhanKhauUC1.Show();
         }
-
         private void hoKhauBtn_Click(object sender, EventArgs e)
         {
             hideAllUC();
@@ -146,7 +144,7 @@ namespace Nhom5
 
         private void logOutBtn_Click(object sender, EventArgs e)
         {
-            OpenScreen.openAnotherScreen(this, new StartScreen());
+            OpenScreen.openAnotherScreen(this, new StartScreen(), 0);
         }
 
         public void open_HocSinhGioiUC()
