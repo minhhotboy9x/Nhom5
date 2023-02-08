@@ -22,13 +22,13 @@ namespace Nhom5.Utility
             }    
             
         }
-        private const string NotAllowed = @":*!^?_;,.><@{}[]#&()'/|*-+$%~\`";
+        private const string NotAllowed = @":*!^?_;,.><@{}[]#&()'/|*+$%~\`";
         public static void keyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            if(NotAllowed.Contains(e.KeyChar))
             {
                 e.Handled = true;
-            }
+            }    
         }
     }
 }

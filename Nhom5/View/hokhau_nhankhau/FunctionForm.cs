@@ -21,6 +21,7 @@ namespace Nhom5.View.hokhau_nhankhau
         private void FunctionForm_Load(object sender, EventArgs e)
         {
             HandleTextBox.HandleTextBox_Load(this);
+            ButtonPaint.RoundedBtn_Load(this);
         }
 
         public Form parent_Form { get => parentForm; set => parentForm = value; }

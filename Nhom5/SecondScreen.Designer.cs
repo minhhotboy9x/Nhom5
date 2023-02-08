@@ -30,7 +30,6 @@
         {
             this.panelMenu = new System.Windows.Forms.Panel();
             this.logOutBtn = new System.Windows.Forms.Button();
-            this.thongKeBtn = new System.Windows.Forms.Button();
             this.phanThuongBtn = new System.Windows.Forms.Button();
             this.hoKhauBtn = new System.Windows.Forms.Button();
             this.nhanKhauBtn = new System.Windows.Forms.Button();
@@ -52,7 +51,6 @@
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(52)))), ((int)(((byte)(77)))));
             this.panelMenu.Controls.Add(this.logOutBtn);
-            this.panelMenu.Controls.Add(this.thongKeBtn);
             this.panelMenu.Controls.Add(this.phanThuongBtn);
             this.panelMenu.Controls.Add(this.hoKhauBtn);
             this.panelMenu.Controls.Add(this.nhanKhauBtn);
@@ -73,7 +71,7 @@
             this.logOutBtn.ForeColor = System.Drawing.Color.Gainsboro;
             this.logOutBtn.Image = global::Nhom5.Properties.Resources.icons8_logout_58;
             this.logOutBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.logOutBtn.Location = new System.Drawing.Point(0, 375);
+            this.logOutBtn.Location = new System.Drawing.Point(0, 315);
             this.logOutBtn.Name = "logOutBtn";
             this.logOutBtn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.logOutBtn.Size = new System.Drawing.Size(214, 60);
@@ -83,26 +81,6 @@
             this.logOutBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.logOutBtn.UseVisualStyleBackColor = true;
             this.logOutBtn.Click += new System.EventHandler(this.logOutBtn_Click);
-            // 
-            // thongKeBtn
-            // 
-            this.thongKeBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.thongKeBtn.FlatAppearance.BorderSize = 0;
-            this.thongKeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.thongKeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.thongKeBtn.ForeColor = System.Drawing.Color.Gainsboro;
-            this.thongKeBtn.Image = global::Nhom5.Properties.Resources.icons8_analytics_601;
-            this.thongKeBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.thongKeBtn.Location = new System.Drawing.Point(0, 315);
-            this.thongKeBtn.Name = "thongKeBtn";
-            this.thongKeBtn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.thongKeBtn.Size = new System.Drawing.Size(214, 60);
-            this.thongKeBtn.TabIndex = 4;
-            this.thongKeBtn.Text = " Thống kê";
-            this.thongKeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.thongKeBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.thongKeBtn.UseVisualStyleBackColor = true;
-            this.thongKeBtn.Click += new System.EventHandler(this.thongKeBtn_Click);
             // 
             // phanThuongBtn
             // 
@@ -293,7 +271,6 @@
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Panel panelTitleBar;
         private System.Windows.Forms.Button nhanKhauBtn;
-        private System.Windows.Forms.Button thongKeBtn;
         private System.Windows.Forms.Button hoKhauBtn;
         private System.Windows.Forms.Button homeBtn;
         private View.hokhau_nhankhau.HomeUC homeUC1;

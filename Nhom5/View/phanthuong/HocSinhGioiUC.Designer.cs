@@ -40,6 +40,7 @@ namespace Nhom5.View.phanthuong
             this.sPanel1 = new Nhom5.Utility.SPanel();
             this.searchTextBox1 = new Nhom5.Utility.WaterMarkTextBox();
             this.featureSearchBox = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.reLoadSPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.reLoadPic)).BeginInit();
@@ -65,12 +66,13 @@ namespace Nhom5.View.phanthuong
             this.chinhSuaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chinhSuaBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chinhSuaBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.chinhSuaBtn.Location = new System.Drawing.Point(828, 266);
+            this.chinhSuaBtn.Location = new System.Drawing.Point(828, 296);
             this.chinhSuaBtn.Name = "chinhSuaBtn";
             this.chinhSuaBtn.Size = new System.Drawing.Size(172, 59);
             this.chinhSuaBtn.TabIndex = 18;
             this.chinhSuaBtn.Text = "Chỉnh sửa";
             this.chinhSuaBtn.UseVisualStyleBackColor = false;
+            this.chinhSuaBtn.Click += new System.EventHandler(this.chinhSuaBtn_Click);
             // 
             // xemChiTietBtn
             // 
@@ -79,12 +81,13 @@ namespace Nhom5.View.phanthuong
             this.xemChiTietBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.xemChiTietBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xemChiTietBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.xemChiTietBtn.Location = new System.Drawing.Point(828, 201);
+            this.xemChiTietBtn.Location = new System.Drawing.Point(828, 216);
             this.xemChiTietBtn.Name = "xemChiTietBtn";
             this.xemChiTietBtn.Size = new System.Drawing.Size(172, 59);
             this.xemChiTietBtn.TabIndex = 17;
             this.xemChiTietBtn.Text = "Xem chi tiết";
             this.xemChiTietBtn.UseVisualStyleBackColor = false;
+            this.xemChiTietBtn.Click += new System.EventHandler(this.xemChiTietBtn_Click);
             // 
             // taoDipBtn
             // 
@@ -178,10 +181,26 @@ namespace Nhom5.View.phanthuong
             this.featureSearchBox.Size = new System.Drawing.Size(130, 26);
             this.featureSearchBox.TabIndex = 6;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Gray;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button1.Location = new System.Drawing.Point(828, 376);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(172, 59);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Xem chi tiết";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // HocSinhGioiUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.chinhSuaBtn);
             this.Controls.Add(this.xemChiTietBtn);
             this.Controls.Add(this.taoDipBtn);
@@ -216,5 +235,6 @@ namespace Nhom5.View.phanthuong
         private System.Windows.Forms.Button chinhSuaBtn;
         private System.Windows.Forms.Button xemChiTietBtn;
         private System.Windows.Forms.Button taoDipBtn;
+        private System.Windows.Forms.Button button1;
     }
 }

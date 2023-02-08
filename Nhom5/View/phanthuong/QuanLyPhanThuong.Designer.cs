@@ -41,9 +41,9 @@ namespace Nhom5.View.phanthuong
             this.dipDacBietBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dipDacBietBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dipDacBietBtn.Image = global::Nhom5.Properties.Resources.icons8_event_accepted_tentatively_100;
-            this.dipDacBietBtn.Location = new System.Drawing.Point(589, 189);
+            this.dipDacBietBtn.Location = new System.Drawing.Point(586, 189);
             this.dipDacBietBtn.Name = "dipDacBietBtn";
-            this.dipDacBietBtn.Size = new System.Drawing.Size(250, 190);
+            this.dipDacBietBtn.Size = new System.Drawing.Size(260, 190);
             this.dipDacBietBtn.TabIndex = 3;
             this.dipDacBietBtn.Text = "Phần thưởng dịp đặc biệt";
             this.dipDacBietBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -59,9 +59,9 @@ namespace Nhom5.View.phanthuong
             this.hsgBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hsgBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.hsgBtn.Image = global::Nhom5.Properties.Resources.icons8_student_center_100;
-            this.hsgBtn.Location = new System.Drawing.Point(206, 189);
+            this.hsgBtn.Location = new System.Drawing.Point(203, 189);
             this.hsgBtn.Name = "hsgBtn";
-            this.hsgBtn.Size = new System.Drawing.Size(250, 190);
+            this.hsgBtn.Size = new System.Drawing.Size(260, 190);
             this.hsgBtn.TabIndex = 2;
             this.hsgBtn.Text = "Phần thưởng học sinh giỏi";
             this.hsgBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;

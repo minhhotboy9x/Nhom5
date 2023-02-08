@@ -69,6 +69,7 @@
       <DependentUpon>StartScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Utility\AutoChangeColor.cs" />
+    <Compile Include="Utility\ButtonPaint.cs" />
     <Compile Include="Utility\GraphicsExtension.cs" />
     <Compile Include="Utility\HandleTextBox.cs" />
     <Compile Include="Utility\OpenScreen.cs" />
@@ -211,6 +212,27 @@
     <Compile Include="View\phanthuong\HocSinhGioiUC.Designer.cs">
       <DependentUpon>HocSinhGioiUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\phanthuong\hocsinhgioi_function\.Designer - Copy %282%29.cs">
+      <DependentUpon>ChinhSuaPhanThuong.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\phanthuong\hocsinhgioi_function\.Designer - Copy %283%29.cs">
+      <DependentUpon>DanhSachHSG.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\phanthuong\hocsinhgioi_function\.Designer - Copy.cs">
+      <DependentUpon>ChiTietPhanThuong.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\phanthuong\hocsinhgioi_function\ChiTietPhanThuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\phanthuong\hocsinhgioi_function\ChinhSuaPhanThuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\phanthuong\hocsinhgioi_function\DanhSachHSG.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="View\phanthuong\hocsinhgioi_function\TaoDipTraoThuong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -305,6 +327,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\phanthuong\HocSinhGioiUC.resx">
       <DependentUpon>HocSinhGioiUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\phanthuong\hocsinhgioi_function\ChiTietPhanThuong.resx">
+      <DependentUpon>ChiTietPhanThuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\phanthuong\hocsinhgioi_function\ChinhSuaPhanThuong.resx">
+      <DependentUpon>ChinhSuaPhanThuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\phanthuong\hocsinhgioi_function\DanhSachHSG.resx">
+      <DependentUpon>DanhSachHSG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\phanthuong\hocsinhgioi_function\TaoDipTraoThuong.resx">
       <DependentUpon>TaoDipTraoThuong.cs</DependentUpon>

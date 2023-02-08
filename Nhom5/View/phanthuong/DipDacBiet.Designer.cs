@@ -33,19 +33,19 @@ namespace Nhom5.View.phanthuong
             this.chinhSuaBtn = new System.Windows.Forms.Button();
             this.xemChiTietBtn = new System.Windows.Forms.Button();
             this.taoDipBtn = new System.Windows.Forms.Button();
-            this.reLoadSPanel = new Nhom5.Utility.SPanel();
-            this.reLoadPic = new System.Windows.Forms.PictureBox();
-            this.searchSPanel = new Nhom5.Utility.SPanel();
-            this.searchPic = new System.Windows.Forms.PictureBox();
             this.sPanel1 = new Nhom5.Utility.SPanel();
             this.searchTextBox1 = new Nhom5.Utility.WaterMarkTextBox();
             this.featureSearchBox = new System.Windows.Forms.ComboBox();
+            this.reLoadPic = new System.Windows.Forms.PictureBox();
+            this.reLoadSPanel = new Nhom5.Utility.SPanel();
+            this.searchPic = new System.Windows.Forms.PictureBox();
+            this.searchSPanel = new Nhom5.Utility.SPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.reLoadSPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.reLoadPic)).BeginInit();
-            this.searchSPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.searchPic)).BeginInit();
             this.sPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.reLoadPic)).BeginInit();
+            this.reLoadSPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.searchPic)).BeginInit();
+            this.searchSPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -101,44 +101,6 @@ namespace Nhom5.View.phanthuong
             this.taoDipBtn.UseVisualStyleBackColor = false;
             this.taoDipBtn.Click += new System.EventHandler(this.taoDipBtn_Click);
             // 
-            // reLoadSPanel
-            // 
-            this.reLoadSPanel.Controls.Add(this.reLoadPic);
-            this.reLoadSPanel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.reLoadSPanel.Location = new System.Drawing.Point(43, 76);
-            this.reLoadSPanel.Name = "reLoadSPanel";
-            this.reLoadSPanel.Size = new System.Drawing.Size(50, 50);
-            this.reLoadSPanel.TabIndex = 15;
-            // 
-            // reLoadPic
-            // 
-            this.reLoadPic.Image = global::Nhom5.Properties.Resources.icons8_update_left_rotation_50;
-            this.reLoadPic.Location = new System.Drawing.Point(10, 10);
-            this.reLoadPic.Name = "reLoadPic";
-            this.reLoadPic.Size = new System.Drawing.Size(30, 30);
-            this.reLoadPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.reLoadPic.TabIndex = 0;
-            this.reLoadPic.TabStop = false;
-            // 
-            // searchSPanel
-            // 
-            this.searchSPanel.Controls.Add(this.searchPic);
-            this.searchSPanel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.searchSPanel.Location = new System.Drawing.Point(683, 76);
-            this.searchSPanel.Name = "searchSPanel";
-            this.searchSPanel.Size = new System.Drawing.Size(50, 50);
-            this.searchSPanel.TabIndex = 14;
-            // 
-            // searchPic
-            // 
-            this.searchPic.Image = global::Nhom5.Properties.Resources.icons8_magnifying_glass_64;
-            this.searchPic.Location = new System.Drawing.Point(10, 10);
-            this.searchPic.Name = "searchPic";
-            this.searchPic.Size = new System.Drawing.Size(30, 30);
-            this.searchPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.searchPic.TabIndex = 0;
-            this.searchPic.TabStop = false;
-            // 
             // sPanel1
             // 
             this.sPanel1.BackColor = System.Drawing.Color.White;
@@ -178,10 +140,48 @@ namespace Nhom5.View.phanthuong
             this.featureSearchBox.Size = new System.Drawing.Size(130, 26);
             this.featureSearchBox.TabIndex = 6;
             // 
+            // reLoadPic
+            // 
+            this.reLoadPic.Image = global::Nhom5.Properties.Resources.icons8_update_left_rotation_50;
+            this.reLoadPic.Location = new System.Drawing.Point(10, 10);
+            this.reLoadPic.Name = "reLoadPic";
+            this.reLoadPic.Size = new System.Drawing.Size(30, 30);
+            this.reLoadPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.reLoadPic.TabIndex = 0;
+            this.reLoadPic.TabStop = false;
+            // 
+            // reLoadSPanel
+            // 
+            this.reLoadSPanel.Controls.Add(this.reLoadPic);
+            this.reLoadSPanel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.reLoadSPanel.Location = new System.Drawing.Point(43, 76);
+            this.reLoadSPanel.Name = "reLoadSPanel";
+            this.reLoadSPanel.Size = new System.Drawing.Size(50, 50);
+            this.reLoadSPanel.TabIndex = 15;
+            // 
+            // searchPic
+            // 
+            this.searchPic.Image = global::Nhom5.Properties.Resources.icons8_magnifying_glass_64;
+            this.searchPic.Location = new System.Drawing.Point(10, 10);
+            this.searchPic.Name = "searchPic";
+            this.searchPic.Size = new System.Drawing.Size(30, 30);
+            this.searchPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.searchPic.TabIndex = 0;
+            this.searchPic.TabStop = false;
+            // 
+            // searchSPanel
+            // 
+            this.searchSPanel.Controls.Add(this.searchPic);
+            this.searchSPanel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.searchSPanel.Location = new System.Drawing.Point(683, 76);
+            this.searchSPanel.Name = "searchSPanel";
+            this.searchSPanel.Size = new System.Drawing.Size(50, 50);
+            this.searchSPanel.TabIndex = 14;
+            // 
             // DipDacBiet
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this.chinhSuaBtn);
             this.Controls.Add(this.xemChiTietBtn);
             this.Controls.Add(this.taoDipBtn);
@@ -193,22 +193,17 @@ namespace Nhom5.View.phanthuong
             this.Size = new System.Drawing.Size(1048, 595);
             this.VisibleChanged += new System.EventHandler(this.DipDacBiet_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.reLoadSPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.reLoadPic)).EndInit();
-            this.searchSPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.searchPic)).EndInit();
             this.sPanel1.ResumeLayout(false);
             this.sPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.reLoadPic)).EndInit();
+            this.reLoadSPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.searchPic)).EndInit();
+            this.searchSPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Utility.SPanel reLoadSPanel;
-        private System.Windows.Forms.PictureBox reLoadPic;
-        private Utility.SPanel searchSPanel;
-        private System.Windows.Forms.PictureBox searchPic;
         private Utility.SPanel sPanel1;
         private Utility.WaterMarkTextBox searchTextBox1;
         private System.Windows.Forms.ComboBox featureSearchBox;
@@ -216,5 +211,9 @@ namespace Nhom5.View.phanthuong
         private System.Windows.Forms.Button chinhSuaBtn;
         private System.Windows.Forms.Button xemChiTietBtn;
         private System.Windows.Forms.Button taoDipBtn;
+        private System.Windows.Forms.PictureBox reLoadPic;
+        private Utility.SPanel reLoadSPanel;
+        private System.Windows.Forms.PictureBox searchPic;
+        private Utility.SPanel searchSPanel;
     }
 }

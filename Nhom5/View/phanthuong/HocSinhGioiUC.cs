@@ -2,12 +2,6 @@
 using Nhom5.View.hokhau_nhankhau.nhankhau_function;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Nhom5.View.phanthuong
@@ -29,6 +23,21 @@ namespace Nhom5.View.phanthuong
         private void taoDipBtn_Click(object sender, EventArgs e)
         {
             OpenScreen.openFunctionForm(this, new TaoDipTraoThuong(), 1);
+        }
+
+        private void xemChiTietBtn_Click(object sender, EventArgs e)
+        {
+            OpenScreen.openFunctionForm(this, new ChiTietPhanThuong(), 1);
+        }
+
+        private void chinhSuaBtn_Click(object sender, EventArgs e)
+        {
+            OpenScreen.openFunctionForm(this, new ChinhSuaPhanThuong());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenScreen.openFunctionForm(this, new DanhSachHSG());
         }
     }
 }

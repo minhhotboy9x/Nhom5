@@ -31,6 +31,11 @@ namespace Nhom5
         private void SecondScreen_Load(object sender, EventArgs e)
         {
             HandleTextBox.HandleTextBox_Load(this);
+            foreach (Control control in this.Controls)
+                if (control is UserControl)
+                {
+                    ButtonPaint.RoundedBtn_Load(control);
+                }
         }
         private void SecondScreen_Activated(object sender, EventArgs e)
         {

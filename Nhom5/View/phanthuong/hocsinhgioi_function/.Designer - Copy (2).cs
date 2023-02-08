@@ -1,7 +1,7 @@
 ﻿
 namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
 {
-    partial class TaoDipTraoThuong
+    partial class ChinhSuaPhanThuong
     {
         /// <summary>
         /// Required designer variable.
@@ -62,7 +62,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label20 = new System.Windows.Forms.Label();
             this.huyBtn = new System.Windows.Forms.Button();
             this.xacNhanBtn = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.panelTitleBar.SuspendLayout();
             this.sPanel9.SuspendLayout();
             this.sPanel11.SuspendLayout();
@@ -94,9 +94,9 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.lblTitle.ForeColor = System.Drawing.Color.Gainsboro;
             this.lblTitle.Location = new System.Drawing.Point(221, 25);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(460, 32);
+            this.lblTitle.Size = new System.Drawing.Size(457, 32);
             this.lblTitle.TabIndex = 3;
-            this.lblTitle.Text = "Tạo dịp trao thưởng học sinh giỏi";
+            this.lblTitle.Text = "Chỉnh sửa thông tin phần thưởng";
             // 
             // sPanel9
             // 
@@ -337,8 +337,8 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             // sPanel3
             // 
+            this.sPanel3.Controls.Add(this.label4);
             this.sPanel3.Controls.Add(this.label3);
-            this.sPanel3.Controls.Add(this.textBox1);
             this.sPanel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.sPanel3.Location = new System.Drawing.Point(0, 0);
             this.sPanel3.Name = "sPanel3";
@@ -423,16 +423,17 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.xacNhanBtn.Text = "Xác nhận";
             this.xacNhanBtn.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // label4
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(99, 15);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(126, 27);
-            this.textBox1.TabIndex = 5;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(105, 18);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 20);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "2020";
             // 
-            // TaoDipTraoThuong
+            // ChinhSuaPhanThuong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -446,9 +447,9 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.Controls.Add(this.panelTitleBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "TaoDipTraoThuong";
+            this.Name = "ChinhSuaPhanThuong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Tạo dịp trao thưởng";
+            this.Text = "Chỉnh sửa thông tin phần thưởng";
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
             this.sPanel9.ResumeLayout(false);
@@ -509,6 +510,6 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label4;
     }
 }
