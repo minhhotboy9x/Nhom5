@@ -18,6 +18,10 @@ namespace Nhom5.View.hokhau_nhankhau
         {
             InitializeComponent();
         }
+        private void FunctionForm_Load(object sender, EventArgs e)
+        {
+            HandleTextBox.HandleTextBox_Load(this);
+        }
 
         public Form parent_Form { get => parentForm; set => parentForm = value; }
 
@@ -40,5 +44,6 @@ namespace Nhom5.View.hokhau_nhankhau
         {
             this.ActiveControl = null;
         }
+        
     }
 }
