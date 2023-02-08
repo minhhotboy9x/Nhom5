@@ -38,11 +38,12 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.dipDacBiet1 = new Nhom5.View.phanthuong.DipDacBiet();
+            this.hocSinhGioiUC1 = new Nhom5.View.phanthuong.HocSinhGioiUC();
+            this.quanLyPhanThuong1 = new Nhom5.View.phanthuong.QuanLyPhanThuong();
             this.hoKhauUC1 = new Nhom5.View.hokhau_nhankhau.HoKhauUC();
             this.nhanKhauUC1 = new Nhom5.View.hokhau_nhankhau.NhanKhauUC();
             this.homeUC1 = new Nhom5.View.hokhau_nhankhau.HomeUC();
-            this.quanLyPhanThuong1 = new Nhom5.View.phanthuong.QuanLyPhanThuong();
-            this.hocSinhGioiUC1 = new Nhom5.View.phanthuong.HocSinhGioiUC();
             this.panelMenu.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
             this.SuspendLayout();
@@ -204,7 +205,6 @@
             // 
             // lblTitle
             // 
-            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.Gainsboro;
@@ -212,6 +212,29 @@
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(0, 32);
             this.lblTitle.TabIndex = 3;
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dipDacBiet1
+            // 
+            this.dipDacBiet1.Location = new System.Drawing.Point(214, 75);
+            this.dipDacBiet1.Name = "dipDacBiet1";
+            this.dipDacBiet1.Size = new System.Drawing.Size(1048, 595);
+            this.dipDacBiet1.TabIndex = 8;
+            // 
+            // hocSinhGioiUC1
+            // 
+            this.hocSinhGioiUC1.Location = new System.Drawing.Point(214, 75);
+            this.hocSinhGioiUC1.Name = "hocSinhGioiUC1";
+            this.hocSinhGioiUC1.Size = new System.Drawing.Size(1048, 595);
+            this.hocSinhGioiUC1.TabIndex = 6;
+            // 
+            // quanLyPhanThuong1
+            // 
+            this.quanLyPhanThuong1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.quanLyPhanThuong1.Location = new System.Drawing.Point(214, 75);
+            this.quanLyPhanThuong1.Name = "quanLyPhanThuong1";
+            this.quanLyPhanThuong1.Size = new System.Drawing.Size(1048, 595);
+            this.quanLyPhanThuong1.TabIndex = 5;
             // 
             // hoKhauUC1
             // 
@@ -238,26 +261,12 @@
             this.homeUC1.Size = new System.Drawing.Size(1048, 595);
             this.homeUC1.TabIndex = 2;
             // 
-            // quanLyPhanThuong1
-            // 
-            this.quanLyPhanThuong1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.quanLyPhanThuong1.Location = new System.Drawing.Point(214, 75);
-            this.quanLyPhanThuong1.Name = "quanLyPhanThuong1";
-            this.quanLyPhanThuong1.Size = new System.Drawing.Size(1048, 595);
-            this.quanLyPhanThuong1.TabIndex = 5;
-            // 
-            // hocSinhGioiUC1
-            // 
-            this.hocSinhGioiUC1.Location = new System.Drawing.Point(214, 75);
-            this.hocSinhGioiUC1.Name = "hocSinhGioiUC1";
-            this.hocSinhGioiUC1.Size = new System.Drawing.Size(1048, 595);
-            this.hocSinhGioiUC1.TabIndex = 6;
-            // 
             // SecondScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.dipDacBiet1);
             this.Controls.Add(this.hocSinhGioiUC1);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
@@ -294,5 +303,6 @@
         private System.Windows.Forms.Button phanThuongBtn;
         private View.phanthuong.QuanLyPhanThuong quanLyPhanThuong1;
         private View.phanthuong.HocSinhGioiUC hocSinhGioiUC1;
+        private View.phanthuong.DipDacBiet dipDacBiet1;
     }
 }

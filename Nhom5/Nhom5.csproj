@@ -198,6 +198,12 @@
     <Compile Include="View\login_signup\SignUpUC.Designer.cs">
       <DependentUpon>SignUpUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\phanthuong\DipDacBiet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\phanthuong\DipDacBiet.Designer.cs">
+      <DependentUpon>DipDacBiet.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\phanthuong\HocSinhGioiUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -292,6 +298,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\login_signup\SignUpUC.resx">
       <DependentUpon>SignUpUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\phanthuong\DipDacBiet.resx">
+      <DependentUpon>DipDacBiet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\phanthuong\HocSinhGioiUC.resx">
       <DependentUpon>HocSinhGioiUC.cs</DependentUpon>

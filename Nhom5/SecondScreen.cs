@@ -35,8 +35,16 @@ namespace Nhom5
             hoKhauUC1.HoKhauUC_VisibleChanged(hoKhauUC1, e);
             nhanKhauUC1.NhanKhauUC_VisibleChanged(nhanKhauUC1, e);
             hocSinhGioiUC1.HocSinhGioiUC_VisibleChanged(hocSinhGioiUC1, e);
+            dipDacBiet1.DipDacBiet_VisibleChanged(dipDacBiet1, e);
         }
-
+        public void change_lblTitle(String text)
+        {
+            lblTitle.Text = text;
+            lblTitle.Location = new Point() {
+                X = (panelTitleBar.Width - lblTitle.Size.Width) / 2,
+                Y = (panelTitleBar.Height - lblTitle.Size.Height) / 2
+                };
+        }
         private Color SelectThemeColor()
         {
             int index = random.Next(ThemeColor.ColorList.Count);
@@ -66,7 +74,7 @@ namespace Nhom5
                     ThemeColor.SecondaryColor = ThemeColor.ChangeColorBrightness(color, -0.3);
 
                     //
-                    lblTitle.Text = currentButton.Text;
+                    change_lblTitle(currentButton.Text);
                    
                 }
             }
@@ -137,6 +145,13 @@ namespace Nhom5
         {
             hideAllUC();
             this.hocSinhGioiUC1.Show();
+        }
+
+        public void open_DipDacBiet()
+        {
+
+            hideAllUC();
+            this.dipDacBiet1.Show();
         }
     }
 }

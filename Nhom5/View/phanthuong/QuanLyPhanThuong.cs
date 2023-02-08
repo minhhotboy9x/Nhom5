@@ -26,7 +26,15 @@ namespace Nhom5.View.phanthuong
         private void hsgBtn_Click(object sender, EventArgs e)
         {
             var secondScreen = this.Parent as SecondScreen;
+            secondScreen.change_lblTitle("Quản lý phần thưởng học sinh giỏi");
             secondScreen.open_HocSinhGioiUC();
+        }
+
+        private void dipDacBietBtn_Click(object sender, EventArgs e)
+        {
+            var secondScreen = this.Parent as SecondScreen;
+            secondScreen.change_lblTitle("Quản lý phần thưởng dịp đặc biệt");
+            secondScreen.open_DipDacBiet();
         }
     }
 }

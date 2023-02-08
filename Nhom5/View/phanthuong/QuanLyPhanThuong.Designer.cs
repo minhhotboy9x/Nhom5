@@ -49,6 +49,7 @@ namespace Nhom5.View.phanthuong
             this.dipDacBietBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.dipDacBietBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.dipDacBietBtn.UseVisualStyleBackColor = false;
+            this.dipDacBietBtn.Click += new System.EventHandler(this.dipDacBietBtn_Click);
             // 
             // hsgBtn
             // 
