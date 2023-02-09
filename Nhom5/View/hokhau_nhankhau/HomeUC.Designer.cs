@@ -39,16 +39,16 @@ namespace Nhom5.View.hokhau_nhankhau
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sPanel4 = new Nhom5.Utility.SPanel();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.tamVangLabel = new System.Windows.Forms.Label();
             this.sPanel3 = new Nhom5.Utility.SPanel();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.tamTruLabel = new System.Windows.Forms.Label();
             this.sPanel2 = new Nhom5.Utility.SPanel();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.hoKhauLabel = new System.Windows.Forms.Label();
             this.sPanel1 = new Nhom5.Utility.SPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.nhanKhauLabel = new System.Windows.Forms.Label();
             this.sPanel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.sPanel7.SuspendLayout();
@@ -142,7 +142,7 @@ namespace Nhom5.View.hokhau_nhankhau
             // sPanel4
             // 
             this.sPanel4.Controls.Add(this.label7);
-            this.sPanel4.Controls.Add(this.label8);
+            this.sPanel4.Controls.Add(this.tamVangLabel);
             this.sPanel4.Location = new System.Drawing.Point(641, 325);
             this.sPanel4.Name = "sPanel4";
             this.sPanel4.Size = new System.Drawing.Size(337, 112);
@@ -159,21 +159,21 @@ namespace Nhom5.View.hokhau_nhankhau
             this.label7.TabIndex = 0;
             this.label7.Text = "Nhân khẩu tạm vắng:";
             // 
-            // label8
+            // tamVangLabel
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label8.Location = new System.Drawing.Point(14, 54);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(42, 44);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "0";
+            this.tamVangLabel.AutoSize = true;
+            this.tamVangLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tamVangLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tamVangLabel.Location = new System.Drawing.Point(14, 54);
+            this.tamVangLabel.Name = "tamVangLabel";
+            this.tamVangLabel.Size = new System.Drawing.Size(42, 44);
+            this.tamVangLabel.TabIndex = 1;
+            this.tamVangLabel.Text = "0";
             // 
             // sPanel3
             // 
             this.sPanel3.Controls.Add(this.label5);
-            this.sPanel3.Controls.Add(this.label6);
+            this.sPanel3.Controls.Add(this.tamTruLabel);
             this.sPanel3.Location = new System.Drawing.Point(160, 325);
             this.sPanel3.Name = "sPanel3";
             this.sPanel3.Size = new System.Drawing.Size(316, 112);
@@ -190,21 +190,21 @@ namespace Nhom5.View.hokhau_nhankhau
             this.label5.TabIndex = 0;
             this.label5.Text = "Nhân khẩu tạm trú:";
             // 
-            // label6
+            // tamTruLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label6.Location = new System.Drawing.Point(15, 54);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(42, 44);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "0";
+            this.tamTruLabel.AutoSize = true;
+            this.tamTruLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tamTruLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tamTruLabel.Location = new System.Drawing.Point(15, 54);
+            this.tamTruLabel.Name = "tamTruLabel";
+            this.tamTruLabel.Size = new System.Drawing.Size(42, 44);
+            this.tamTruLabel.TabIndex = 1;
+            this.tamTruLabel.Text = "0";
             // 
             // sPanel2
             // 
             this.sPanel2.Controls.Add(this.label3);
-            this.sPanel2.Controls.Add(this.label4);
+            this.sPanel2.Controls.Add(this.hoKhauLabel);
             this.sPanel2.Location = new System.Drawing.Point(160, 184);
             this.sPanel2.Name = "sPanel2";
             this.sPanel2.Size = new System.Drawing.Size(818, 112);
@@ -221,22 +221,22 @@ namespace Nhom5.View.hokhau_nhankhau
             this.label3.TabIndex = 0;
             this.label3.Text = "Hộ khẩu có trên địa bàn:";
             // 
-            // label4
+            // hoKhauLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label4.Location = new System.Drawing.Point(15, 53);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 44);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "0";
-            this.label4.Click += new System.EventHandler(this.HomeUC_VisibleChanged);
+            this.hoKhauLabel.AutoSize = true;
+            this.hoKhauLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hoKhauLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.hoKhauLabel.Location = new System.Drawing.Point(15, 53);
+            this.hoKhauLabel.Name = "hoKhauLabel";
+            this.hoKhauLabel.Size = new System.Drawing.Size(42, 44);
+            this.hoKhauLabel.TabIndex = 1;
+            this.hoKhauLabel.Text = "0";
+            this.hoKhauLabel.Click += new System.EventHandler(this.HomeUC_VisibleChanged);
             // 
             // sPanel1
             // 
             this.sPanel1.Controls.Add(this.label1);
-            this.sPanel1.Controls.Add(this.label2);
+            this.sPanel1.Controls.Add(this.nhanKhauLabel);
             this.sPanel1.Location = new System.Drawing.Point(160, 44);
             this.sPanel1.Name = "sPanel1";
             this.sPanel1.Size = new System.Drawing.Size(818, 112);
@@ -253,16 +253,16 @@ namespace Nhom5.View.hokhau_nhankhau
             this.label1.TabIndex = 0;
             this.label1.Text = "Nhân khẩu có trên địa bàn:";
             // 
-            // label2
+            // nhanKhauLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label2.Location = new System.Drawing.Point(15, 53);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 44);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "0";
+            this.nhanKhauLabel.AutoSize = true;
+            this.nhanKhauLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nhanKhauLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.nhanKhauLabel.Location = new System.Drawing.Point(15, 53);
+            this.nhanKhauLabel.Name = "nhanKhauLabel";
+            this.nhanKhauLabel.Size = new System.Drawing.Size(42, 44);
+            this.nhanKhauLabel.TabIndex = 1;
+            this.nhanKhauLabel.Text = "0";
             // 
             // HomeUC
             // 
@@ -302,18 +302,18 @@ namespace Nhom5.View.hokhau_nhankhau
         }
 
         #endregion
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label nhanKhauLabel;
         private System.Windows.Forms.Label label1;
         private Utility.SPanel sPanel1;
         private Utility.SPanel sPanel2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label hoKhauLabel;
         private Utility.SPanel sPanel3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label tamTruLabel;
         private Utility.SPanel sPanel4;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label tamVangLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Utility.SPanel sPanel5;
         private Utility.SPanel sPanel6;

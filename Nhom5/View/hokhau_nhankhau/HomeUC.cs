@@ -31,6 +31,5 @@ namespace Nhom5.View.hokhau_nhankhau
                 }
             }    
         }
-        
     }
 }
