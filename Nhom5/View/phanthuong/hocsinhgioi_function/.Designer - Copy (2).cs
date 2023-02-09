@@ -34,35 +34,35 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel9 = new Nhom5.Utility.SPanel();
             this.sPanel11 = new Nhom5.Utility.SPanel();
             this.label11 = new System.Windows.Forms.Label();
-            this.waterMarkTextBox3 = new Nhom5.Utility.WaterMarkTextBox();
+            this.tien3TextBox = new Nhom5.Utility.WaterMarkTextBox();
             this.sPanel12 = new Nhom5.Utility.SPanel();
             this.label10 = new System.Windows.Forms.Label();
-            this.waterMarkTextBox2 = new Nhom5.Utility.WaterMarkTextBox();
+            this.tien2TextBox = new Nhom5.Utility.WaterMarkTextBox();
             this.sPanel13 = new Nhom5.Utility.SPanel();
             this.label9 = new System.Windows.Forms.Label();
-            this.waterMarkTextBox1 = new Nhom5.Utility.WaterMarkTextBox();
+            this.tien1TextBox = new Nhom5.Utility.WaterMarkTextBox();
             this.sPanel2 = new Nhom5.Utility.SPanel();
             this.sPanel4 = new Nhom5.Utility.SPanel();
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.sPanel5 = new Nhom5.Utility.SPanel();
+            this.phanQua3TextBox = new System.Windows.Forms.TextBox();
+            this.Spanel23 = new Nhom5.Utility.SPanel();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.phanQua2TextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.sPanel1 = new Nhom5.Utility.SPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.hoTenText = new System.Windows.Forms.TextBox();
+            this.phanQua1TextBox = new System.Windows.Forms.TextBox();
             this.sPanel3 = new Nhom5.Utility.SPanel();
+            this.namHocLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.sPanel17 = new Nhom5.Utility.SPanel();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.moTaTextBox = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.huyBtn = new System.Windows.Forms.Button();
             this.xacNhanBtn = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.panelTitleBar.SuspendLayout();
             this.sPanel9.SuspendLayout();
             this.sPanel11.SuspendLayout();
@@ -70,7 +70,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel13.SuspendLayout();
             this.sPanel2.SuspendLayout();
             this.sPanel4.SuspendLayout();
-            this.sPanel5.SuspendLayout();
+            this.Spanel23.SuspendLayout();
             this.sPanel1.SuspendLayout();
             this.sPanel3.SuspendLayout();
             this.sPanel17.SuspendLayout();
@@ -111,7 +111,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // sPanel11
             // 
             this.sPanel11.Controls.Add(this.label11);
-            this.sPanel11.Controls.Add(this.waterMarkTextBox3);
+            this.sPanel11.Controls.Add(this.tien3TextBox);
             this.sPanel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.sPanel11.Location = new System.Drawing.Point(0, 114);
             this.sPanel11.Name = "sPanel11";
@@ -130,20 +130,20 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label11.TabIndex = 9;
             this.label11.Text = "(*)";
             // 
-            // waterMarkTextBox3
+            // tien3TextBox
             // 
-            this.waterMarkTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.waterMarkTextBox3.Location = new System.Drawing.Point(3, 15);
-            this.waterMarkTextBox3.Name = "waterMarkTextBox3";
-            this.waterMarkTextBox3.Size = new System.Drawing.Size(181, 27);
-            this.waterMarkTextBox3.TabIndex = 1;
-            this.waterMarkTextBox3.WaterMarkColor = System.Drawing.Color.Gray;
-            this.waterMarkTextBox3.WaterMarkText = "Quy ra tiền (VND)";
+            this.tien3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tien3TextBox.Location = new System.Drawing.Point(3, 15);
+            this.tien3TextBox.Name = "tien3TextBox";
+            this.tien3TextBox.Size = new System.Drawing.Size(181, 27);
+            this.tien3TextBox.TabIndex = 1;
+            this.tien3TextBox.WaterMarkColor = System.Drawing.Color.Gray;
+            this.tien3TextBox.WaterMarkText = "Quy ra tiền (VND)";
             // 
             // sPanel12
             // 
             this.sPanel12.Controls.Add(this.label10);
-            this.sPanel12.Controls.Add(this.waterMarkTextBox2);
+            this.sPanel12.Controls.Add(this.tien2TextBox);
             this.sPanel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.sPanel12.Location = new System.Drawing.Point(0, 57);
             this.sPanel12.Name = "sPanel12";
@@ -162,20 +162,20 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label10.TabIndex = 8;
             this.label10.Text = "(*)";
             // 
-            // waterMarkTextBox2
+            // tien2TextBox
             // 
-            this.waterMarkTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.waterMarkTextBox2.Location = new System.Drawing.Point(3, 15);
-            this.waterMarkTextBox2.Name = "waterMarkTextBox2";
-            this.waterMarkTextBox2.Size = new System.Drawing.Size(181, 27);
-            this.waterMarkTextBox2.TabIndex = 1;
-            this.waterMarkTextBox2.WaterMarkColor = System.Drawing.Color.Gray;
-            this.waterMarkTextBox2.WaterMarkText = "Quy ra tiền (VND)";
+            this.tien2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tien2TextBox.Location = new System.Drawing.Point(3, 15);
+            this.tien2TextBox.Name = "tien2TextBox";
+            this.tien2TextBox.Size = new System.Drawing.Size(181, 27);
+            this.tien2TextBox.TabIndex = 1;
+            this.tien2TextBox.WaterMarkColor = System.Drawing.Color.Gray;
+            this.tien2TextBox.WaterMarkText = "Quy ra tiền (VND)";
             // 
             // sPanel13
             // 
             this.sPanel13.Controls.Add(this.label9);
-            this.sPanel13.Controls.Add(this.waterMarkTextBox1);
+            this.sPanel13.Controls.Add(this.tien1TextBox);
             this.sPanel13.Dock = System.Windows.Forms.DockStyle.Top;
             this.sPanel13.Location = new System.Drawing.Point(0, 0);
             this.sPanel13.Name = "sPanel13";
@@ -194,20 +194,20 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label9.TabIndex = 7;
             this.label9.Text = "(*)";
             // 
-            // waterMarkTextBox1
+            // tien1TextBox
             // 
-            this.waterMarkTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.waterMarkTextBox1.Location = new System.Drawing.Point(3, 15);
-            this.waterMarkTextBox1.Name = "waterMarkTextBox1";
-            this.waterMarkTextBox1.Size = new System.Drawing.Size(181, 27);
-            this.waterMarkTextBox1.TabIndex = 0;
-            this.waterMarkTextBox1.WaterMarkColor = System.Drawing.Color.Gray;
-            this.waterMarkTextBox1.WaterMarkText = "Quy ra tiền (VND)";
+            this.tien1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tien1TextBox.Location = new System.Drawing.Point(3, 15);
+            this.tien1TextBox.Name = "tien1TextBox";
+            this.tien1TextBox.Size = new System.Drawing.Size(181, 27);
+            this.tien1TextBox.TabIndex = 0;
+            this.tien1TextBox.WaterMarkColor = System.Drawing.Color.Gray;
+            this.tien1TextBox.WaterMarkText = "Quy ra tiền (VND)";
             // 
             // sPanel2
             // 
             this.sPanel2.Controls.Add(this.sPanel4);
-            this.sPanel2.Controls.Add(this.sPanel5);
+            this.sPanel2.Controls.Add(this.Spanel23);
             this.sPanel2.Controls.Add(this.sPanel1);
             this.sPanel2.Controls.Add(this.sPanel3);
             this.sPanel2.Location = new System.Drawing.Point(50, 81);
@@ -219,7 +219,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             this.sPanel4.Controls.Add(this.label8);
             this.sPanel4.Controls.Add(this.label5);
-            this.sPanel4.Controls.Add(this.textBox3);
+            this.sPanel4.Controls.Add(this.phanQua3TextBox);
             this.sPanel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.sPanel4.Location = new System.Drawing.Point(0, 171);
             this.sPanel4.Name = "sPanel4";
@@ -246,25 +246,25 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label5.TabIndex = 4;
             this.label5.Text = "Phần quà học sinh khá:";
             // 
-            // textBox3
+            // phanQua3TextBox
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(236, 15);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(271, 27);
-            this.textBox3.TabIndex = 5;
+            this.phanQua3TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.phanQua3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phanQua3TextBox.Location = new System.Drawing.Point(236, 15);
+            this.phanQua3TextBox.Name = "phanQua3TextBox";
+            this.phanQua3TextBox.Size = new System.Drawing.Size(271, 27);
+            this.phanQua3TextBox.TabIndex = 5;
             // 
-            // sPanel5
+            // Spanel23
             // 
-            this.sPanel5.Controls.Add(this.label6);
-            this.sPanel5.Controls.Add(this.textBox2);
-            this.sPanel5.Controls.Add(this.label7);
-            this.sPanel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.sPanel5.Location = new System.Drawing.Point(0, 114);
-            this.sPanel5.Name = "sPanel5";
-            this.sPanel5.Size = new System.Drawing.Size(555, 57);
-            this.sPanel5.TabIndex = 9;
+            this.Spanel23.Controls.Add(this.label6);
+            this.Spanel23.Controls.Add(this.phanQua2TextBox);
+            this.Spanel23.Controls.Add(this.label7);
+            this.Spanel23.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Spanel23.Location = new System.Drawing.Point(0, 114);
+            this.Spanel23.Name = "Spanel23";
+            this.Spanel23.Size = new System.Drawing.Size(555, 57);
+            this.Spanel23.TabIndex = 9;
             // 
             // label6
             // 
@@ -276,14 +276,14 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label6.TabIndex = 8;
             this.label6.Text = "=>>";
             // 
-            // textBox2
+            // phanQua2TextBox
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(236, 15);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(271, 27);
-            this.textBox2.TabIndex = 7;
+            this.phanQua2TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.phanQua2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phanQua2TextBox.Location = new System.Drawing.Point(236, 15);
+            this.phanQua2TextBox.Name = "phanQua2TextBox";
+            this.phanQua2TextBox.Size = new System.Drawing.Size(271, 27);
+            this.phanQua2TextBox.TabIndex = 7;
             // 
             // label7
             // 
@@ -299,7 +299,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             this.sPanel1.Controls.Add(this.label2);
             this.sPanel1.Controls.Add(this.label1);
-            this.sPanel1.Controls.Add(this.hoTenText);
+            this.sPanel1.Controls.Add(this.phanQua1TextBox);
             this.sPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.sPanel1.Location = new System.Drawing.Point(0, 57);
             this.sPanel1.Name = "sPanel1";
@@ -326,24 +326,34 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label1.TabIndex = 4;
             this.label1.Text = "Phần quà học sinh đặc biệt:";
             // 
-            // hoTenText
+            // phanQua1TextBox
             // 
-            this.hoTenText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.hoTenText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hoTenText.Location = new System.Drawing.Point(236, 15);
-            this.hoTenText.Name = "hoTenText";
-            this.hoTenText.Size = new System.Drawing.Size(271, 27);
-            this.hoTenText.TabIndex = 5;
+            this.phanQua1TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.phanQua1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phanQua1TextBox.Location = new System.Drawing.Point(236, 15);
+            this.phanQua1TextBox.Name = "phanQua1TextBox";
+            this.phanQua1TextBox.Size = new System.Drawing.Size(271, 27);
+            this.phanQua1TextBox.TabIndex = 5;
             // 
             // sPanel3
             // 
-            this.sPanel3.Controls.Add(this.label4);
+            this.sPanel3.Controls.Add(this.namHocLabel);
             this.sPanel3.Controls.Add(this.label3);
             this.sPanel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.sPanel3.Location = new System.Drawing.Point(0, 0);
             this.sPanel3.Name = "sPanel3";
             this.sPanel3.Size = new System.Drawing.Size(555, 57);
             this.sPanel3.TabIndex = 8;
+            // 
+            // namHocLabel
+            // 
+            this.namHocLabel.AutoSize = true;
+            this.namHocLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namHocLabel.Location = new System.Drawing.Point(105, 18);
+            this.namHocLabel.Name = "namHocLabel";
+            this.namHocLabel.Size = new System.Drawing.Size(45, 20);
+            this.namHocLabel.TabIndex = 5;
+            this.namHocLabel.Text = "2020";
             // 
             // label3
             // 
@@ -358,7 +368,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // sPanel17
             // 
             this.sPanel17.Controls.Add(this.label18);
-            this.sPanel17.Controls.Add(this.textBox4);
+            this.sPanel17.Controls.Add(this.moTaTextBox);
             this.sPanel17.Location = new System.Drawing.Point(50, 320);
             this.sPanel17.Name = "sPanel17";
             this.sPanel17.Size = new System.Drawing.Size(799, 55);
@@ -374,14 +384,14 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label18.TabIndex = 4;
             this.label18.Text = "Mô tả:";
             // 
-            // textBox4
+            // moTaTextBox
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(99, 15);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(646, 27);
-            this.textBox4.TabIndex = 5;
+            this.moTaTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.moTaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.moTaTextBox.Location = new System.Drawing.Point(99, 15);
+            this.moTaTextBox.Name = "moTaTextBox";
+            this.moTaTextBox.Size = new System.Drawing.Size(646, 27);
+            this.moTaTextBox.TabIndex = 5;
             // 
             // label20
             // 
@@ -423,16 +433,6 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.xacNhanBtn.Text = "Xác nhận";
             this.xacNhanBtn.UseVisualStyleBackColor = false;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(105, 18);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 20);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "2020";
-            // 
             // ChinhSuaPhanThuong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -462,8 +462,8 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel2.ResumeLayout(false);
             this.sPanel4.ResumeLayout(false);
             this.sPanel4.PerformLayout();
-            this.sPanel5.ResumeLayout(false);
-            this.sPanel5.PerformLayout();
+            this.Spanel23.ResumeLayout(false);
+            this.Spanel23.PerformLayout();
             this.sPanel1.ResumeLayout(false);
             this.sPanel1.PerformLayout();
             this.sPanel3.ResumeLayout(false);
@@ -479,13 +479,13 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
 
         private System.Windows.Forms.Panel panelTitleBar;
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.TextBox hoTenText;
+        private System.Windows.Forms.TextBox phanQua1TextBox;
         private System.Windows.Forms.Label label1;
         private Utility.SPanel sPanel1;
         private Utility.SPanel sPanel2;
         private Utility.SPanel sPanel4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox phanQua3TextBox;
         private Utility.SPanel sPanel3;
         private System.Windows.Forms.Label label3;
         private Utility.SPanel sPanel9;
@@ -494,22 +494,22 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
         private Utility.SPanel sPanel13;
         private Utility.SPanel sPanel17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox moTaTextBox;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button huyBtn;
         private System.Windows.Forms.Button xacNhanBtn;
-        private Utility.SPanel sPanel5;
+        private Utility.SPanel Spanel23;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label11;
-        private Utility.WaterMarkTextBox waterMarkTextBox3;
+        private Utility.WaterMarkTextBox tien3TextBox;
         private System.Windows.Forms.Label label10;
-        private Utility.WaterMarkTextBox waterMarkTextBox2;
+        private Utility.WaterMarkTextBox tien2TextBox;
         private System.Windows.Forms.Label label9;
-        private Utility.WaterMarkTextBox waterMarkTextBox1;
+        private Utility.WaterMarkTextBox tien1TextBox;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox phanQua2TextBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label namHocLabel;
     }
 }

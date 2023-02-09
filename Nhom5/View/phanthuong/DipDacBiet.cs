@@ -27,7 +27,22 @@ namespace Nhom5.View.phanthuong
         }
         private void taoDipBtn_Click(object sender, EventArgs e)
         {
-            
+            OpenScreen.openFunctionForm(this, new TaoDipDacBiet(), 1);
+        }
+
+        private void xemChiTietBtn_Click(object sender, EventArgs e)
+        {
+            OpenScreen.openFunctionForm(this, new ChiTietDip(), 1);
+        }
+
+        private void chinhSuaBtn_Click(object sender, EventArgs e)
+        {
+            OpenScreen.openFunctionForm(this, new ChinhSuaDip(), 1);
+        }
+
+        private void xemDanhSachBtn_Click(object sender, EventArgs e)
+        {
+            OpenScreen.openFunctionForm(this, new DanhSachDip(), 1);
         }
     }
 }

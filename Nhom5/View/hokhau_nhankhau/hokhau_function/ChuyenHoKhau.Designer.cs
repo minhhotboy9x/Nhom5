@@ -34,40 +34,40 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.label20 = new System.Windows.Forms.Label();
             this.sPanel9 = new Nhom5.Utility.SPanel();
             this.sPanel10 = new Nhom5.Utility.SPanel();
-            this.label12 = new System.Windows.Forms.Label();
+            this.tenChuHoLabel = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.sPanel6 = new Nhom5.Utility.SPanel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.maHoKhauLabel = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.sPanel5 = new Nhom5.Utility.SPanel();
             this.sPanel11 = new Nhom5.Utility.SPanel();
             this.sPanel12 = new Nhom5.Utility.SPanel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.ngayDateTime = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.sPanel13 = new Nhom5.Utility.SPanel();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.phuongTextBox = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.sPanel4 = new Nhom5.Utility.SPanel();
             this.sPanel8 = new Nhom5.Utility.SPanel();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.quanTextBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.sPanel7 = new Nhom5.Utility.SPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tinhTextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.sPanel2 = new Nhom5.Utility.SPanel();
             this.sPanel3 = new Nhom5.Utility.SPanel();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.diaChiChuyenDenTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.sPanel1 = new Nhom5.Utility.SPanel();
-            this.label22 = new System.Windows.Forms.Label();
+            this.diaChiHienTaiLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.ghiChuTextBox = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.huyBtn = new System.Windows.Forms.Button();
             this.xacNhanBtn = new System.Windows.Forms.Button();
@@ -132,7 +132,7 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             // 
             // sPanel10
             // 
-            this.sPanel10.Controls.Add(this.label12);
+            this.sPanel10.Controls.Add(this.tenChuHoLabel);
             this.sPanel10.Controls.Add(this.label9);
             this.sPanel10.Dock = System.Windows.Forms.DockStyle.Left;
             this.sPanel10.Location = new System.Drawing.Point(380, 0);
@@ -140,15 +140,15 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.sPanel10.Size = new System.Drawing.Size(436, 57);
             this.sPanel10.TabIndex = 11;
             // 
-            // label12
+            // tenChuHoLabel
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(128, 18);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(159, 20);
-            this.label12.TabIndex = 6;
-            this.label12.Text = "Hotboy keo kon void";
+            this.tenChuHoLabel.AutoSize = true;
+            this.tenChuHoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tenChuHoLabel.Location = new System.Drawing.Point(128, 18);
+            this.tenChuHoLabel.Name = "tenChuHoLabel";
+            this.tenChuHoLabel.Size = new System.Drawing.Size(159, 20);
+            this.tenChuHoLabel.TabIndex = 6;
+            this.tenChuHoLabel.Text = "Hotboy keo kon void";
             // 
             // label9
             // 
@@ -162,7 +162,7 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             // 
             // sPanel6
             // 
-            this.sPanel6.Controls.Add(this.label5);
+            this.sPanel6.Controls.Add(this.maHoKhauLabel);
             this.sPanel6.Controls.Add(this.label6);
             this.sPanel6.Dock = System.Windows.Forms.DockStyle.Left;
             this.sPanel6.Location = new System.Drawing.Point(0, 0);
@@ -170,15 +170,15 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.sPanel6.Size = new System.Drawing.Size(380, 57);
             this.sPanel6.TabIndex = 12;
             // 
-            // label5
+            // maHoKhauLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(178, 18);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(21, 20);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "...";
+            this.maHoKhauLabel.AutoSize = true;
+            this.maHoKhauLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maHoKhauLabel.Location = new System.Drawing.Point(178, 18);
+            this.maHoKhauLabel.Name = "maHoKhauLabel";
+            this.maHoKhauLabel.Size = new System.Drawing.Size(21, 20);
+            this.maHoKhauLabel.TabIndex = 6;
+            this.maHoKhauLabel.Text = "...";
             // 
             // label6
             // 
@@ -213,7 +213,7 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             // 
             // sPanel12
             // 
-            this.sPanel12.Controls.Add(this.dateTimePicker1);
+            this.sPanel12.Controls.Add(this.ngayDateTime);
             this.sPanel12.Controls.Add(this.label11);
             this.sPanel12.Controls.Add(this.label13);
             this.sPanel12.Dock = System.Windows.Forms.DockStyle.Right;
@@ -222,15 +222,15 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.sPanel12.Size = new System.Drawing.Size(467, 57);
             this.sPanel12.TabIndex = 9;
             // 
-            // dateTimePicker1
+            // ngayDateTime
             // 
-            this.dateTimePicker1.CustomFormat = "dd-mm-yyyy";
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(170, 13);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(220, 27);
-            this.dateTimePicker1.TabIndex = 10;
+            this.ngayDateTime.CustomFormat = "dd-mm-yyyy";
+            this.ngayDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ngayDateTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ngayDateTime.Location = new System.Drawing.Point(170, 13);
+            this.ngayDateTime.Name = "ngayDateTime";
+            this.ngayDateTime.Size = new System.Drawing.Size(220, 27);
+            this.ngayDateTime.TabIndex = 10;
             // 
             // label11
             // 
@@ -257,7 +257,7 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             // sPanel13
             // 
             this.sPanel13.Controls.Add(this.label14);
-            this.sPanel13.Controls.Add(this.textBox5);
+            this.sPanel13.Controls.Add(this.phuongTextBox);
             this.sPanel13.Controls.Add(this.label15);
             this.sPanel13.Dock = System.Windows.Forms.DockStyle.Left;
             this.sPanel13.Location = new System.Drawing.Point(0, 0);
@@ -277,13 +277,13 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.label14.TabIndex = 9;
             this.label14.Text = "(*)";
             // 
-            // textBox5
+            // phuongTextBox
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(182, 15);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(124, 27);
-            this.textBox5.TabIndex = 8;
+            this.phuongTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phuongTextBox.Location = new System.Drawing.Point(182, 15);
+            this.phuongTextBox.Name = "phuongTextBox";
+            this.phuongTextBox.Size = new System.Drawing.Size(124, 27);
+            this.phuongTextBox.TabIndex = 8;
             // 
             // label15
             // 
@@ -308,7 +308,7 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             // sPanel8
             // 
             this.sPanel8.Controls.Add(this.label8);
-            this.sPanel8.Controls.Add(this.textBox3);
+            this.sPanel8.Controls.Add(this.quanTextBox);
             this.sPanel8.Controls.Add(this.label10);
             this.sPanel8.Dock = System.Windows.Forms.DockStyle.Right;
             this.sPanel8.Location = new System.Drawing.Point(380, 0);
@@ -328,13 +328,13 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.label8.TabIndex = 9;
             this.label8.Text = "(*)";
             // 
-            // textBox3
+            // quanTextBox
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(170, 15);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(220, 27);
-            this.textBox3.TabIndex = 8;
+            this.quanTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quanTextBox.Location = new System.Drawing.Point(170, 15);
+            this.quanTextBox.Name = "quanTextBox";
+            this.quanTextBox.Size = new System.Drawing.Size(220, 27);
+            this.quanTextBox.TabIndex = 8;
             // 
             // label10
             // 
@@ -349,7 +349,7 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             // sPanel7
             // 
             this.sPanel7.Controls.Add(this.label2);
-            this.sPanel7.Controls.Add(this.textBox1);
+            this.sPanel7.Controls.Add(this.tinhTextBox);
             this.sPanel7.Controls.Add(this.label7);
             this.sPanel7.Dock = System.Windows.Forms.DockStyle.Left;
             this.sPanel7.Location = new System.Drawing.Point(0, 0);
@@ -369,13 +369,13 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.label2.TabIndex = 9;
             this.label2.Text = "(*)";
             // 
-            // textBox1
+            // tinhTextBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(182, 15);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(124, 27);
-            this.textBox1.TabIndex = 8;
+            this.tinhTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tinhTextBox.Location = new System.Drawing.Point(182, 15);
+            this.tinhTextBox.Name = "tinhTextBox";
+            this.tinhTextBox.Size = new System.Drawing.Size(124, 27);
+            this.tinhTextBox.TabIndex = 8;
             // 
             // label7
             // 
@@ -399,7 +399,7 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             // sPanel3
             // 
             this.sPanel3.Controls.Add(this.label4);
-            this.sPanel3.Controls.Add(this.textBox2);
+            this.sPanel3.Controls.Add(this.diaChiChuyenDenTextBox);
             this.sPanel3.Controls.Add(this.label3);
             this.sPanel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.sPanel3.Location = new System.Drawing.Point(0, 0);
@@ -419,13 +419,13 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.label4.TabIndex = 7;
             this.label4.Text = "(*)";
             // 
-            // textBox2
+            // diaChiChuyenDenTextBox
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(182, 15);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(588, 27);
-            this.textBox2.TabIndex = 6;
+            this.diaChiChuyenDenTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.diaChiChuyenDenTextBox.Location = new System.Drawing.Point(182, 15);
+            this.diaChiChuyenDenTextBox.Name = "diaChiChuyenDenTextBox";
+            this.diaChiChuyenDenTextBox.Size = new System.Drawing.Size(588, 27);
+            this.diaChiChuyenDenTextBox.TabIndex = 6;
             // 
             // label3
             // 
@@ -439,7 +439,7 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             // 
             // sPanel1
             // 
-            this.sPanel1.Controls.Add(this.label22);
+            this.sPanel1.Controls.Add(this.diaChiHienTaiLabel);
             this.sPanel1.Controls.Add(this.label1);
             this.sPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.sPanel1.Location = new System.Drawing.Point(0, 0);
@@ -447,15 +447,15 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.sPanel1.Size = new System.Drawing.Size(847, 57);
             this.sPanel1.TabIndex = 7;
             // 
-            // label22
+            // diaChiHienTaiLabel
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(178, 18);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(187, 20);
-            this.label22.TabIndex = 7;
-            this.label22.Text = "Số 1, đường Los Santos";
+            this.diaChiHienTaiLabel.AutoSize = true;
+            this.diaChiHienTaiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.diaChiHienTaiLabel.Location = new System.Drawing.Point(178, 18);
+            this.diaChiHienTaiLabel.Name = "diaChiHienTaiLabel";
+            this.diaChiHienTaiLabel.Size = new System.Drawing.Size(187, 20);
+            this.diaChiHienTaiLabel.TabIndex = 7;
+            this.diaChiHienTaiLabel.Text = "Số 1, đường Los Santos";
             // 
             // label1
             // 
@@ -477,14 +477,14 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.label16.TabIndex = 22;
             this.label16.Text = "Ghi chú:";
             // 
-            // textBox4
+            // ghiChuTextBox
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(137, 417);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(461, 225);
-            this.textBox4.TabIndex = 23;
+            this.ghiChuTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ghiChuTextBox.Location = new System.Drawing.Point(137, 417);
+            this.ghiChuTextBox.Multiline = true;
+            this.ghiChuTextBox.Name = "ghiChuTextBox";
+            this.ghiChuTextBox.Size = new System.Drawing.Size(461, 225);
+            this.ghiChuTextBox.TabIndex = 23;
             // 
             // label17
             // 
@@ -532,7 +532,7 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.Controls.Add(this.huyBtn);
             this.Controls.Add(this.xacNhanBtn);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.ghiChuTextBox);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.sPanel5);
             this.Controls.Add(this.sPanel9);
@@ -542,7 +542,7 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.MaximizeBox = false;
             this.Name = "ChuyenHoKhau";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ChuyenHoKhau";
+            this.Text = "Chuyển hộ khẩu";
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
             this.sPanel9.ResumeLayout(false);
@@ -578,10 +578,10 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
         private System.Windows.Forms.Label label20;
         private Utility.SPanel sPanel9;
         private Utility.SPanel sPanel10;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label tenChuHoLabel;
         private System.Windows.Forms.Label label9;
         private Utility.SPanel sPanel6;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label maHoKhauLabel;
         private System.Windows.Forms.Label label6;
         private Utility.SPanel sPanel5;
         private Utility.SPanel sPanel4;
@@ -591,15 +591,15 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
         private Utility.SPanel sPanel3;
         private System.Windows.Forms.Label label3;
         private Utility.SPanel sPanel1;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label diaChiHienTaiLabel;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox diaChiChuyenDenTextBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tinhTextBox;
         private System.Windows.Forms.Label label4;
         private Utility.SPanel sPanel8;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox quanTextBox;
         private System.Windows.Forms.Label label10;
         private Utility.SPanel sPanel11;
         private Utility.SPanel sPanel12;
@@ -607,11 +607,11 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
         private System.Windows.Forms.Label label13;
         private Utility.SPanel sPanel13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox phuongTextBox;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker ngayDateTime;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox ghiChuTextBox;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button huyBtn;
         private System.Windows.Forms.Button xacNhanBtn;

@@ -206,8 +206,29 @@
     <Compile Include="View\phanthuong\DipDacBiet.Designer.cs">
       <DependentUpon>DipDacBiet.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\phanthuong\dipdacbiet_function\.Designer - Copy %282%29.cs">
+      <DependentUpon>ChinhSuaDip.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\phanthuong\dipdacbiet_function\.Designer - Copy %283%29.cs">
+      <DependentUpon>DanhSachDip.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\phanthuong\dipdacbiet_function\.Designer - Copy.cs">
+      <DependentUpon>ChiTietDip.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="View\phanthuong\dipdacbiet_function\.Designer.cs">
       <DependentUpon>TaoDipDacBiet.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\phanthuong\dipdacbiet_function\ChinhSuaDip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\phanthuong\dipdacbiet_function\ChiTietDip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\phanthuong\dipdacbiet_function\DanhSachDip.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\phanthuong\dipdacbiet_function\TaoDipDacBiet.cs">
@@ -338,6 +359,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\phanthuong\DipDacBiet.resx">
       <DependentUpon>DipDacBiet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\phanthuong\dipdacbiet_function\ChinhSuaDip.resx">
+      <DependentUpon>ChinhSuaDip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\phanthuong\dipdacbiet_function\ChiTietDip.resx">
+      <DependentUpon>ChiTietDip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\phanthuong\dipdacbiet_function\DanhSachDip.resx">
+      <DependentUpon>DanhSachDip.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\phanthuong\dipdacbiet_function\TaoDipDacBiet.resx">
       <DependentUpon>TaoDipDacBiet.cs</DependentUpon>

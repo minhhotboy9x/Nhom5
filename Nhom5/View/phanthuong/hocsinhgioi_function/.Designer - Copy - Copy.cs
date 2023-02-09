@@ -39,25 +39,25 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label15 = new System.Windows.Forms.Label();
             this.sPanel2 = new Nhom5.Utility.SPanel();
             this.sPanel7 = new Nhom5.Utility.SPanel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.thanhTichComboBox = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.sPanel6 = new Nhom5.Utility.SPanel();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lopTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.sPanel4 = new Nhom5.Utility.SPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.truongHocTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.sPanel5 = new Nhom5.Utility.SPanel();
-            this.label14 = new System.Windows.Forms.Label();
+            this.tenLabel = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.sPanel1 = new Nhom5.Utility.SPanel();
-            this.label13 = new System.Windows.Forms.Label();
+            this.IDLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.sPanel3 = new Nhom5.Utility.SPanel();
-            this.label12 = new System.Windows.Forms.Label();
+            this.namHocLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panelTitleBar.SuspendLayout();
             this.sPanel2.SuspendLayout();
@@ -183,7 +183,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             // sPanel7
             // 
-            this.sPanel7.Controls.Add(this.comboBox1);
+            this.sPanel7.Controls.Add(this.thanhTichComboBox);
             this.sPanel7.Controls.Add(this.label8);
             this.sPanel7.Controls.Add(this.label10);
             this.sPanel7.Dock = System.Windows.Forms.DockStyle.Top;
@@ -192,15 +192,15 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel7.Size = new System.Drawing.Size(555, 57);
             this.sPanel7.TabIndex = 12;
             // 
-            // comboBox1
+            // thanhTichComboBox
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(133, 15);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 28);
-            this.comboBox1.TabIndex = 11;
+            this.thanhTichComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.thanhTichComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thanhTichComboBox.FormattingEnabled = true;
+            this.thanhTichComboBox.Location = new System.Drawing.Point(133, 15);
+            this.thanhTichComboBox.Name = "thanhTichComboBox";
+            this.thanhTichComboBox.Size = new System.Drawing.Size(121, 28);
+            this.thanhTichComboBox.TabIndex = 11;
             // 
             // label8
             // 
@@ -227,7 +227,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // sPanel6
             // 
             this.sPanel6.Controls.Add(this.label5);
-            this.sPanel6.Controls.Add(this.textBox1);
+            this.sPanel6.Controls.Add(this.lopTextBox);
             this.sPanel6.Controls.Add(this.label6);
             this.sPanel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.sPanel6.Location = new System.Drawing.Point(0, 228);
@@ -247,14 +247,14 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label5.TabIndex = 10;
             this.label5.Text = "(*)";
             // 
-            // textBox1
+            // lopTextBox
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(136, 15);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(61, 27);
-            this.textBox1.TabIndex = 9;
+            this.lopTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lopTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lopTextBox.Location = new System.Drawing.Point(136, 15);
+            this.lopTextBox.Name = "lopTextBox";
+            this.lopTextBox.Size = new System.Drawing.Size(61, 27);
+            this.lopTextBox.TabIndex = 9;
             // 
             // label6
             // 
@@ -269,7 +269,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // sPanel4
             // 
             this.sPanel4.Controls.Add(this.label2);
-            this.sPanel4.Controls.Add(this.textBox5);
+            this.sPanel4.Controls.Add(this.truongHocTextBox);
             this.sPanel4.Controls.Add(this.label4);
             this.sPanel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.sPanel4.Location = new System.Drawing.Point(0, 171);
@@ -289,14 +289,14 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label2.TabIndex = 10;
             this.label2.Text = "(*)";
             // 
-            // textBox5
+            // truongHocTextBox
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(136, 15);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(375, 27);
-            this.textBox5.TabIndex = 9;
+            this.truongHocTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.truongHocTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.truongHocTextBox.Location = new System.Drawing.Point(136, 15);
+            this.truongHocTextBox.Name = "truongHocTextBox";
+            this.truongHocTextBox.Size = new System.Drawing.Size(375, 27);
+            this.truongHocTextBox.TabIndex = 9;
             // 
             // label4
             // 
@@ -310,7 +310,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             // sPanel5
             // 
-            this.sPanel5.Controls.Add(this.label14);
+            this.sPanel5.Controls.Add(this.tenLabel);
             this.sPanel5.Controls.Add(this.label7);
             this.sPanel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.sPanel5.Location = new System.Drawing.Point(0, 114);
@@ -318,15 +318,15 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel5.Size = new System.Drawing.Size(555, 57);
             this.sPanel5.TabIndex = 9;
             // 
-            // label14
+            // tenLabel
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(138, 18);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(96, 20);
-            this.label14.TabIndex = 9;
-            this.label14.Text = "Nobi Nobita";
+            this.tenLabel.AutoSize = true;
+            this.tenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tenLabel.Location = new System.Drawing.Point(138, 18);
+            this.tenLabel.Name = "tenLabel";
+            this.tenLabel.Size = new System.Drawing.Size(96, 20);
+            this.tenLabel.TabIndex = 9;
+            this.tenLabel.Text = "Nobi Nobita";
             // 
             // label7
             // 
@@ -340,7 +340,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             // sPanel1
             // 
-            this.sPanel1.Controls.Add(this.label13);
+            this.sPanel1.Controls.Add(this.IDLabel);
             this.sPanel1.Controls.Add(this.label1);
             this.sPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.sPanel1.Location = new System.Drawing.Point(0, 57);
@@ -348,15 +348,15 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel1.Size = new System.Drawing.Size(555, 57);
             this.sPanel1.TabIndex = 7;
             // 
-            // label13
+            // IDLabel
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(138, 18);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(131, 20);
-            this.label13.TabIndex = 7;
-            this.label13.Text = "10 tỷ đô la biden";
+            this.IDLabel.AutoSize = true;
+            this.IDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IDLabel.Location = new System.Drawing.Point(138, 18);
+            this.IDLabel.Name = "IDLabel";
+            this.IDLabel.Size = new System.Drawing.Size(131, 20);
+            this.IDLabel.TabIndex = 7;
+            this.IDLabel.Text = "10 tỷ đô la biden";
             // 
             // label1
             // 
@@ -370,7 +370,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             // sPanel3
             // 
-            this.sPanel3.Controls.Add(this.label12);
+            this.sPanel3.Controls.Add(this.namHocLabel);
             this.sPanel3.Controls.Add(this.label3);
             this.sPanel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.sPanel3.Location = new System.Drawing.Point(0, 0);
@@ -378,15 +378,15 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel3.Size = new System.Drawing.Size(555, 57);
             this.sPanel3.TabIndex = 8;
             // 
-            // label12
+            // namHocLabel
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(138, 18);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(87, 20);
-            this.label12.TabIndex = 7;
-            this.label12.Text = "2018-2019";
+            this.namHocLabel.AutoSize = true;
+            this.namHocLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namHocLabel.Location = new System.Drawing.Point(138, 18);
+            this.namHocLabel.Name = "namHocLabel";
+            this.namHocLabel.Size = new System.Drawing.Size(87, 20);
+            this.namHocLabel.TabIndex = 7;
+            this.namHocLabel.Text = "2018-2019";
             // 
             // label3
             // 
@@ -449,9 +449,9 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
         private System.Windows.Forms.Label label3;
         private Utility.SPanel sPanel5;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label tenLabel;
+        private System.Windows.Forms.Label IDLabel;
+        private System.Windows.Forms.Label namHocLabel;
         private Utility.SPanel sPanel4;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button huyBtn;
@@ -461,13 +461,13 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
         private System.Windows.Forms.Label label10;
         private Utility.SPanel sPanel6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox lopTextBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox truongHocTextBox;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox thanhTichComboBox;
         private System.Windows.Forms.Button upAnhBtn;
         private System.Windows.Forms.Label label20;
     }

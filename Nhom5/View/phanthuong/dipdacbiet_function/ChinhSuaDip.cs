@@ -1,5 +1,4 @@
-﻿using Nhom5.Utility;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,12 +10,11 @@ using System.Windows.Forms;
 
 namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
 {
-    public partial class ThemMoiHoKhau : FunctionForm
+    public partial class ChinhSuaDip : FunctionForm
     {
-        public ThemMoiHoKhau()
+        public ChinhSuaDip()
         {
             InitializeComponent();
-            
         }
     }
 }

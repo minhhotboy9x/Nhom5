@@ -33,10 +33,10 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.lblTitle = new System.Windows.Forms.Label();
             this.sPanel9 = new Nhom5.Utility.SPanel();
             this.sPanel10 = new Nhom5.Utility.SPanel();
-            this.label12 = new System.Windows.Forms.Label();
+            this.tenLabel = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.sPanel11 = new Nhom5.Utility.SPanel();
-            this.label10 = new System.Windows.Forms.Label();
+            this.maChuHoLabel = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dongBtn = new System.Windows.Forms.Button();
@@ -80,7 +80,7 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             // 
             // sPanel10
             // 
-            this.sPanel10.Controls.Add(this.label12);
+            this.sPanel10.Controls.Add(this.tenLabel);
             this.sPanel10.Controls.Add(this.label9);
             this.sPanel10.Dock = System.Windows.Forms.DockStyle.Right;
             this.sPanel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -89,15 +89,15 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.sPanel10.Size = new System.Drawing.Size(456, 57);
             this.sPanel10.TabIndex = 11;
             // 
-            // label12
+            // tenLabel
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(144, 18);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(220, 24);
-            this.label12.TabIndex = 6;
-            this.label12.Text = "Nguyễn Quốc Nhật Minh";
+            this.tenLabel.AutoSize = true;
+            this.tenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tenLabel.Location = new System.Drawing.Point(144, 18);
+            this.tenLabel.Name = "tenLabel";
+            this.tenLabel.Size = new System.Drawing.Size(220, 24);
+            this.tenLabel.TabIndex = 6;
+            this.tenLabel.Text = "Nguyễn Quốc Nhật Minh";
             // 
             // label9
             // 
@@ -111,7 +111,7 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             // 
             // sPanel11
             // 
-            this.sPanel11.Controls.Add(this.label10);
+            this.sPanel11.Controls.Add(this.maChuHoLabel);
             this.sPanel11.Controls.Add(this.label11);
             this.sPanel11.Dock = System.Windows.Forms.DockStyle.Left;
             this.sPanel11.Location = new System.Drawing.Point(0, 0);
@@ -119,15 +119,15 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.sPanel11.Size = new System.Drawing.Size(309, 57);
             this.sPanel11.TabIndex = 8;
             // 
-            // label10
+            // maChuHoLabel
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(147, 18);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(25, 24);
-            this.label10.TabIndex = 5;
-            this.label10.Text = "...";
+            this.maChuHoLabel.AutoSize = true;
+            this.maChuHoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maChuHoLabel.Location = new System.Drawing.Point(147, 18);
+            this.maChuHoLabel.Name = "maChuHoLabel";
+            this.maChuHoLabel.Size = new System.Drawing.Size(25, 24);
+            this.maChuHoLabel.TabIndex = 5;
+            this.maChuHoLabel.Text = "...";
             // 
             // label11
             // 
@@ -175,7 +175,7 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.Controls.Add(this.panelTitleBar);
             this.Name = "LichSuChuyenDi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LichSuChuyenDi";
+            this.Text = "Lịch sử chuyển đi";
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
             this.sPanel9.ResumeLayout(false);
@@ -194,10 +194,10 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
         private System.Windows.Forms.Label lblTitle;
         private Utility.SPanel sPanel9;
         private Utility.SPanel sPanel10;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label tenLabel;
         private System.Windows.Forms.Label label9;
         private Utility.SPanel sPanel11;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label maChuHoLabel;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button dongBtn;
