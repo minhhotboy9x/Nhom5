@@ -404,6 +404,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="View\login_signup\login_signup.cd" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

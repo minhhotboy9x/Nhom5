@@ -1,7 +1,7 @@
 ﻿
 namespace Nhom5.View.login_signup
 {
-    partial class forgetPassUC
+    partial class ForgetPassUC
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Nhom5.View.login_signup
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(forgetPassUC));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ForgetPassUC));
             this.forgetLabel = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();

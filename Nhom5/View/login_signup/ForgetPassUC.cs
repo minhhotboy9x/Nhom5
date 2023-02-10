@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Nhom5.View.login_signup
 {
-    public partial class forgetPassUC : UserControl
+    public partial class ForgetPassUC : UserControl
     {
-        public forgetPassUC()
+        public ForgetPassUC()
         {
             InitializeComponent();
             userNameText.LostFocus += UserNameText_LostFocus;

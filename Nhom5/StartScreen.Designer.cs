@@ -32,7 +32,7 @@ namespace Nhom5
             this.signUpUC1 = new Nhom5.View.login_signup.SignUpUC();
             this.loginUC1 = new Nhom5.View.login_signup.LoginUC();
             this.resetPassUC1 = new Nhom5.View.login_signup.ResetPassUC();
-            this.forgetPassUC1 = new Nhom5.View.login_signup.forgetPassUC();
+            this.forgetPassUC1 = new Nhom5.View.login_signup.ForgetPassUC();
             this.SuspendLayout();
             // 
             // signUpUC1
@@ -50,7 +50,6 @@ namespace Nhom5
             this.loginUC1.ForeColor = System.Drawing.Color.White;
             this.loginUC1.Location = new System.Drawing.Point(362, 0);
             this.loginUC1.Name = "loginUC1";
-            this.loginUC1.SecondScreen = null;
             this.loginUC1.Size = new System.Drawing.Size(900, 673);
             this.loginUC1.TabIndex = 0;
             // 
@@ -95,7 +94,7 @@ namespace Nhom5
 
         private View.login_signup.LoginUC loginUC1;
         private View.login_signup.SignUpUC signUpUC1;
-        private View.login_signup.forgetPassUC forgetPassUC1;
+        private View.login_signup.ForgetPassUC forgetPassUC1;
         private View.login_signup.ResetPassUC resetPassUC1;
     }
 }

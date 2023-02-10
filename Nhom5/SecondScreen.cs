@@ -124,12 +124,7 @@ namespace Nhom5
             ActivateButton(sender);
             quanLyPhanThuong1.Show();
         }
-        private void thongKeBtn_Click(object sender, EventArgs e)
-        {
-            hideAllUC();
-            ActivateButton(sender);
-        }
-        
+
         #endregion
         private void hideAllUC()
         {
