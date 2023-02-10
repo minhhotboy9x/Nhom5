@@ -1,4 +1,5 @@
-﻿using Nhom5.Utility;
+﻿using Nhom5.Controller.login_signup;
+using Nhom5.Utility;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,6 +21,7 @@ namespace Nhom5.View.login_signup
             userNameText.GotFocus += UserNameText_GotFocus;
             passwordText.LostFocus += PasswordText_LostFocus;
             passwordText.GotFocus += PasswordText_GotFocus;
+            announcementLabel.Hide();
         }
 
         private void PasswordText_GotFocus(object sender, EventArgs e)
@@ -70,7 +72,7 @@ namespace Nhom5.View.login_signup
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            bool ok = true;
+            bool ok = Login_SignUpCtrl.checkTK_MK(userNameText.Text, passwordText.Text); ;
 
             if(ok) // đăng nhập hợp lệ
             {
@@ -79,9 +81,14 @@ namespace Nhom5.View.login_signup
             } 
             else
             {
-
+                announcementLabel.Show();
             }    
 
+        }
+
+        private void LoginUC_VisibleChanged(object sender, EventArgs e)
+        {
+            announcementLabel.Hide();
         }
     }
 }

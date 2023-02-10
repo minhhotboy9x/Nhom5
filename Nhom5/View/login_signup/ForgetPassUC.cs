@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Nhom5.Controller.login_signup;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,7 +22,6 @@ namespace Nhom5.View.login_signup
             passwordText.GotFocus += PasswordText_GotFocus;
             repeatPasswordText.LostFocus += repeatPasswordText_LostFocus;
             repeatPasswordText.GotFocus += repeatPasswordText_GotFocus;
-
         }
 
         private void repeatPasswordText_GotFocus(object sender, EventArgs e)
@@ -70,13 +70,32 @@ namespace Nhom5.View.login_signup
 
         private void signUpButton_Click(object sender, EventArgs e)
         {
-
+            if (passwordText.Text != repeatPasswordText.Text)
+            {
+                validateLabel.Show();
+            }
+            if (Login_SignUpCtrl.checkExistTK(userNameText.Text))
+            {
+                Login_SignUpCtrl.changeMK(userNameText.Text, passwordText.Text);
+                MessageBox.Show("Đổi mật khẩu thành công");
+                backLabel_Click(sender, e);  
+            }
+            else
+            {
+                announcementLabel.Show();
+            }    
         }
 
         private void backLabel_Click(object sender, EventArgs e)
         {
             var startScreenForm = this.Parent as StartScreen;
             startScreenForm.changeToLogin();
+        }
+
+        private void ForgetPassUC_VisibleChanged(object sender, EventArgs e)
+        {
+            validateLabel.Hide();
+            announcementLabel.Hide();
         }
     }
 }

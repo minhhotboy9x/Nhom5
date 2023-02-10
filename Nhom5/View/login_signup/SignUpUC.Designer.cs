@@ -264,7 +264,7 @@ namespace Nhom5.View.login_signup
             this.repeatPasswordText.Name = "repeatPasswordText";
             this.repeatPasswordText.Size = new System.Drawing.Size(300, 27);
             this.repeatPasswordText.TabIndex = 3;
-            this.repeatPasswordText.Text = "Enter password";
+            this.repeatPasswordText.Text = "Repeat password";
             // 
             // repeatPasswordLabel
             // 
@@ -335,6 +335,7 @@ namespace Nhom5.View.login_signup
             this.Controls.Add(this.panel4);
             this.Name = "SignUpUC";
             this.Size = new System.Drawing.Size(900, 720);
+            this.VisibleChanged += new System.EventHandler(this.SignUpUC_VisibleChanged);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

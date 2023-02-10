@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Nhom5.Controller.hokhau_nhankhau.homeUC;
 
 namespace Nhom5.View.hokhau_nhankhau
 {
@@ -22,6 +23,10 @@ namespace Nhom5.View.hokhau_nhankhau
         {
             if(this.Visible)
             {
+                nhanKhauLabel.Text = HomeUCCtrl.layNhanKhau().ToString();
+                hoKhauLabel.Text = HomeUCCtrl.layHoKhau().ToString();
+                tamTruLabel.Text = HomeUCCtrl.layTamTru().ToString();
+                tamVangLabel.Text = HomeUCCtrl.layTamVang().ToString();
                 foreach (Control panel in this.Controls)
                 {
                     if (panel.GetType() == typeof(SPanel))

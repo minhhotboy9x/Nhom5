@@ -275,6 +275,7 @@ namespace Nhom5.View.login_signup
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "LoginUC";
             this.Size = new System.Drawing.Size(900, 720);
+            this.VisibleChanged += new System.EventHandler(this.LoginUC_VisibleChanged);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

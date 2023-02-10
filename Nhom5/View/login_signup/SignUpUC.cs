@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Nhom5.Controller.login_signup;
 
 namespace Nhom5.View.login_signup
 {
@@ -26,7 +27,7 @@ namespace Nhom5.View.login_signup
 
         private void repeatPasswordText_GotFocus(object sender, EventArgs e)
         {
-            if (this.repeatPasswordText.Text == "Enter password")
+            if (this.repeatPasswordText.Text == "Repeat password")
                 this.repeatPasswordText.Text = "";
             repeatPasswordText.PasswordChar = '\u25CF';
         }
@@ -35,7 +36,7 @@ namespace Nhom5.View.login_signup
         {
             if (this.repeatPasswordText.Text == "")
             {
-                this.repeatPasswordText.Text = "Enter password";
+                this.repeatPasswordText.Text = "Repeat password";
                 repeatPasswordText.PasswordChar = '\0';
             }
         }
@@ -70,22 +71,26 @@ namespace Nhom5.View.login_signup
 
         private void signUpButton_Click(object sender, EventArgs e)
         {
-            // nếu sign up đúng quy trình
-            bool ok = true;
-
-
-            if(ok)
-            {
-                // thêm tài khoản mật khẩu vào csdl
-
-                // chuyển đến màn hình login
-                var startScreenForm = this.Parent as StartScreen;
-                startScreenForm.changeToLogin();
-                //
+            if (!Login_SignUpCtrl.checkExistTK(userNameText.Text))
+            {  
+                if(passwordText.Text != repeatPasswordText.Text)
+                {
+                    validateLabel.Show();
+                }
+                else 
+                {
+                    // thêm tài khoản mật khẩu vào csdl
+                    Login_SignUpCtrl.addTK_MK(userNameText.Text, passwordText.Text);
+                    // chuyển đến màn hình login
+                    var startScreenForm = this.Parent as StartScreen;
+                    startScreenForm.changeToLogin();
+                    //
+                    MessageBox.Show("Đăng kí thành công");
+                }
             }
             else
             {
-
+                announcementLabel.Show();
             }    
         }
 
@@ -93,6 +98,12 @@ namespace Nhom5.View.login_signup
         {
             var startScreenForm = this.Parent as StartScreen;
             startScreenForm.changeToLogin();
+        }
+
+        private void SignUpUC_VisibleChanged(object sender, EventArgs e)
+        {
+            validateLabel.Hide();
+            announcementLabel.Hide();
         }
     }
 }

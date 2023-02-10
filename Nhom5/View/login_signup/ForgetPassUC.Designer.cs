@@ -321,7 +321,7 @@ namespace Nhom5.View.login_signup
     "ồm các kí tự chữ và số không dấu với độ dài không quá 20 kí tự.\r\n";
             this.announcementLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // forgetPassUC
+            // ForgetPassUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -333,8 +333,9 @@ namespace Nhom5.View.login_signup
             this.Controls.Add(this.forgetLabel);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
-            this.Name = "forgetPassUC";
+            this.Name = "ForgetPassUC";
             this.Size = new System.Drawing.Size(900, 720);
+            this.VisibleChanged += new System.EventHandler(this.ForgetPassUC_VisibleChanged);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

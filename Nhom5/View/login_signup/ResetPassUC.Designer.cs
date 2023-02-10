@@ -296,7 +296,7 @@ namespace Nhom5.View.login_signup
             this.signUpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.signUpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUpButton.ForeColor = System.Drawing.Color.White;
-            this.signUpButton.Location = new System.Drawing.Point(325, 549);
+            this.signUpButton.Location = new System.Drawing.Point(322, 562);
             this.signUpButton.Name = "signUpButton";
             this.signUpButton.Size = new System.Drawing.Size(251, 59);
             this.signUpButton.TabIndex = 15;
@@ -385,12 +385,13 @@ namespace Nhom5.View.login_signup
             this.announcementLabel.AutoSize = true;
             this.announcementLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.announcementLabel.ForeColor = System.Drawing.Color.Firebrick;
-            this.announcementLabel.Location = new System.Drawing.Point(207, 476);
+            this.announcementLabel.Location = new System.Drawing.Point(207, 464);
             this.announcementLabel.Name = "announcementLabel";
-            this.announcementLabel.Size = new System.Drawing.Size(487, 60);
+            this.announcementLabel.Size = new System.Drawing.Size(487, 80);
             this.announcementLabel.TabIndex = 17;
-            this.announcementLabel.Text = "Username đã tồn tại hoặc không hợp lệ.\r\nCác kí tự của username và password chỉ\r\ng" +
-    "ồm các kí tự chữ và số không dấu với độ dài không quá 20 kí tự.\r\n";
+            this.announcementLabel.Text = "Username có thể không hợp lệ.\r\nOld password có thể không chính xác.\r\nCác kí tự củ" +
+    "a username và password chỉ\r\ngồm các kí tự chữ và số không dấu với độ dài không q" +
+    "uá 20 kí tự.\r\n";
             this.announcementLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ResetPassUC
@@ -408,6 +409,7 @@ namespace Nhom5.View.login_signup
             this.Controls.Add(this.panel4);
             this.Name = "ResetPassUC";
             this.Size = new System.Drawing.Size(900, 720);
+            this.VisibleChanged += new System.EventHandler(this.ResetPassUC_VisibleChanged);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
