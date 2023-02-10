@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Nhom5.View.login
+namespace Nhom5.View.login_signup
 {
     public partial class LoginUC : UserControl
     {

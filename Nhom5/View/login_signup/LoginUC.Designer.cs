@@ -1,5 +1,5 @@
 ﻿
-namespace Nhom5.View.login
+namespace Nhom5.View.login_signup
 {
     partial class LoginUC
     {

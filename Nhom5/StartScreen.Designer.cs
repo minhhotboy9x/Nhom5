@@ -30,7 +30,7 @@ namespace Nhom5
         private void InitializeComponent()
         {
             this.signUpUC1 = new Nhom5.View.login_signup.SignUpUC();
-            this.loginUC1 = new Nhom5.View.login.LoginUC();
+            this.loginUC1 = new Nhom5.View.login_signup.LoginUC();
             this.resetPassUC1 = new Nhom5.View.login_signup.ResetPassUC();
             this.forgetPassUC1 = new Nhom5.View.login_signup.forgetPassUC();
             this.SuspendLayout();
@@ -92,7 +92,7 @@ namespace Nhom5
 
         #endregion
 
-        private View.login.LoginUC loginUC1;
+        private View.login_signup.LoginUC loginUC1;
         private View.login_signup.SignUpUC signUpUC1;
         private View.login_signup.forgetPassUC forgetPassUC1;
         private View.login_signup.ResetPassUC resetPassUC1;
