@@ -1,4 +1,5 @@
-﻿using Nhom5.Utility;
+﻿using Nhom5.Controller.hokhau_nhankhau.nhankhau;
+using Nhom5.Utility;
 using Nhom5.View.hokhau_nhankhau.nhankhau_function;
 using System;
 using System.Collections.Generic;
@@ -25,6 +26,7 @@ namespace Nhom5.View.hokhau_nhankhau
             AutoChangeColor.changeColorScreen2(sender, e, new List<String>() {"Button"});
             AutoChangeColor.changeSPanelScreen2(sender, searchSPanel);
             AutoChangeColor.changeSPanelScreen2(sender, reLoadSPanel);
+
         }
         private void themMoiBtn_EnabledChanged(object sender, EventArgs e)
         {
@@ -35,7 +37,7 @@ namespace Nhom5.View.hokhau_nhankhau
         #region SPanel click
         private void searchSPanel_Click(object sender, EventArgs e)
         {
-             Console.WriteLine("click");
+            NhanKhauUCCtrl.traCuuNhanKhau(dataGridView1, featureSearchBox.SelectedItem.ToString(), searchTextBox1.Text);
         }
         private void searchPic_Click(object sender, EventArgs e)
         {
@@ -45,7 +47,8 @@ namespace Nhom5.View.hokhau_nhankhau
         }
         private void reLoadSPanel_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("click");
+            //Console.WriteLine("click");
+            NhanKhauUCCtrl.loadNhanKhau(this.dataGridView1);
         }
 
         private void reLoadPic_Click(object sender, EventArgs e)
@@ -53,6 +56,7 @@ namespace Nhom5.View.hokhau_nhankhau
             PictureBox pic = sender as PictureBox;
             SPanel sPanel = pic.Parent as SPanel;
             reLoadSPanel_Click(sPanel, e);
+
         }
         #endregion
         private void themMoiBtn_Click(object sender, EventArgs e)
@@ -107,6 +111,10 @@ namespace Nhom5.View.hokhau_nhankhau
             dKKhaiTu.getFormRef(startScreenForm);
             OpenScreen.openAnotherScreen(startScreenForm, dKKhaiTu, 1);
         }
-        
+
+        private void NhanKhauUC_Load(object sender, EventArgs e)
+        {
+            NhanKhauUCCtrl.loadNhanKhau(this.dataGridView1);
+        }
     }
 }

@@ -18,7 +18,8 @@ namespace Nhom5
                 SetProcessDPIAware();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StartScreen());
+            Application.Run(new SecondScreen());
+            //Application.Run(new StartScreen());
         }
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern bool SetProcessDPIAware();

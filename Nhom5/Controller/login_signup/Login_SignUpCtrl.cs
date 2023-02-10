@@ -10,7 +10,6 @@ namespace Nhom5.Controller.login_signup
     {
         public static bool checkTK_MK(String tk, String mk)
         {
-            bool ok = false;
             nguoi_dung tk1 = dbContext.db.nguoi_dung
                 .FirstOrDefault(p => tk == p.taiKhoan);
             if(tk1 != null)

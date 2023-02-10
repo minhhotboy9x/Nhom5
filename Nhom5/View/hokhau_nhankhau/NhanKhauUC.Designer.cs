@@ -53,9 +53,13 @@ namespace Nhom5.View.hokhau_nhankhau
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(46, 130);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(749, 421);
@@ -227,7 +231,11 @@ namespace Nhom5.View.hokhau_nhankhau
             this.featureSearchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.featureSearchBox.FormattingEnabled = true;
             this.featureSearchBox.Items.AddRange(new object[] {
-            "(none)"});
+            "ID nhân khẩu",
+            "Họ tên",
+            "Giới tính",
+            "CCCD/CMND",
+            "Trạng thái"});
             this.featureSearchBox.Location = new System.Drawing.Point(265, 0);
             this.featureSearchBox.Name = "featureSearchBox";
             this.featureSearchBox.Size = new System.Drawing.Size(130, 26);
@@ -250,6 +258,7 @@ namespace Nhom5.View.hokhau_nhankhau
             this.Controls.Add(this.themMoiBtn);
             this.Name = "NhanKhauUC";
             this.Size = new System.Drawing.Size(1048, 595);
+            this.Load += new System.EventHandler(this.NhanKhauUC_Load);
             this.VisibleChanged += new System.EventHandler(this.NhanKhauUC_VisibleChanged);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NhanKhauUC_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
