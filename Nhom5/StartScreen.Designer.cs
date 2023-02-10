@@ -50,6 +50,7 @@ namespace Nhom5
             this.loginUC1.ForeColor = System.Drawing.Color.White;
             this.loginUC1.Location = new System.Drawing.Point(362, 0);
             this.loginUC1.Name = "loginUC1";
+            this.loginUC1.SecondScreen = null;
             this.loginUC1.Size = new System.Drawing.Size(900, 673);
             this.loginUC1.TabIndex = 0;
             // 
@@ -75,10 +76,10 @@ namespace Nhom5
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1262, 673);
-            this.Controls.Add(this.signUpUC1);
-            this.Controls.Add(this.loginUC1);
             this.Controls.Add(this.resetPassUC1);
             this.Controls.Add(this.forgetPassUC1);
+            this.Controls.Add(this.signUpUC1);
+            this.Controls.Add(this.loginUC1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "StartScreen";

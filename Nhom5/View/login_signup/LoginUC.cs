@@ -22,6 +22,14 @@ namespace Nhom5.View.login_signup
             passwordText.GotFocus += PasswordText_GotFocus;
         }
 
+        public SecondScreen SecondScreen
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void PasswordText_GotFocus(object sender, EventArgs e)
         {
             if (this.passwordText.Text == "Enter password")
