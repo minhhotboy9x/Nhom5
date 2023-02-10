@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9b43ba3d6c8742529bb35b9d1c826d81" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="nmcnpm_teamAKAMModel.chi_tiet_dip_dac_biet" Width="1.5" PointX="6" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="nmcnpm_teamAKAMModel.chi_tiet_dip_hoc_sinh_gioi" Width="1.5" PointX="6.5" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="nmcnpm_teamAKAMModel.chuyen_ho_khau" Width="1.5" PointX="11.75" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="nmcnpm_teamAKAMModel.chuyen_nhan_khau" Width="1.5" PointX="9" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="nmcnpm_teamAKAMModel.dip_dac_biet" Width="1.5" PointX="3.625" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="nmcnpm_teamAKAMModel.dip_hoc_sinh_gioi" Width="1.5" PointX="3.125" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="nmcnpm_teamAKAMModel.ho_khau" Width="1.5" PointX="11.5" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nmcnpm_teamAKAMModel.ho_khau_nhan_khau" Width="1.5" PointX="12.25" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="nmcnpm_teamAKAMModel.khai_tu" Width="1.5" PointX="5" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="nmcnpm_teamAKAMModel.nguoi_dung" Width="1.5" PointX="8.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="nmcnpm_teamAKAMModel.nhan_khau" Width="1.5" PointX="8.5" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="nmcnpm_teamAKAMModel.sysdiagram" Width="1.5" PointX="6.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="nmcnpm_teamAKAMModel.tam_tru" Width="1.5" PointX="7.875" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="nmcnpm_teamAKAMModel.tam_vang" Width="1.5" PointX="16" PointY="18.75" IsExpanded="true" />
+        <AssociationConnector Association="nmcnpm_teamAKAMModel.FK_chi_tiet_dip_dac_biet_dip_dac_biet" ManuallyRouted="false" />
+        <AssociationConnector Association="nmcnpm_teamAKAMModel.FK_chi_tiet_dip_dac_biet_nhan_khau" ManuallyRouted="false" />
+        <AssociationConnector Association="nmcnpm_teamAKAMModel.FK_chi_tiet_dip_hoc_sinh_gioi" ManuallyRouted="false" />
+        <AssociationConnector Association="nmcnpm_teamAKAMModel.FK_chi_tiet_dip_hoc_sinh_gioi_dip_hoc_sinh_gioi" ManuallyRouted="false" />
+        <AssociationConnector Association="nmcnpm_teamAKAMModel.FK__chuyen_ho__idHoK__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="nmcnpm_teamAKAMModel.FK_chuyen_nhan_khau_nhan_khau" ManuallyRouted="false" />
+        <AssociationConnector Association="nmcnpm_teamAKAMModel.FK_ho_khau_nhan_khau" ManuallyRouted="false" />
+        <AssociationConnector Association="nmcnpm_teamAKAMModel.KN" ManuallyRouted="false" />
+        <AssociationConnector Association="nmcnpm_teamAKAMModel.KN2" ManuallyRouted="false" />
+        <AssociationConnector Association="nmcnpm_teamAKAMModel.FK_khai_tu_nguoi_khai_nhan_khau" ManuallyRouted="false" />
+        <AssociationConnector Association="nmcnpm_teamAKAMModel.FK_khai_tu_nguoi_mat_nhan_khau" ManuallyRouted="false" />
+        <AssociationConnector Association="nmcnpm_teamAKAMModel.FK_khai_tu_nguoi_mat_nhan_khau_2" ManuallyRouted="false" />
+        <AssociationConnector Association="nmcnpm_teamAKAMModel.FK_tam_tru_nhan_khau" ManuallyRouted="false" />
+        <AssociationConnector Association="nmcnpm_teamAKAMModel.FK_tam_vang_nhan_khau" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
