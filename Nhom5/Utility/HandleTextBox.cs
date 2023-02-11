@@ -22,6 +22,7 @@ namespace Nhom5.Utility
             }    
             
         }
+
         private const string NotAllowed = @":*!^?_;,.><@{}[]#&()'/|*+$%~\`";
         public static void keyPress(object sender, KeyPressEventArgs e)
         {
@@ -29,6 +30,19 @@ namespace Nhom5.Utility
             {
                 e.Handled = true;
             }    
+        }
+
+        public static void xoaTextBox(Control sender)
+        {
+            if (sender is TextBox)
+            {
+                sender.Text = "";
+            }
+            else if (sender.Controls.Count != 0)
+                foreach (Control control in sender.Controls)
+                {
+                    xoaTextBox(control);
+                }
         }
     }
 }

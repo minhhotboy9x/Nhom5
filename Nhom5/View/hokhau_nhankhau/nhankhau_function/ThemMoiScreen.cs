@@ -1,4 +1,5 @@
 ﻿using Nhom5.Controller.hokhau_nhankhau.nhankhau;
+using Nhom5.Utility;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,21 +19,10 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             InitializeComponent();
             gioiTinhComboBox.SelectedIndex = 0;
         }
-        private void xoaTextBox(Control sender)
-        {
-            if (sender is TextBox)
-            {
-                sender.Text = "";
-            }
-            else if (sender.Controls.Count != 0)
-                foreach (Control control in sender.Controls)
-                {
-                    xoaTextBox(control);
-                }
-        }
+        
         private void huyBtn_Click(object sender, EventArgs e)
         {
-            xoaTextBox(this);
+            HandleTextBox.xoaTextBox(this);
         }
 
         private void xacNhanBtn_Click(object sender, EventArgs e)

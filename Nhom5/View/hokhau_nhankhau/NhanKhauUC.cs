@@ -66,15 +66,24 @@ namespace Nhom5.View.hokhau_nhankhau
             themMoiScreen.getFormRef(startScreenForm);
             OpenScreen.openAnotherScreen(startScreenForm, themMoiScreen, 1);
         }
-        
+
         private void xemChiTietBtn_Click(object sender, EventArgs e)
         {
-            var startScreenForm = this.Parent as SecondScreen;
-            XemChiTiet xemChiTietScreen = new XemChiTiet();
-            xemChiTietScreen.getFormRef(startScreenForm);
-            OpenScreen.openAnotherScreen(startScreenForm, xemChiTietScreen, 1);
-        }
 
+            XemChiTiet xemChiTietScreen = new XemChiTiet();
+            OpenScreen.openFunctionForm(this, xemChiTietScreen, 1);
+            int id = 0;
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                id = Int32.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+            }
+            else
+            {
+                id = Int32.Parse(dataGridView1.SelectedCells[0].OwningRow.Cells[0].Value.ToString());
+                //Console.WriteLine(id);
+            }
+            NhanKhauUCCtrl.xemNhanKhau(id);
+        }
         private void NhanKhauUC_MouseDown(object sender, MouseEventArgs e)
         {
             this.ActiveControl = null; 

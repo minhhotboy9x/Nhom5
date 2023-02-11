@@ -12,11 +12,14 @@ namespace Nhom5.Controller.hokhau_nhankhau.nhankhau
 {
     public static class NhanKhauUCCtrl
     {
-        public static void loadNhanKhau(DataGridView dtview)
+        public static async void loadNhanKhau(DataGridView dtview)
         {
-            dtview.DataSource =  dbContext.db.nhan_khau
-                .Select(p => new { p.idNhanKhau, p.hoTen, p.ngaySinh, p.gioiTinh, p.cmnd, p.trangThai })
-                .ToList();
+            dtview.DataSource = await Task.Run(() =>
+            {
+               return dbContext.db.nhan_khau
+               .Select(p => new { p.idNhanKhau, p.hoTen, p.ngaySinh, p.gioiTinh, p.cmnd, p.trangThai })
+               .ToList();
+            });
             dtview.Columns[0].HeaderText = "ID nhân khẩu";
             dtview.Columns[1].HeaderText = "Họ tên";
             dtview.Columns[2].HeaderText = "Ngày sinh";
@@ -30,7 +33,7 @@ namespace Nhom5.Controller.hokhau_nhankhau.nhankhau
             }
         }
 
-        public static void traCuuNhanKhau(DataGridView dtview, String headText, String value)
+        public static async void traCuuNhanKhau(DataGridView dtview, String headText, String value)
         {
             int Index = 0;
             for(int i=0;i<=5;i++)
@@ -43,23 +46,32 @@ namespace Nhom5.Controller.hokhau_nhankhau.nhankhau
             var columnType = dbContext.db.nhan_khau.First().GetType().GetProperty(columnName).PropertyType;
             if (columnType.IsAssignableFrom(typeof(int)))
             {
-                // Sử lý nếu column là kiểu int
-                dtview.DataSource = dbContext.db.nhan_khau
-                .AsQueryable()
-                .Where(string.Format("{0}=@0", columnName), Int32.Parse(value))
-                .Select(p => new { p.idNhanKhau, p.hoTen, p.ngaySinh, p.gioiTinh, p.cmnd, p.trangThai })
-                .ToList();
+                int res = 0;
+                if (int.TryParse(value, out res))
+                {
+                    // Sử lý nếu column là kiểu int
+                    dtview.DataSource = await Task.Run(() =>
+                    {
+                        return dbContext.db.nhan_khau
+                            .AsQueryable()
+                            .Where(string.Format("{0}=@0", columnName), res)
+                            .Select(p => new { p.idNhanKhau, p.hoTen, p.ngaySinh, p.gioiTinh, p.cmnd, p.trangThai })
+                            .ToList();
+                    });
+                }
             }
             else
             {
                 // Sử lý nếu column không phải là kiểu int
-                dtview.DataSource = dbContext.db.nhan_khau
-                .AsQueryable()
-                .Where(string.Format("{0}.Contains(@0)", columnName.ToString()), value.ToString())
-                .Select(p => new { p.idNhanKhau, p.hoTen, p.ngaySinh, p.gioiTinh, p.cmnd, p.trangThai })
-                .ToList();
+                dtview.DataSource = await Task.Run(() =>
+                {
+                    return dbContext.db.nhan_khau
+                        .AsQueryable()
+                        .Where(string.Format("{0}.Contains(@0)", columnName.ToString()), value.ToString())
+                        .Select(p => new { p.idNhanKhau, p.hoTen, p.ngaySinh, p.gioiTinh, p.cmnd, p.trangThai })
+                        .ToList();
+                });
             }
-            //result.Find()
         }
 
         public static bool themNhanKhau(
@@ -122,6 +134,11 @@ namespace Nhom5.Controller.hokhau_nhankhau.nhankhau
                 return false;
             }
             return true;
+        }
+        
+        public static nhan_khau xemNhanKhau(int id)
+        {
+            return null;
         }
     }
 }
