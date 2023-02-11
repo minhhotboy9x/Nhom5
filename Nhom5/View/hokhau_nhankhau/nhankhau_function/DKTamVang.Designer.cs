@@ -34,28 +34,28 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label20 = new System.Windows.Forms.Label();
             this.sPanel2 = new Nhom5.Utility.SPanel();
             this.sPanel7 = new Nhom5.Utility.SPanel();
+            this.lyDoTextBox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.sPanel6 = new Nhom5.Utility.SPanel();
+            this.toDateTime = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.sPanel1 = new Nhom5.Utility.SPanel();
+            this.fromDateTime = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.sPanel4 = new Nhom5.Utility.SPanel();
+            this.noiTamTruTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.sPanel5 = new Nhom5.Utility.SPanel();
+            this.ngaySinhLabel = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.sPanel3 = new Nhom5.Utility.SPanel();
+            this.tenLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.huyBtn = new System.Windows.Forms.Button();
             this.xacNhanBtn = new System.Windows.Forms.Button();
-            this.tenLabel = new System.Windows.Forms.Label();
-            this.ngaySinhLabel = new System.Windows.Forms.Label();
-            this.noiTamTruTextBox = new System.Windows.Forms.TextBox();
-            this.fromDateTime = new System.Windows.Forms.DateTimePicker();
-            this.toDateTime = new System.Windows.Forms.DateTimePicker();
-            this.lyDoTextBox = new System.Windows.Forms.TextBox();
             this.panelTitleBar.SuspendLayout();
             this.sPanel2.SuspendLayout();
             this.sPanel7.SuspendLayout();
@@ -123,6 +123,16 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel7.Size = new System.Drawing.Size(642, 149);
             this.sPanel7.TabIndex = 12;
             // 
+            // lyDoTextBox
+            // 
+            this.lyDoTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lyDoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lyDoTextBox.Location = new System.Drawing.Point(135, 17);
+            this.lyDoTextBox.Multiline = true;
+            this.lyDoTextBox.Name = "lyDoTextBox";
+            this.lyDoTextBox.Size = new System.Drawing.Size(359, 131);
+            this.lyDoTextBox.TabIndex = 6;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -143,6 +153,16 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel6.Name = "sPanel6";
             this.sPanel6.Size = new System.Drawing.Size(642, 57);
             this.sPanel6.TabIndex = 11;
+            // 
+            // toDateTime
+            // 
+            this.toDateTime.CustomFormat = "dd-MM-yyyy";
+            this.toDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toDateTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.toDateTime.Location = new System.Drawing.Point(135, 15);
+            this.toDateTime.Name = "toDateTime";
+            this.toDateTime.Size = new System.Drawing.Size(133, 27);
+            this.toDateTime.TabIndex = 10;
             // 
             // label9
             // 
@@ -177,6 +197,16 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel1.Size = new System.Drawing.Size(642, 57);
             this.sPanel1.TabIndex = 10;
             // 
+            // fromDateTime
+            // 
+            this.fromDateTime.CustomFormat = "dd-MM-yyyy";
+            this.fromDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fromDateTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.fromDateTime.Location = new System.Drawing.Point(135, 15);
+            this.fromDateTime.Name = "fromDateTime";
+            this.fromDateTime.Size = new System.Drawing.Size(133, 27);
+            this.fromDateTime.TabIndex = 10;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -210,6 +240,15 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel4.Size = new System.Drawing.Size(642, 57);
             this.sPanel4.TabIndex = 9;
             // 
+            // noiTamTruTextBox
+            // 
+            this.noiTamTruTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.noiTamTruTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.noiTamTruTextBox.Location = new System.Drawing.Point(135, 17);
+            this.noiTamTruTextBox.Name = "noiTamTruTextBox";
+            this.noiTamTruTextBox.Size = new System.Drawing.Size(359, 27);
+            this.noiTamTruTextBox.TabIndex = 7;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -242,6 +281,16 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel5.Size = new System.Drawing.Size(642, 57);
             this.sPanel5.TabIndex = 9;
             // 
+            // ngaySinhLabel
+            // 
+            this.ngaySinhLabel.AutoSize = true;
+            this.ngaySinhLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ngaySinhLabel.Location = new System.Drawing.Point(131, 18);
+            this.ngaySinhLabel.Name = "ngaySinhLabel";
+            this.ngaySinhLabel.Size = new System.Drawing.Size(92, 24);
+            this.ngaySinhLabel.TabIndex = 11;
+            this.ngaySinhLabel.Text = "30-2-2022";
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -261,6 +310,16 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel3.Name = "sPanel3";
             this.sPanel3.Size = new System.Drawing.Size(642, 57);
             this.sPanel3.TabIndex = 8;
+            // 
+            // tenLabel
+            // 
+            this.tenLabel.AutoSize = true;
+            this.tenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tenLabel.Location = new System.Drawing.Point(131, 18);
+            this.tenLabel.Name = "tenLabel";
+            this.tenLabel.Size = new System.Drawing.Size(220, 24);
+            this.tenLabel.TabIndex = 8;
+            this.tenLabel.Text = "Nguyễn Quốc Nhật Minh";
             // 
             // label3
             // 
@@ -285,6 +344,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.huyBtn.TabIndex = 16;
             this.huyBtn.Text = "Huỷ";
             this.huyBtn.UseVisualStyleBackColor = false;
+            this.huyBtn.Click += new System.EventHandler(this.huyBtn_Click);
             // 
             // xacNhanBtn
             // 
@@ -299,65 +359,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.xacNhanBtn.TabIndex = 15;
             this.xacNhanBtn.Text = "Xác nhận";
             this.xacNhanBtn.UseVisualStyleBackColor = false;
-            // 
-            // tenLabel
-            // 
-            this.tenLabel.AutoSize = true;
-            this.tenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tenLabel.Location = new System.Drawing.Point(131, 18);
-            this.tenLabel.Name = "tenLabel";
-            this.tenLabel.Size = new System.Drawing.Size(220, 24);
-            this.tenLabel.TabIndex = 8;
-            this.tenLabel.Text = "Nguyễn Quốc Nhật Minh";
-            // 
-            // ngaySinhLabel
-            // 
-            this.ngaySinhLabel.AutoSize = true;
-            this.ngaySinhLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ngaySinhLabel.Location = new System.Drawing.Point(131, 18);
-            this.ngaySinhLabel.Name = "ngaySinhLabel";
-            this.ngaySinhLabel.Size = new System.Drawing.Size(92, 24);
-            this.ngaySinhLabel.TabIndex = 11;
-            this.ngaySinhLabel.Text = "30-2-2022";
-            // 
-            // noiTamTruTextBox
-            // 
-            this.noiTamTruTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.noiTamTruTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.noiTamTruTextBox.Location = new System.Drawing.Point(135, 17);
-            this.noiTamTruTextBox.Name = "noiTamTruTextBox";
-            this.noiTamTruTextBox.Size = new System.Drawing.Size(359, 27);
-            this.noiTamTruTextBox.TabIndex = 7;
-            // 
-            // fromDateTime
-            // 
-            this.fromDateTime.CustomFormat = "dd-MM-yyyy";
-            this.fromDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fromDateTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.fromDateTime.Location = new System.Drawing.Point(135, 15);
-            this.fromDateTime.Name = "fromDateTime";
-            this.fromDateTime.Size = new System.Drawing.Size(133, 27);
-            this.fromDateTime.TabIndex = 10;
-            // 
-            // toDateTime
-            // 
-            this.toDateTime.CustomFormat = "dd-MM-yyyy";
-            this.toDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toDateTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.toDateTime.Location = new System.Drawing.Point(135, 15);
-            this.toDateTime.Name = "toDateTime";
-            this.toDateTime.Size = new System.Drawing.Size(133, 27);
-            this.toDateTime.TabIndex = 10;
-            // 
-            // lyDoTextBox
-            // 
-            this.lyDoTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lyDoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lyDoTextBox.Location = new System.Drawing.Point(135, 17);
-            this.lyDoTextBox.Multiline = true;
-            this.lyDoTextBox.Name = "lyDoTextBox";
-            this.lyDoTextBox.Size = new System.Drawing.Size(359, 131);
-            this.lyDoTextBox.TabIndex = 6;
+            this.xacNhanBtn.Click += new System.EventHandler(this.xacNhanBtn_Click);
             // 
             // DKTamVang
             // 

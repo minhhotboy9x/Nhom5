@@ -60,7 +60,6 @@ namespace Nhom5.View.hokhau_nhankhau
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(749, 421);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // themMoiBtn
             // 
@@ -162,7 +161,6 @@ namespace Nhom5.View.hokhau_nhankhau
             this.reLoadSPanel.Size = new System.Drawing.Size(50, 50);
             this.reLoadSPanel.TabIndex = 11;
             this.reLoadSPanel.Click += new System.EventHandler(this.reLoadSPanel_Click);
-            this.reLoadSPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.reLoadSPanel_Paint);
             // 
             // reLoadPic
             // 
@@ -184,7 +182,6 @@ namespace Nhom5.View.hokhau_nhankhau
             this.searchSPanel.Size = new System.Drawing.Size(50, 50);
             this.searchSPanel.TabIndex = 10;
             this.searchSPanel.Click += new System.EventHandler(this.searchSPanel_Click);
-            this.searchSPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.searchSPanel_Paint);
             // 
             // searchPic
             // 
@@ -208,7 +205,6 @@ namespace Nhom5.View.hokhau_nhankhau
             this.sPanel1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.sPanel1.Size = new System.Drawing.Size(397, 29);
             this.sPanel1.TabIndex = 7;
-            this.sPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.sPanel1_Paint);
             // 
             // searchTextBox1
             // 

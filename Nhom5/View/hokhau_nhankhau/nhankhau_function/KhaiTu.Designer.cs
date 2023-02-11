@@ -56,9 +56,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.huyBtn = new System.Windows.Forms.Button();
             this.sPanel1 = new Nhom5.Utility.SPanel();
             this.searchTextBox1 = new Nhom5.Utility.WaterMarkTextBox();
-            this.featureSearchBox = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.sPanel4 = new Nhom5.Utility.SPanel();
             this.sPanel6 = new Nhom5.Utility.SPanel();
             this.cmndLabel = new System.Windows.Forms.Label();
@@ -67,8 +65,11 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.ngaySinhNguoiKhaiBaoLabel = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.sPanel10 = new Nhom5.Utility.SPanel();
+            this.label2 = new System.Windows.Forms.Label();
             this.tenNguoiKhaiBaoLabel = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.searchBtn = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panelTitleBar.SuspendLayout();
             this.sPanel9.SuspendLayout();
             this.sPanel7.SuspendLayout();
@@ -78,11 +79,11 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel5.SuspendLayout();
             this.sPanel3.SuspendLayout();
             this.sPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.sPanel4.SuspendLayout();
             this.sPanel6.SuspendLayout();
             this.sPanel8.SuspendLayout();
             this.sPanel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTitleBar
@@ -341,6 +342,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.xacNhanBtn.TabIndex = 13;
             this.xacNhanBtn.Text = "Xác nhận";
             this.xacNhanBtn.UseVisualStyleBackColor = false;
+            this.xacNhanBtn.Click += new System.EventHandler(this.xacNhanBtn_Click);
             // 
             // huyBtn
             // 
@@ -361,7 +363,6 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel1.BackColor = System.Drawing.Color.White;
             this.sPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sPanel1.Controls.Add(this.searchTextBox1);
-            this.sPanel1.Controls.Add(this.featureSearchBox);
             this.sPanel1.Location = new System.Drawing.Point(57, 318);
             this.sPanel1.Name = "sPanel1";
             this.sPanel1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -376,24 +377,10 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.searchTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchTextBox1.Location = new System.Drawing.Point(10, 4);
             this.searchTextBox1.Name = "searchTextBox1";
-            this.searchTextBox1.Size = new System.Drawing.Size(236, 20);
+            this.searchTextBox1.Size = new System.Drawing.Size(382, 20);
             this.searchTextBox1.TabIndex = 5;
             this.searchTextBox1.WaterMarkColor = System.Drawing.Color.DimGray;
-            this.searchTextBox1.WaterMarkText = "Nhập dữ liệu tra cứu";
-            // 
-            // featureSearchBox
-            // 
-            this.featureSearchBox.Dock = System.Windows.Forms.DockStyle.Right;
-            this.featureSearchBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.featureSearchBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.featureSearchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.featureSearchBox.FormattingEnabled = true;
-            this.featureSearchBox.Items.AddRange(new object[] {
-            "(none)"});
-            this.featureSearchBox.Location = new System.Drawing.Point(265, 0);
-            this.featureSearchBox.Name = "featureSearchBox";
-            this.featureSearchBox.Size = new System.Drawing.Size(130, 26);
-            this.featureSearchBox.TabIndex = 6;
+            this.searchTextBox1.WaterMarkText = "Nhập tên người khai báo";
             // 
             // label5
             // 
@@ -404,16 +391,6 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label5.Size = new System.Drawing.Size(183, 20);
             this.label5.TabIndex = 10;
             this.label5.Text = "Tra cứu người khai báo:";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(57, 353);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(429, 207);
-            this.dataGridView1.TabIndex = 16;
             // 
             // sPanel4
             // 
@@ -441,9 +418,8 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.cmndLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmndLabel.Location = new System.Drawing.Point(144, 18);
             this.cmndLabel.Name = "cmndLabel";
-            this.cmndLabel.Size = new System.Drawing.Size(84, 20);
+            this.cmndLabel.Size = new System.Drawing.Size(0, 20);
             this.cmndLabel.TabIndex = 13;
-            this.cmndLabel.Text = "30-2-2022";
             // 
             // label6
             // 
@@ -471,9 +447,8 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.ngaySinhNguoiKhaiBaoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ngaySinhNguoiKhaiBaoLabel.Location = new System.Drawing.Point(144, 18);
             this.ngaySinhNguoiKhaiBaoLabel.Name = "ngaySinhNguoiKhaiBaoLabel";
-            this.ngaySinhNguoiKhaiBaoLabel.Size = new System.Drawing.Size(84, 20);
+            this.ngaySinhNguoiKhaiBaoLabel.Size = new System.Drawing.Size(0, 20);
             this.ngaySinhNguoiKhaiBaoLabel.TabIndex = 12;
-            this.ngaySinhNguoiKhaiBaoLabel.Text = "30-2-2022";
             // 
             // label13
             // 
@@ -487,6 +462,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             // sPanel10
             // 
+            this.sPanel10.Controls.Add(this.label2);
             this.sPanel10.Controls.Add(this.tenNguoiKhaiBaoLabel);
             this.sPanel10.Controls.Add(this.label14);
             this.sPanel10.Dock = System.Windows.Forms.DockStyle.Top;
@@ -495,15 +471,26 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel10.Size = new System.Drawing.Size(436, 57);
             this.sPanel10.TabIndex = 8;
             // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(386, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(27, 20);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "(*)";
+            // 
             // tenNguoiKhaiBaoLabel
             // 
             this.tenNguoiKhaiBaoLabel.AutoSize = true;
             this.tenNguoiKhaiBaoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tenNguoiKhaiBaoLabel.Location = new System.Drawing.Point(144, 18);
             this.tenNguoiKhaiBaoLabel.Name = "tenNguoiKhaiBaoLabel";
-            this.tenNguoiKhaiBaoLabel.Size = new System.Drawing.Size(49, 20);
+            this.tenNguoiKhaiBaoLabel.Size = new System.Drawing.Size(0, 20);
             this.tenNguoiKhaiBaoLabel.TabIndex = 6;
-            this.tenNguoiKhaiBaoLabel.Text = "Hít le";
             // 
             // label14
             // 
@@ -515,13 +502,45 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label14.TabIndex = 4;
             this.label14.Text = "Người khai báo:";
             // 
+            // searchBtn
+            // 
+            this.searchBtn.BackColor = System.Drawing.Color.Gray;
+            this.searchBtn.BackgroundImage = global::Nhom5.Properties.Resources.icons8_magnifying_glass_64;
+            this.searchBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.searchBtn.FlatAppearance.BorderSize = 0;
+            this.searchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.searchBtn.Location = new System.Drawing.Point(459, 311);
+            this.searchBtn.Name = "searchBtn";
+            this.searchBtn.Size = new System.Drawing.Size(40, 40);
+            this.searchBtn.TabIndex = 23;
+            this.searchBtn.UseVisualStyleBackColor = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(50, 357);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(449, 203);
+            this.dataGridView1.TabIndex = 24;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dataGridView1_DataBindingComplete);
+            // 
             // KhaiTu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1030, 673);
-            this.Controls.Add(this.sPanel4);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.searchBtn);
+            this.Controls.Add(this.sPanel4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.sPanel1);
             this.Controls.Add(this.huyBtn);
@@ -551,7 +570,6 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel3.PerformLayout();
             this.sPanel1.ResumeLayout(false);
             this.sPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.sPanel4.ResumeLayout(false);
             this.sPanel6.ResumeLayout(false);
             this.sPanel6.PerformLayout();
@@ -559,6 +577,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel8.PerformLayout();
             this.sPanel10.ResumeLayout(false);
             this.sPanel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -592,9 +611,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
         private System.Windows.Forms.Label ngaySinhNguoiMatLabel;
         private Utility.SPanel sPanel1;
         private Utility.WaterMarkTextBox searchTextBox1;
-        private System.Windows.Forms.ComboBox featureSearchBox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private Utility.SPanel sPanel4;
         private Utility.SPanel sPanel6;
         private System.Windows.Forms.Label label6;
@@ -606,5 +623,8 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
         private System.Windows.Forms.Label ngaySinhNguoiKhaiBaoLabel;
         private System.Windows.Forms.Label cmndLabel;
         private System.Windows.Forms.Label tenNguoiMatLabel;
+        private System.Windows.Forms.Button searchBtn;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label2;
     }
 }

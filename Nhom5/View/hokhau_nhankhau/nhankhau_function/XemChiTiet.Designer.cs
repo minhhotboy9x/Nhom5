@@ -57,6 +57,9 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.biDanhLabel = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.sPanel2 = new Nhom5.Utility.SPanel();
+            this.sPanel18 = new Nhom5.Utility.SPanel();
+            this.trangThaiLabel = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.sPanel7 = new Nhom5.Utility.SPanel();
             this.danTocLabel = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -91,6 +94,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel15.SuspendLayout();
             this.sPanel16.SuspendLayout();
             this.sPanel2.SuspendLayout();
+            this.sPanel18.SuspendLayout();
             this.sPanel7.SuspendLayout();
             this.sPanel8.SuspendLayout();
             this.sPanel6.SuspendLayout();
@@ -126,7 +130,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             this.sPanel17.Controls.Add(this.noiThuongTruTruocLabel);
             this.sPanel17.Controls.Add(this.label18);
-            this.sPanel17.Location = new System.Drawing.Point(46, 506);
+            this.sPanel17.Location = new System.Drawing.Point(45, 545);
             this.sPanel17.Name = "sPanel17";
             this.sPanel17.Size = new System.Drawing.Size(938, 55);
             this.sPanel17.TabIndex = 14;
@@ -160,7 +164,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel9.Controls.Add(this.sPanel14);
             this.sPanel9.Controls.Add(this.sPanel15);
             this.sPanel9.Controls.Add(this.sPanel16);
-            this.sPanel9.Location = new System.Drawing.Point(548, 101);
+            this.sPanel9.Location = new System.Drawing.Point(547, 81);
             this.sPanel9.Name = "sPanel9";
             this.sPanel9.Size = new System.Drawing.Size(436, 410);
             this.sPanel9.TabIndex = 13;
@@ -377,6 +381,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             // sPanel2
             // 
+            this.sPanel2.Controls.Add(this.sPanel18);
             this.sPanel2.Controls.Add(this.sPanel7);
             this.sPanel2.Controls.Add(this.sPanel8);
             this.sPanel2.Controls.Add(this.sPanel6);
@@ -384,10 +389,40 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel2.Controls.Add(this.sPanel5);
             this.sPanel2.Controls.Add(this.sPanel1);
             this.sPanel2.Controls.Add(this.sPanel3);
-            this.sPanel2.Location = new System.Drawing.Point(46, 101);
+            this.sPanel2.Location = new System.Drawing.Point(45, 81);
             this.sPanel2.Name = "sPanel2";
-            this.sPanel2.Size = new System.Drawing.Size(436, 410);
+            this.sPanel2.Size = new System.Drawing.Size(436, 467);
             this.sPanel2.TabIndex = 12;
+            // 
+            // sPanel18
+            // 
+            this.sPanel18.Controls.Add(this.trangThaiLabel);
+            this.sPanel18.Controls.Add(this.label6);
+            this.sPanel18.Dock = System.Windows.Forms.DockStyle.Top;
+            this.sPanel18.Location = new System.Drawing.Point(0, 399);
+            this.sPanel18.Name = "sPanel18";
+            this.sPanel18.Size = new System.Drawing.Size(436, 57);
+            this.sPanel18.TabIndex = 12;
+            // 
+            // trangThaiLabel
+            // 
+            this.trangThaiLabel.AutoSize = true;
+            this.trangThaiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trangThaiLabel.Location = new System.Drawing.Point(144, 18);
+            this.trangThaiLabel.Name = "trangThaiLabel";
+            this.trangThaiLabel.Size = new System.Drawing.Size(107, 25);
+            this.trangThaiLabel.TabIndex = 12;
+            this.trangThaiLabel.Text = "Thường trú";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(3, 18);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(106, 25);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Trạng thái:";
             // 
             // sPanel7
             // 
@@ -605,7 +640,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(42, 575);
+            this.label2.Location = new System.Drawing.Point(40, 603);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(312, 40);
             this.label2.TabIndex = 15;
@@ -618,7 +653,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.dongBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dongBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dongBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dongBtn.Location = new System.Drawing.Point(448, 594);
+            this.dongBtn.Location = new System.Drawing.Point(448, 636);
             this.dongBtn.Name = "dongBtn";
             this.dongBtn.Size = new System.Drawing.Size(135, 45);
             this.dongBtn.TabIndex = 16;
@@ -630,7 +665,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1030, 673);
+            this.ClientSize = new System.Drawing.Size(1030, 733);
             this.Controls.Add(this.dongBtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.sPanel17);
@@ -662,6 +697,8 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel16.ResumeLayout(false);
             this.sPanel16.PerformLayout();
             this.sPanel2.ResumeLayout(false);
+            this.sPanel18.ResumeLayout(false);
+            this.sPanel18.PerformLayout();
             this.sPanel7.ResumeLayout(false);
             this.sPanel7.PerformLayout();
             this.sPanel8.ResumeLayout(false);
@@ -734,5 +771,8 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
         private System.Windows.Forms.Label quocTichLabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button dongBtn;
+        private Utility.SPanel sPanel18;
+        private System.Windows.Forms.Label trangThaiLabel;
+        private System.Windows.Forms.Label label6;
     }
 }

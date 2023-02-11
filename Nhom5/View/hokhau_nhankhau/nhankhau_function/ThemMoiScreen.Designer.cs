@@ -89,6 +89,8 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label20 = new System.Windows.Forms.Label();
             this.huyBtn = new System.Windows.Forms.Button();
             this.xacNhanBtn = new System.Windows.Forms.Button();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
             this.panelTitleBar.SuspendLayout();
             this.sPanel9.SuspendLayout();
             this.sPanel10.SuspendLayout();
@@ -189,6 +191,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             // sPanel11
             // 
+            this.sPanel11.Controls.Add(this.label22);
             this.sPanel11.Controls.Add(this.chuyenDenDateTime);
             this.sPanel11.Controls.Add(this.label17);
             this.sPanel11.Dock = System.Windows.Forms.DockStyle.Top;
@@ -219,6 +222,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             // sPanel12
             // 
+            this.sPanel12.Controls.Add(this.label24);
             this.sPanel12.Controls.Add(this.ngayCapDateTime);
             this.sPanel12.Controls.Add(this.label19);
             this.sPanel12.Dock = System.Windows.Forms.DockStyle.Top;
@@ -747,6 +751,30 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.xacNhanBtn.UseVisualStyleBackColor = false;
             this.xacNhanBtn.Click += new System.EventHandler(this.xacNhanBtn_Click);
             // 
+            // label22
+            // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Red;
+            this.label22.Location = new System.Drawing.Point(397, 18);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(27, 20);
+            this.label22.TabIndex = 11;
+            this.label22.Text = "(*)";
+            // 
+            // label24
+            // 
+            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Red;
+            this.label24.Location = new System.Drawing.Point(397, 18);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(27, 20);
+            this.label24.TabIndex = 11;
+            this.label24.Text = "(*)";
+            // 
             // ThemMoiScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -865,5 +893,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button huyBtn;
         private System.Windows.Forms.Button xacNhanBtn;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label24;
     }
 }

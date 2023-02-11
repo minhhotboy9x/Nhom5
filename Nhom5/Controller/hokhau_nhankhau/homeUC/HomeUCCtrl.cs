@@ -10,7 +10,9 @@ namespace Nhom5.Controller.hokhau_nhankhau.homeUC
     {
         public static int layNhanKhau()
         {
-            return dbContext.db.nhan_khau.Count();
+            return dbContext.db.nhan_khau.AsQueryable()
+                .Where(p => p.trangThai.ToLower() == "Thường trú".ToLower()
+                || p.trangThai.ToLower() == "Tạm trú".ToLower()).Count();
         }
         public static int layHoKhau()
         {

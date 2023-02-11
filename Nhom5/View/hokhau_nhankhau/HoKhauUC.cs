@@ -92,25 +92,5 @@ namespace Nhom5.View.hokhau_nhankhau
         {
             OpenScreen.openFunctionForm(this, new LichSuChuyenDi(), 1);
         }
-
-        private void reLoadSPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void searchSPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void sPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }

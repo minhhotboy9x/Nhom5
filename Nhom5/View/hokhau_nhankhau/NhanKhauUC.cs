@@ -15,6 +15,7 @@ namespace Nhom5.View.hokhau_nhankhau
 {
     public partial class NhanKhauUC : UserControl
     {
+        bool complete = false;
         public NhanKhauUC()
         {
             InitializeComponent();
@@ -69,9 +70,8 @@ namespace Nhom5.View.hokhau_nhankhau
 
         private void xemChiTietBtn_Click(object sender, EventArgs e)
         {
-
-            XemChiTiet xemChiTietScreen = new XemChiTiet();
-            OpenScreen.openFunctionForm(this, xemChiTietScreen, 1);
+            if (!complete)
+                return;
             int id = 0;
             if (dataGridView1.SelectedRows.Count > 0)
             {
@@ -82,7 +82,9 @@ namespace Nhom5.View.hokhau_nhankhau
                 id = Int32.Parse(dataGridView1.SelectedCells[0].OwningRow.Cells[0].Value.ToString());
                 //Console.WriteLine(id);
             }
-            NhanKhauUCCtrl.xemNhanKhau(id);
+            XemChiTiet xemChiTietScreen = new XemChiTiet();
+            OpenScreen.openFunctionForm(this, xemChiTietScreen, 1);
+            xemChiTietScreen.getNhan_Khau(id);
         }
         private void NhanKhauUC_MouseDown(object sender, MouseEventArgs e)
         {
@@ -91,39 +93,98 @@ namespace Nhom5.View.hokhau_nhankhau
 
         private void chinhSuaBtn_Click(object sender, EventArgs e)
         {
-            var startScreenForm = this.Parent as SecondScreen;
-            ChinhSua chinhSua = new ChinhSua();
-            chinhSua.getFormRef(startScreenForm);
-            OpenScreen.openAnotherScreen(startScreenForm, chinhSua, 1);
+            if (!complete)
+                return;
+            ChinhSua chinhSuaScreen = new ChinhSua();
+            OpenScreen.openFunctionForm(this, chinhSuaScreen, 1);
+            int id = 0;
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                id = Int32.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+            }
+            else
+            {
+                id = Int32.Parse(dataGridView1.SelectedCells[0].OwningRow.Cells[0].Value.ToString());
+                //Console.WriteLine(id);
+            }
+            chinhSuaScreen.getNhan_Khau(id);
         }
 
         private void dKTamVangBtn_Click(object sender, EventArgs e)
         {
-            var startScreenForm = this.Parent as SecondScreen;
-            DKTamVang dKTamVang = new DKTamVang();
-            dKTamVang.getFormRef(startScreenForm);
-            OpenScreen.openAnotherScreen(startScreenForm, dKTamVang, 1);
+            if (!complete)
+                return;
+            DKTamVang tamVangScreen = new DKTamVang();
+            OpenScreen.openFunctionForm(this, tamVangScreen, 1);
+            int id = 0;
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                id = Int32.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+            }
+            else
+            {
+                id = Int32.Parse(dataGridView1.SelectedCells[0].OwningRow.Cells[0].Value.ToString());
+            }
+            tamVangScreen.getNhan_Khau(id);
         }
 
         private void dKTamTruBtn_Click(object sender, EventArgs e)
         {
-            var startScreenForm = this.Parent as SecondScreen;
+            if (!complete)
+                return;
             DKTamTru dKTamTru = new DKTamTru();
-            dKTamTru.getFormRef(startScreenForm);
-            OpenScreen.openAnotherScreen(startScreenForm, dKTamTru, 1);
+            OpenScreen.openFunctionForm(this, dKTamTru, 1);
+            int id = 0;
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                id = Int32.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+            }
+            else
+            {
+                id = Int32.Parse(dataGridView1.SelectedCells[0].OwningRow.Cells[0].Value.ToString());
+            }
+            dKTamTru.getNhan_Khau(id);
         }
 
         private void khaiTuBtn_Click(object sender, EventArgs e)
         {
-            var startScreenForm = this.Parent as SecondScreen;
-            KhaiTu dKKhaiTu = new KhaiTu();
-            dKKhaiTu.getFormRef(startScreenForm);
-            OpenScreen.openAnotherScreen(startScreenForm, dKKhaiTu, 1);
+            if (!complete)
+                return;
+            int id = 0;
+            string trangthai = "";
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                id = Int32.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                trangthai = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+            }
+            else
+            {
+                id = Int32.Parse(dataGridView1.SelectedCells[0].OwningRow.Cells[0].Value.ToString());
+                trangthai = dataGridView1.SelectedCells[0].OwningRow.Cells[5].Value.ToString();
+            }
+            if(trangthai.ToLower()=="Đã qua đời".ToLower())
+            {
+                MessageBox.Show("Nhân khẩu đã được khai tử");
+                return;
+            }    
+            KhaiTu khaiTu = new KhaiTu(); 
+            OpenScreen.openFunctionForm(this, khaiTu, 1);
+            khaiTu.getNhan_Khau(id);
+           
         }
 
         private void NhanKhauUC_Load(object sender, EventArgs e)
         {
             NhanKhauUCCtrl.loadNhanKhau(this.dataGridView1);
+        }
+
+        private void dataGridView1_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            complete = false;
+            if (e.ListChangedType == ListChangedType.Reset)
+            {
+                complete = true;
+            }
         }
     }
 }
