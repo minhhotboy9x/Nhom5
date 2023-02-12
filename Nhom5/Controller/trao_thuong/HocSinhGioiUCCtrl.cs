@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq.Dynamic;
 using System.Linq.Expressions;
 
-namespace Nhom5.Controller.hokhau_nhankhau.traothuong
+namespace Nhom5.Controller.traothuong
 {
     public static class HocSinhGioiUCCtrl
     {

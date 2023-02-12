@@ -1,5 +1,5 @@
 ﻿using Nhom5.Controller;
-using Nhom5.Controller.hokhau_nhankhau.traothuong;
+using Nhom5.Controller.traothuong;
 using Nhom5.Utility;
 using Nhom5.View.hokhau_nhankhau.nhankhau_function;
 using System;

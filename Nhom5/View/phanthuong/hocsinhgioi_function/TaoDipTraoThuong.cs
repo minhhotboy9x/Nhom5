@@ -1,4 +1,4 @@
-﻿using Nhom5.Controller.hokhau_nhankhau.traothuong;
+﻿using Nhom5.Controller.traothuong;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
