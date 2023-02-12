@@ -64,8 +64,8 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.maHoKhauLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dongBtn = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panelTitleBar.SuspendLayout();
             this.sPanel5.SuspendLayout();
             this.sPanel12.SuspendLayout();
@@ -443,16 +443,6 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.dongBtn.UseVisualStyleBackColor = false;
             this.dongBtn.Click += new System.EventHandler(this.dongBtn_Click);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(61, 414);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(534, 225);
-            this.dataGridView1.TabIndex = 6;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -463,13 +453,29 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.label6.TabIndex = 5;
             this.label6.Text = "Nhân khẩu trong hộ khẩu:";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(61, 406);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(510, 234);
+            this.dataGridView1.TabIndex = 18;
+            // 
             // XemHoKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(872, 673);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.dongBtn);
             this.Controls.Add(this.sPanel5);
             this.Controls.Add(this.panelTitleBar);
@@ -545,8 +551,8 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
         private System.Windows.Forms.Label maHoKhauLabel;
         private System.Windows.Forms.Label ngayLabel;
         private System.Windows.Forms.Label quanLabel;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button dongBtn;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

@@ -12,14 +12,11 @@ namespace Nhom5.Controller.hokhau_nhankhau.nhankhau
 {
     public static class NhanKhauUCCtrl
     {
-        public static async void loadNhanKhau(DataGridView dtview)
+        public static void loadNhanKhau(DataGridView dtview)
         {
-            dtview.DataSource = await Task.Run(() =>
-            {
-               return dbContext.db.nhan_khau
+            dtview.DataSource = dbContext.db.nhan_khau
                .Select(p => new { p.idNhanKhau, p.hoTen, p.ngaySinh, p.gioiTinh, p.cmnd, p.trangThai })
                .ToList();
-            });
             dtview.Columns[0].HeaderText = "ID nhân khẩu";
             dtview.Columns[1].HeaderText = "Họ tên";
             dtview.Columns[2].HeaderText = "Ngày sinh";

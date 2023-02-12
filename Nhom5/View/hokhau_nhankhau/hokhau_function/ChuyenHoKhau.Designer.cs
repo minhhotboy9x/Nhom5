@@ -250,9 +250,9 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(3, 18);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(142, 20);
+            this.label13.Size = new System.Drawing.Size(128, 20);
             this.label13.TabIndex = 4;
-            this.label13.Text = "Ngày chuyển đến:";
+            this.label13.Text = "Ngày chuyển đi:";
             // 
             // sPanel13
             // 
@@ -509,6 +509,7 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.huyBtn.TabIndex = 26;
             this.huyBtn.Text = "Huỷ";
             this.huyBtn.UseVisualStyleBackColor = false;
+            this.huyBtn.Click += new System.EventHandler(this.huyBtn_Click);
             // 
             // xacNhanBtn
             // 
@@ -523,6 +524,7 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.xacNhanBtn.TabIndex = 25;
             this.xacNhanBtn.Text = "Xác nhận";
             this.xacNhanBtn.UseVisualStyleBackColor = false;
+            this.xacNhanBtn.Click += new System.EventHandler(this.xacNhanBtn_Click);
             // 
             // ChuyenHoKhau
             // 
@@ -543,6 +545,7 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.Name = "ChuyenHoKhau";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chuyển hộ khẩu";
+            this.Load += new System.EventHandler(this.ChuyenHoKhau_Load);
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
             this.sPanel9.ResumeLayout(false);

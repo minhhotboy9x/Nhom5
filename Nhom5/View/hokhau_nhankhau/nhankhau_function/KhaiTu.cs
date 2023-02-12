@@ -71,5 +71,10 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
                 complete = true;
             }
         }
+
+        private void huyBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

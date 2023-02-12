@@ -38,7 +38,10 @@ namespace Nhom5.View.hokhau_nhankhau
         #region SPanel click
         private void searchSPanel_Click(object sender, EventArgs e)
         {
-            NhanKhauUCCtrl.traCuuNhanKhau(dataGridView1, featureSearchBox.SelectedItem.ToString(), searchTextBox1.Text);
+            if (!complete)
+                return;
+            NhanKhauUCCtrl.traCuuNhanKhau(dataGridView1, 
+                featureSearchBox.SelectedItem.ToString(), searchTextBox1.Text);
         }
         private void searchPic_Click(object sender, EventArgs e)
         {
@@ -46,8 +49,11 @@ namespace Nhom5.View.hokhau_nhankhau
              SPanel sPanel = pic.Parent as SPanel;
              searchSPanel_Click(sPanel, e);
         }
+
         private void reLoadSPanel_Click(object sender, EventArgs e)
         {
+            if (!complete)
+                return;
             //Console.WriteLine("click");
             NhanKhauUCCtrl.loadNhanKhau(this.dataGridView1);
         }
@@ -62,10 +68,10 @@ namespace Nhom5.View.hokhau_nhankhau
         #endregion
         private void themMoiBtn_Click(object sender, EventArgs e)
         {
-            var startScreenForm = this.Parent as SecondScreen;
+            if (!complete)
+                return;
             ThemMoiScreen themMoiScreen = new ThemMoiScreen();
-            themMoiScreen.getFormRef(startScreenForm);
-            OpenScreen.openAnotherScreen(startScreenForm, themMoiScreen, 1);
+            OpenScreen.openFunctionForm(this, themMoiScreen, 1);
         }
 
         private void xemChiTietBtn_Click(object sender, EventArgs e)
@@ -86,6 +92,7 @@ namespace Nhom5.View.hokhau_nhankhau
             OpenScreen.openFunctionForm(this, xemChiTietScreen, 1);
             xemChiTietScreen.getNhan_Khau(id);
         }
+
         private void NhanKhauUC_MouseDown(object sender, MouseEventArgs e)
         {
             this.ActiveControl = null; 

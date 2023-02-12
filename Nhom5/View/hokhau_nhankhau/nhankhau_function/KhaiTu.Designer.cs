@@ -357,6 +357,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.huyBtn.TabIndex = 14;
             this.huyBtn.Text = "Huỷ";
             this.huyBtn.UseVisualStyleBackColor = false;
+            this.huyBtn.Click += new System.EventHandler(this.huyBtn_Click);
             // 
             // sPanel1
             // 
