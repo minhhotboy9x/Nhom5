@@ -38,7 +38,7 @@ namespace Nhom5.View.hokhau_nhankhau
         #region SPanel click
         private void searchSPanel_Click(object sender, EventArgs e)
         {
-            if (!complete)
+            if (!complete || dataGridView1.Rows.Count == 0)
                 return;
             NhanKhauUCCtrl.traCuuNhanKhau(dataGridView1, 
                 featureSearchBox.SelectedItem.ToString(), searchTextBox1.Text);
@@ -52,7 +52,7 @@ namespace Nhom5.View.hokhau_nhankhau
 
         private void reLoadSPanel_Click(object sender, EventArgs e)
         {
-            if (!complete)
+            if (!complete || dataGridView1.Rows.Count == 0)
                 return;
             //Console.WriteLine("click");
             NhanKhauUCCtrl.loadNhanKhau(this.dataGridView1);
@@ -68,7 +68,7 @@ namespace Nhom5.View.hokhau_nhankhau
         #endregion
         private void themMoiBtn_Click(object sender, EventArgs e)
         {
-            if (!complete)
+            if (!complete || dataGridView1.Rows.Count == 0)
                 return;
             ThemMoiScreen themMoiScreen = new ThemMoiScreen();
             OpenScreen.openFunctionForm(this, themMoiScreen, 1);
@@ -76,7 +76,7 @@ namespace Nhom5.View.hokhau_nhankhau
 
         private void xemChiTietBtn_Click(object sender, EventArgs e)
         {
-            if (!complete)
+            if (!complete || dataGridView1.Rows.Count == 0)
                 return;
             int id = 0;
             if (dataGridView1.SelectedRows.Count > 0)
@@ -100,7 +100,7 @@ namespace Nhom5.View.hokhau_nhankhau
 
         private void chinhSuaBtn_Click(object sender, EventArgs e)
         {
-            if (!complete)
+            if (!complete || dataGridView1.Rows.Count == 0)
                 return;
             ChinhSua chinhSuaScreen = new ChinhSua();
             OpenScreen.openFunctionForm(this, chinhSuaScreen, 1);
@@ -119,7 +119,7 @@ namespace Nhom5.View.hokhau_nhankhau
 
         private void dKTamVangBtn_Click(object sender, EventArgs e)
         {
-            if (!complete)
+            if (!complete || dataGridView1.Rows.Count == 0)
                 return;
             DKTamVang tamVangScreen = new DKTamVang();
             OpenScreen.openFunctionForm(this, tamVangScreen, 1);
@@ -137,7 +137,7 @@ namespace Nhom5.View.hokhau_nhankhau
 
         private void dKTamTruBtn_Click(object sender, EventArgs e)
         {
-            if (!complete)
+            if (!complete || dataGridView1.Rows.Count == 0)
                 return;
             DKTamTru dKTamTru = new DKTamTru();
             OpenScreen.openFunctionForm(this, dKTamTru, 1);
@@ -155,7 +155,7 @@ namespace Nhom5.View.hokhau_nhankhau
 
         private void khaiTuBtn_Click(object sender, EventArgs e)
         {
-            if (!complete)
+            if (!complete || dataGridView1.Rows.Count == 0)
                 return;
             int id = 0;
             string trangthai = "";

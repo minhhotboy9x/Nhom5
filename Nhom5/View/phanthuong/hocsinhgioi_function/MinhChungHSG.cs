@@ -1,4 +1,5 @@
-﻿using Nhom5.Utility;
+﻿using Nhom5.Controller.hokhau_nhankhau.traothuong;
+using Nhom5.Utility;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,6 +20,10 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
         }
         Form parent_Form;
         Color color;
+        int idnk;
+        int iddip;
+        int namhoc;
+        Image image = null;
         public void getForm_ColorRef(Form form, Color color)
         {
             this.parent_Form = form;
@@ -42,11 +47,52 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 string selectedFile = openFileDialog.FileName;
-                Image image = Image.FromFile(selectedFile);
+                image = Image.FromFile(selectedFile);
                 // Tiếp tục xử lý tập tin hình ảnh đã chọn
                 //Console.WriteLine(image);
                 
             }
+        }
+
+        public void getHSG(int idnk, int iddip, int namhoc)
+        {
+            this.idnk = idnk;
+            this.iddip = iddip;
+            this.namhoc = namhoc;
+            nhan_khau HSG = HocSinhGioiUCCtrl.xemHSG(idnk);
+            Invoke((MethodInvoker)delegate
+            {
+                namHocLabel.Text = namhoc.ToString();
+                IDLabel.Text = idnk.ToString();
+                tenLabel.Text = HSG.hoTen;
+            });
+
+        }
+
+        private void huyBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void xacNhanBtn_Click(object sender, EventArgs e)
+        {
+            int res = 0;
+            if(truongHocTextBox.Text.Trim()==""|| !Int32.TryParse(lopTextBox.Text, out res)
+                || thanhTichComboBox.SelectedIndex == -1)
+            {
+                MessageBox.Show("Hãy điền đầy đủ thông tin");
+                return;
+            }
+            string minhchung = image != null ? "MC" : "";
+            HocSinhGioiUCCtrl.minhChung_themHSG(
+                iddip,
+                idnk,
+                truongHocTextBox.Text.Trim(),
+                lopTextBox.Text.Trim(),
+                thanhTichComboBox.SelectedIndex+1,
+                minhchung,
+                minhchung!="");
+            this.Close();
         }
     }
 }

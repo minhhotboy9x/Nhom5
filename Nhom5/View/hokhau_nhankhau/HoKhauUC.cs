@@ -72,8 +72,9 @@ namespace Nhom5.View.hokhau_nhankhau
 
         private void xemChiTietBtn_Click(object sender, EventArgs e)
         {
-            if (!complete)
+            if (!complete || dataGridView1.Rows.Count == 0)
                 return;
+
             int idhokhau = 0;
             int idnhankhau = 0;
             if (dataGridView1.SelectedRows.Count > 0)
@@ -95,7 +96,7 @@ namespace Nhom5.View.hokhau_nhankhau
 
         private void chinhSuaBtn_Click(object sender, EventArgs e)
         {
-            if (!complete)
+            if (!complete || dataGridView1.Rows.Count == 0)
                 return;
             int idhokhau = 0;
             int idnhankhau = 0;
@@ -118,7 +119,7 @@ namespace Nhom5.View.hokhau_nhankhau
 
         private void tachHoKhauBtn_Click(object sender, EventArgs e)
         {
-            if (!complete)
+            if (!complete || dataGridView1.Rows.Count == 0)
                 return;
             int idhokhau = 0;
             int idnhankhau = 0;
@@ -141,7 +142,7 @@ namespace Nhom5.View.hokhau_nhankhau
         
         private void chuyenKhauBtn_Click(object sender, EventArgs e)
         {
-            if (!complete)
+            if (!complete || dataGridView1.Rows.Count == 0)
                 return;
             int idhokhau = 0;
             int idnhankhau = 0;
@@ -164,7 +165,7 @@ namespace Nhom5.View.hokhau_nhankhau
 
         private void lichSuBtn_Click(object sender, EventArgs e)
         {
-            if (!complete)
+            if (!complete || dataGridView1.Rows.Count == 0)
                 return;
             int idhokhau = 0;
             int idnhankhau = 0;

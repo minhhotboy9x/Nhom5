@@ -152,6 +152,7 @@
     <Compile Include="Controller\hokhau_nhankhau\hokhau\HoKhauUCCtrl.cs" />
     <Compile Include="Controller\hokhau_nhankhau\homeUC\HomeUCCtrl.cs" />
     <Compile Include="Controller\hokhau_nhankhau\nhankhau\NhanKhauUCCtrl.cs" />
+    <Compile Include="Controller\hokhau_nhankhau\traothuong\HocSinhGioiUCCtrl.cs" />
     <Compile Include="Controller\login_signup\Login_SignUpCtrl.cs" />
     <Compile Include="dip_dac_biet.cs">
       <DependentUpon>Model1.tt</DependentUpon>

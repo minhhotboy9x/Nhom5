@@ -55,7 +55,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.namHocLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.sPanel17 = new Nhom5.Utility.SPanel();
-            this.label9 = new System.Windows.Forms.Label();
+            this.moTaLabel = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.dongBtn = new System.Windows.Forms.Button();
             this.panelTitleBar.SuspendLayout();
@@ -326,22 +326,22 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             // sPanel17
             // 
-            this.sPanel17.Controls.Add(this.label9);
+            this.sPanel17.Controls.Add(this.moTaLabel);
             this.sPanel17.Controls.Add(this.label18);
             this.sPanel17.Location = new System.Drawing.Point(50, 320);
             this.sPanel17.Name = "sPanel17";
             this.sPanel17.Size = new System.Drawing.Size(799, 55);
             this.sPanel17.TabIndex = 11;
             // 
-            // label9
+            // moTaLabel
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(138, 18);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(373, 20);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "Phần quà dành cho những học sinh siêu xuất xắc";
+            this.moTaLabel.AutoSize = true;
+            this.moTaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.moTaLabel.Location = new System.Drawing.Point(138, 18);
+            this.moTaLabel.Name = "moTaLabel";
+            this.moTaLabel.Size = new System.Drawing.Size(373, 20);
+            this.moTaLabel.TabIndex = 5;
+            this.moTaLabel.Text = "Phần quà dành cho những học sinh siêu xuất xắc";
             // 
             // label18
             // 
@@ -366,6 +366,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.dongBtn.TabIndex = 16;
             this.dongBtn.Text = "Đóng";
             this.dongBtn.UseVisualStyleBackColor = false;
+            this.dongBtn.Click += new System.EventHandler(this.dongBtn_Click);
             // 
             // ChiTietPhanThuong
             // 
@@ -436,6 +437,6 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
         private System.Windows.Forms.Label phanQua2Label;
         private System.Windows.Forms.Label phanQua1Label;
         private System.Windows.Forms.Label namHocLabel;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label moTaLabel;
     }
 }

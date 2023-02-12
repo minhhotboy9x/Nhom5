@@ -35,7 +35,6 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.xacNhanBtn = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
             this.upAnhBtn = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.sPanel2 = new Nhom5.Utility.SPanel();
             this.sPanel7 = new Nhom5.Utility.SPanel();
@@ -104,6 +103,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.huyBtn.TabIndex = 18;
             this.huyBtn.Text = "Huỷ";
             this.huyBtn.UseVisualStyleBackColor = false;
+            this.huyBtn.Click += new System.EventHandler(this.huyBtn_Click);
             // 
             // xacNhanBtn
             // 
@@ -118,6 +118,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.xacNhanBtn.TabIndex = 17;
             this.xacNhanBtn.Text = "Xác nhận";
             this.xacNhanBtn.UseVisualStyleBackColor = false;
+            this.xacNhanBtn.Click += new System.EventHandler(this.xacNhanBtn_Click);
             // 
             // label20
             // 
@@ -145,18 +146,6 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.upAnhBtn.Text = "Tải ảnh minh chứng từ máy";
             this.upAnhBtn.UseVisualStyleBackColor = false;
             this.upAnhBtn.Click += new System.EventHandler(this.upAnhBtn_Click);
-            // 
-            // label11
-            // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Red;
-            this.label11.Location = new System.Drawing.Point(439, 447);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(27, 20);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "(*)";
             // 
             // label15
             // 
@@ -197,6 +186,10 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.thanhTichComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.thanhTichComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.thanhTichComboBox.FormattingEnabled = true;
+            this.thanhTichComboBox.Items.AddRange(new object[] {
+            "Đặc biệt",
+            "Giỏi",
+            "Khá"});
             this.thanhTichComboBox.Location = new System.Drawing.Point(133, 15);
             this.thanhTichComboBox.Name = "thanhTichComboBox";
             this.thanhTichComboBox.Size = new System.Drawing.Size(121, 28);
@@ -403,7 +396,6 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(675, 653);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.upAnhBtn);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label15);
@@ -465,7 +457,6 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox truongHocTextBox;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox thanhTichComboBox;
         private System.Windows.Forms.Button upAnhBtn;
