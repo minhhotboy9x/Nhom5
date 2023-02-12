@@ -1,4 +1,5 @@
-﻿using Nhom5.Utility;
+﻿using Nhom5.Controller.trao_thuong;
+using Nhom5.Utility;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,25 +19,32 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
         {
             InitializeComponent();
         }
-
+        int iddip;
         private void dongBtn_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void themMinhChungBtn_Click(object sender, EventArgs e)
+        public void getDipDacBiet(int iddip)
         {
-            
-            MinhChungHSG minhChung = new MinhChungHSG();
-            minhChung.getForm_ColorRef(this, this.themMinhChungBtn.BackColor);
-            void runSecondScreen()
+            this.iddip = iddip;
+            dip_dac_biet dipDB = DipDacBietUCCtrl.xemDipDacBiet(iddip);
+            Invoke((MethodInvoker)delegate
             {
-                Application.Run(minhChung);
-            }
-            Thread th = new Thread(runSecondScreen);
-            th.SetApartmentState(ApartmentState.STA);
-            th.Start();
-            this.Enabled = false;
+                dipLabel.Text = dipDB.ten;
+                namLabel.Text = dipDB.nam.ToString();
+            });
+            DipDacBietUCCtrl.load_DanhSachDip(dataGridView1, iddip);
+        }
+
+        private void reloadBtn_Click(object sender, EventArgs e)
+        {
+            DipDacBietUCCtrl.load_DanhSachDip(dataGridView1, iddip);
+        }
+
+        private void searchBtn_Click(object sender, EventArgs e)
+        {
+            DipDacBietUCCtrl.traCuuDanhSachDip(dataGridView1, featureSearchBox.SelectedItem.ToString(), searchTextBox1.Text, iddip);
         }
     }
 }

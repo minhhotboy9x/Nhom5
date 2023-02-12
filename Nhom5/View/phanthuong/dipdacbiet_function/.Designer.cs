@@ -482,6 +482,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.huyBtn.TabIndex = 16;
             this.huyBtn.Text = "Huỷ";
             this.huyBtn.UseVisualStyleBackColor = false;
+            this.huyBtn.Click += new System.EventHandler(this.huyBtn_Click);
             // 
             // xacNhanBtn
             // 
@@ -496,6 +497,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.xacNhanBtn.TabIndex = 15;
             this.xacNhanBtn.Text = "Xác nhận";
             this.xacNhanBtn.UseVisualStyleBackColor = false;
+            this.xacNhanBtn.Click += new System.EventHandler(this.xacNhanBtn_Click);
             // 
             // TaoDipDacBiet
             // 

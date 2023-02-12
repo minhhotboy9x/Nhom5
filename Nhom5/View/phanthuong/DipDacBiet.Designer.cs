@@ -29,10 +29,11 @@ namespace Nhom5.View.phanthuong
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.chinhSuaBtn = new System.Windows.Forms.Button();
             this.xemChiTietBtn = new System.Windows.Forms.Button();
             this.taoDipBtn = new System.Windows.Forms.Button();
+            this.xemDanhSachBtn = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.reLoadSPanel = new Nhom5.Utility.SPanel();
             this.reLoadPic = new System.Windows.Forms.PictureBox();
             this.searchSPanel = new Nhom5.Utility.SPanel();
@@ -40,7 +41,6 @@ namespace Nhom5.View.phanthuong
             this.sPanel1 = new Nhom5.Utility.SPanel();
             this.searchTextBox1 = new Nhom5.Utility.WaterMarkTextBox();
             this.featureSearchBox = new System.Windows.Forms.ComboBox();
-            this.xemDanhSachBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.reLoadSPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.reLoadPic)).BeginInit();
@@ -48,16 +48,6 @@ namespace Nhom5.View.phanthuong
             ((System.ComponentModel.ISupportInitialize)(this.searchPic)).BeginInit();
             this.sPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(43, 136);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(749, 421);
-            this.dataGridView1.TabIndex = 12;
             // 
             // chinhSuaBtn
             // 
@@ -104,6 +94,36 @@ namespace Nhom5.View.phanthuong
             this.taoDipBtn.UseVisualStyleBackColor = false;
             this.taoDipBtn.Click += new System.EventHandler(this.taoDipBtn_Click);
             // 
+            // xemDanhSachBtn
+            // 
+            this.xemDanhSachBtn.BackColor = System.Drawing.Color.Gray;
+            this.xemDanhSachBtn.FlatAppearance.BorderSize = 0;
+            this.xemDanhSachBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.xemDanhSachBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xemDanhSachBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.xemDanhSachBtn.Location = new System.Drawing.Point(828, 376);
+            this.xemDanhSachBtn.Name = "xemDanhSachBtn";
+            this.xemDanhSachBtn.Size = new System.Drawing.Size(172, 59);
+            this.xemDanhSachBtn.TabIndex = 20;
+            this.xemDanhSachBtn.Text = "Xem danh sách";
+            this.xemDanhSachBtn.UseVisualStyleBackColor = false;
+            this.xemDanhSachBtn.Click += new System.EventHandler(this.xemDanhSachBtn_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(43, 132);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(755, 423);
+            this.dataGridView1.TabIndex = 21;
+            this.dataGridView1.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dataGridView1_DataBindingComplete);
+            // 
             // reLoadSPanel
             // 
             this.reLoadSPanel.Controls.Add(this.reLoadPic);
@@ -112,6 +132,7 @@ namespace Nhom5.View.phanthuong
             this.reLoadSPanel.Name = "reLoadSPanel";
             this.reLoadSPanel.Size = new System.Drawing.Size(50, 50);
             this.reLoadSPanel.TabIndex = 15;
+            this.reLoadSPanel.Click += new System.EventHandler(this.reLoadSPanel_Click);
             // 
             // reLoadPic
             // 
@@ -122,6 +143,7 @@ namespace Nhom5.View.phanthuong
             this.reLoadPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.reLoadPic.TabIndex = 0;
             this.reLoadPic.TabStop = false;
+            this.reLoadPic.Click += new System.EventHandler(this.reLoadPic_Click);
             // 
             // searchSPanel
             // 
@@ -131,6 +153,7 @@ namespace Nhom5.View.phanthuong
             this.searchSPanel.Name = "searchSPanel";
             this.searchSPanel.Size = new System.Drawing.Size(50, 50);
             this.searchSPanel.TabIndex = 14;
+            this.searchSPanel.Click += new System.EventHandler(this.searchSPanel_Click);
             // 
             // searchPic
             // 
@@ -141,6 +164,7 @@ namespace Nhom5.View.phanthuong
             this.searchPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.searchPic.TabIndex = 0;
             this.searchPic.TabStop = false;
+            this.searchPic.Click += new System.EventHandler(this.searchPic_Click);
             // 
             // sPanel1
             // 
@@ -175,31 +199,19 @@ namespace Nhom5.View.phanthuong
             this.featureSearchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.featureSearchBox.FormattingEnabled = true;
             this.featureSearchBox.Items.AddRange(new object[] {
-            "(none)"});
+            "ID dịp",
+            "Tên dịp",
+            "Năm"});
             this.featureSearchBox.Location = new System.Drawing.Point(265, 0);
             this.featureSearchBox.Name = "featureSearchBox";
             this.featureSearchBox.Size = new System.Drawing.Size(130, 26);
             this.featureSearchBox.TabIndex = 6;
             // 
-            // xemDanhSachBtn
-            // 
-            this.xemDanhSachBtn.BackColor = System.Drawing.Color.Gray;
-            this.xemDanhSachBtn.FlatAppearance.BorderSize = 0;
-            this.xemDanhSachBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.xemDanhSachBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xemDanhSachBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.xemDanhSachBtn.Location = new System.Drawing.Point(828, 376);
-            this.xemDanhSachBtn.Name = "xemDanhSachBtn";
-            this.xemDanhSachBtn.Size = new System.Drawing.Size(172, 59);
-            this.xemDanhSachBtn.TabIndex = 20;
-            this.xemDanhSachBtn.Text = "Xem danh sách";
-            this.xemDanhSachBtn.UseVisualStyleBackColor = false;
-            this.xemDanhSachBtn.Click += new System.EventHandler(this.xemDanhSachBtn_Click);
-            // 
             // DipDacBiet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.xemDanhSachBtn);
             this.Controls.Add(this.chinhSuaBtn);
             this.Controls.Add(this.xemChiTietBtn);
@@ -207,9 +219,9 @@ namespace Nhom5.View.phanthuong
             this.Controls.Add(this.reLoadSPanel);
             this.Controls.Add(this.searchSPanel);
             this.Controls.Add(this.sPanel1);
-            this.Controls.Add(this.dataGridView1);
             this.Name = "DipDacBiet";
             this.Size = new System.Drawing.Size(1048, 595);
+            this.Load += new System.EventHandler(this.DipDacBiet_Load);
             this.VisibleChanged += new System.EventHandler(this.DipDacBiet_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.reLoadSPanel.ResumeLayout(false);
@@ -226,7 +238,6 @@ namespace Nhom5.View.phanthuong
         private Utility.SPanel sPanel1;
         private Utility.WaterMarkTextBox searchTextBox1;
         private System.Windows.Forms.ComboBox featureSearchBox;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button chinhSuaBtn;
         private System.Windows.Forms.Button xemChiTietBtn;
         private System.Windows.Forms.Button taoDipBtn;
@@ -235,5 +246,6 @@ namespace Nhom5.View.phanthuong
         private System.Windows.Forms.PictureBox searchPic;
         private Utility.SPanel searchSPanel;
         private System.Windows.Forms.Button xemDanhSachBtn;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

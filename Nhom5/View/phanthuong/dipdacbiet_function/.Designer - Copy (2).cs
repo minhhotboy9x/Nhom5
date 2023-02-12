@@ -55,6 +55,8 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label4 = new System.Windows.Forms.Label();
             this.tenDipTextBox = new System.Windows.Forms.TextBox();
             this.sPanel3 = new Nhom5.Utility.SPanel();
+            this.iDDipTextBox = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.namLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.sPanel9 = new Nhom5.Utility.SPanel();
@@ -156,6 +158,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.huyBtn.TabIndex = 16;
             this.huyBtn.Text = "Huỷ";
             this.huyBtn.UseVisualStyleBackColor = false;
+            this.huyBtn.Click += new System.EventHandler(this.huyBtn_Click);
             // 
             // xacNhanBtn
             // 
@@ -170,6 +173,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.xacNhanBtn.TabIndex = 15;
             this.xacNhanBtn.Text = "Xác nhận";
             this.xacNhanBtn.UseVisualStyleBackColor = false;
+            this.xacNhanBtn.Click += new System.EventHandler(this.xacNhanBtn_Click);
             // 
             // sPanel2
             // 
@@ -350,6 +354,8 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             // sPanel3
             // 
+            this.sPanel3.Controls.Add(this.iDDipTextBox);
+            this.sPanel3.Controls.Add(this.label14);
             this.sPanel3.Controls.Add(this.namLabel);
             this.sPanel3.Controls.Add(this.label3);
             this.sPanel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -358,11 +364,31 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel3.Size = new System.Drawing.Size(555, 57);
             this.sPanel3.TabIndex = 8;
             // 
+            // iDDipTextBox
+            // 
+            this.iDDipTextBox.AutoSize = true;
+            this.iDDipTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iDDipTextBox.Location = new System.Drawing.Point(92, 18);
+            this.iDDipTextBox.Name = "iDDipTextBox";
+            this.iDDipTextBox.Size = new System.Drawing.Size(45, 20);
+            this.iDDipTextBox.TabIndex = 7;
+            this.iDDipTextBox.Text = "2020";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(232, 18);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(49, 20);
+            this.label14.TabIndex = 6;
+            this.label14.Text = "Năm:";
+            // 
             // namLabel
             // 
             this.namLabel.AutoSize = true;
             this.namLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.namLabel.Location = new System.Drawing.Point(95, 18);
+            this.namLabel.Location = new System.Drawing.Point(301, 18);
             this.namLabel.Name = "namLabel";
             this.namLabel.Size = new System.Drawing.Size(45, 20);
             this.namLabel.TabIndex = 5;
@@ -374,9 +400,9 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(3, 18);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 20);
+            this.label3.Size = new System.Drawing.Size(58, 20);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Năm:";
+            this.label3.Text = "ID dịp:";
             // 
             // sPanel9
             // 
@@ -568,5 +594,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
         private Utility.SPanel sPanel13;
         private System.Windows.Forms.Label label12;
         private Utility.WaterMarkTextBox tien1TextBox;
+        private System.Windows.Forms.Label iDDipTextBox;
+        private System.Windows.Forms.Label label14;
     }
 }
