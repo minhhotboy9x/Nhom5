@@ -554,7 +554,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.MaximizeBox = false;
             this.Name = "KhaiTu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ThemMoiScreen";
+            this.Text = "Khai tử";
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
             this.sPanel9.ResumeLayout(false);

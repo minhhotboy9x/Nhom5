@@ -177,6 +177,7 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             this.Controls.Add(this.dongBtn);
             this.Controls.Add(this.sPanel9);
             this.Controls.Add(this.panelTitleBar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "LichSuChuyenDi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lịch sử chuyển đi";

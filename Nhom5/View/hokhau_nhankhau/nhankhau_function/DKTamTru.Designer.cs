@@ -422,7 +422,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "DKTamTru";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DK tạm vắng";
+            this.Text = "DK tạm trú";
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
             this.sPanel2.ResumeLayout(false);
