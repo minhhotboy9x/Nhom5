@@ -431,5 +431,21 @@ namespace Nhom5.Controller.hokhau_nhankhau.hokhau
             dbContext.db.SaveChanges();
             return;
         }
+
+        public static void load_LichSu(DataGridView dtview, int idhokhau)
+        {
+            dtview.Invoke((MethodInvoker)delegate
+            {
+                dtview.DataSource = dbContext.db.chuyen_ho_khau
+                    .Where(p=>p.idHoKhau==idhokhau)
+                    .Select(p => new { p.id, p.ngayChuyenDi, p.noiChuyenDen, p.ghiChu })
+                    .ToList();
+                dtview.Columns[0].HeaderText = "ID";
+                dtview.Columns[1].HeaderText = "Ngày chuyển đi";
+                dtview.Columns[2].HeaderText = "Địa chỉ chuyển đến";
+                dtview.Columns[3].HeaderText = "Ghi chú";
+            });
+            
+        }
     }
 }

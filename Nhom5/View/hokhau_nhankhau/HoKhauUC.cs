@@ -164,7 +164,24 @@ namespace Nhom5.View.hokhau_nhankhau
 
         private void lichSuBtn_Click(object sender, EventArgs e)
         {
-            OpenScreen.openFunctionForm(this, new LichSuChuyenDi(), 1);
+            if (!complete)
+                return;
+            int idhokhau = 0;
+            int idnhankhau = 0;
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                idhokhau = Int32.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                idnhankhau = Int32.Parse(dataGridView1.SelectedRows[0].Cells[1].Value.ToString());
+            }
+            else
+            {
+                idhokhau = Int32.Parse(dataGridView1.SelectedCells[0].OwningRow.Cells[0].Value.ToString());
+                idnhankhau = Int32.Parse(dataGridView1.SelectedCells[0].OwningRow.Cells[1].Value.ToString());
+                //Console.WriteLine(id);
+            }
+            LichSuChuyenDi lichsuHoKhau = new LichSuChuyenDi();
+            OpenScreen.openFunctionForm(this, lichsuHoKhau, 1);
+            lichsuHoKhau.getChu_Ho(idnhankhau);
         }
 
         private void HoKhauUC_Load(object sender, EventArgs e)
