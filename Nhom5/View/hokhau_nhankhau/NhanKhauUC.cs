@@ -105,17 +105,13 @@ namespace Nhom5.View.hokhau_nhankhau
             ChinhSua chinhSuaScreen = new ChinhSua();
             OpenScreen.openFunctionForm(this, chinhSuaScreen, 1);
             int id = 0;
-            string trangthai = "";
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 id = Int32.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
-                trangthai = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
             }
             else
             {
                 id = Int32.Parse(dataGridView1.SelectedCells[0].OwningRow.Cells[0].Value.ToString());
-                trangthai = dataGridView1.SelectedCells[0].OwningRow.Cells[5].Value.ToString();
-                //Console.WriteLine(id);
             }
             chinhSuaScreen.getNhan_Khau(id);
         }
@@ -124,18 +120,19 @@ namespace Nhom5.View.hokhau_nhankhau
         {
             if (!complete || dataGridView1.Rows.Count == 0)
                 return;
-            int id;
+            int id = 0;
             string trangthai = "";
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 id = Int32.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
-                trangthai = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+                if (dataGridView1.SelectedRows[0].Cells[5].Value != null)
+                    trangthai = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
             }
             else
             {
                 id = Int32.Parse(dataGridView1.SelectedCells[0].OwningRow.Cells[0].Value.ToString());
-                trangthai = dataGridView1.SelectedCells[0].OwningRow.Cells[5].Value.ToString();
-                //Console.WriteLine(id);
+                if (dataGridView1.SelectedCells[0].OwningRow.Cells[5].Value != null)
+                    trangthai = dataGridView1.SelectedCells[0].OwningRow.Cells[5].Value.ToString();
             }
             if (trangthai == "Đã qua đời")
             {
@@ -152,21 +149,22 @@ namespace Nhom5.View.hokhau_nhankhau
         {
             if (!complete || dataGridView1.Rows.Count == 0)
                 return;
-            
-            int id;
+
+            int id = 0;
             string trangthai = "";
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 id = Int32.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
-                trangthai = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+                if (dataGridView1.SelectedRows[0].Cells[5].Value != null)
+                    trangthai = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
             }
             else
             {
                 id = Int32.Parse(dataGridView1.SelectedCells[0].OwningRow.Cells[0].Value.ToString());
-                trangthai = dataGridView1.SelectedCells[0].OwningRow.Cells[5].Value.ToString();
-                //Console.WriteLine(id);
+                if (dataGridView1.SelectedCells[0].OwningRow.Cells[5].Value != null)
+                    trangthai = dataGridView1.SelectedCells[0].OwningRow.Cells[5].Value.ToString();
             }
-            if(trangthai == "Đã qua đời")
+            if (trangthai == "Đã qua đời")
             {
                 MessageBox.Show("Nhân khẩu đã qua đời");
                 return;
@@ -185,12 +183,14 @@ namespace Nhom5.View.hokhau_nhankhau
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 id = Int32.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                if(dataGridView1.SelectedRows[0].Cells[5].Value!=null)
                 trangthai = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
             }
             else
             {
                 id = Int32.Parse(dataGridView1.SelectedCells[0].OwningRow.Cells[0].Value.ToString());
-                trangthai = dataGridView1.SelectedCells[0].OwningRow.Cells[5].Value.ToString();
+                if (dataGridView1.SelectedCells[0].OwningRow.Cells[5].Value != null)
+                    trangthai = dataGridView1.SelectedCells[0].OwningRow.Cells[5].Value.ToString();
             }
             if(trangthai.ToLower()=="Đã qua đời".ToLower())
             {
