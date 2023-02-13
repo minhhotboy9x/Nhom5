@@ -60,12 +60,21 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.iddip = iddip;
             this.namhoc = namhoc;
             nhan_khau HSG = HocSinhGioiUCCtrl.xemHSG(idnk);
-            Invoke((MethodInvoker)delegate
+            if(this.InvokeRequired)
+                Invoke((MethodInvoker)delegate
+                {
+                    namHocLabel.Text = namhoc.ToString();
+                    IDLabel.Text = idnk.ToString();
+                    tenLabel.Text = HSG.hoTen;
+                    //Console.WriteLine(1);
+                });
+            else
             {
                 namHocLabel.Text = namhoc.ToString();
                 IDLabel.Text = idnk.ToString();
                 tenLabel.Text = HSG.hoTen;
-            });
+                //Console.WriteLine(2);
+            }
 
         }
 
