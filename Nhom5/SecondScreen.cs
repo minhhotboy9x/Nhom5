@@ -39,11 +39,18 @@ namespace Nhom5
         }
         private void SecondScreen_Activated(object sender, EventArgs e)
         {
-            homeUC1.HomeUC_VisibleChanged(homeUC1, e);
-            hoKhauUC1.HoKhauUC_VisibleChanged(hoKhauUC1, e);
-            nhanKhauUC1.NhanKhauUC_VisibleChanged(nhanKhauUC1, e);
-            hocSinhGioiUC1.HocSinhGioiUC_VisibleChanged(hocSinhGioiUC1, e);
-            dipDacBiet1.DipDacBiet_VisibleChanged(dipDacBiet1, e);
+            try
+            {
+                homeUC1.HomeUC_VisibleChanged(homeUC1, e);
+                hoKhauUC1.HoKhauUC_VisibleChanged(hoKhauUC1, e);
+                nhanKhauUC1.NhanKhauUC_VisibleChanged(nhanKhauUC1, e);
+                hocSinhGioiUC1.HocSinhGioiUC_VisibleChanged(hocSinhGioiUC1, e);
+                dipDacBiet1.DipDacBiet_VisibleChanged(dipDacBiet1, e);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
         public void change_lblTitle(String text)
         {

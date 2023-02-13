@@ -10,23 +10,56 @@ namespace Nhom5.Controller.hokhau_nhankhau.homeUC
     {
         public static int layNhanKhau()
         {
-            return dbContext.db.nhan_khau.AsQueryable()
+            try
+            {
+                return dbContext.db.nhan_khau.AsQueryable()
                 .Where(p => p.trangThai.ToLower() == "Thường trú".ToLower()
                 || p.trangThai.ToLower() == "Tạm trú".ToLower()).Count();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return 0;
+            
         }
         public static int layHoKhau()
         {
-            return dbContext.db.ho_khau.Count();
+            try
+            {
+                return dbContext.db.ho_khau.Count();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return 0;
         }
 
         public static int layTamTru()
         {
-            return dbContext.db.tam_tru.Count();
+            try
+            {
+                return dbContext.db.tam_tru.Count();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return 0;
         }
 
         public static int layTamVang()
         {
-            return dbContext.db.tam_vang.Count();
+            try
+            {
+                return dbContext.db.tam_vang.Count();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return 0;
         }
 
     }

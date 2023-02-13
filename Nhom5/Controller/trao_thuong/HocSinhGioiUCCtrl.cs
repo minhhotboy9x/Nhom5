@@ -14,7 +14,9 @@ namespace Nhom5.Controller.traothuong
     {
         public static void load_HSG(DataGridView dtview)
         {
-            dtview.DataSource = dbContext.db.dip_hoc_sinh_gioi
+            try 
+            {
+                dtview.DataSource = dbContext.db.dip_hoc_sinh_gioi
                 .GroupJoin(dbContext.db.chi_tiet_dip_hoc_sinh_gioi, p => p.idDip,
                     q => q.idDip,
                     (p, q) => new { dip_hsg = p, chitiet_hsg = q.DefaultIfEmpty() })
@@ -25,10 +27,16 @@ namespace Nhom5.Controller.traothuong
                     count = t.chitiet_hsg.Count(c => c.kiemtra == false),
                     t.dip_hsg.moTa
                 }).ToList();
-            dtview.Columns[0].HeaderText = "ID dịp";
-            dtview.Columns[1].HeaderText = "Năm";
-            dtview.Columns[2].HeaderText = "Số người chưa được trao thưởng";
-            dtview.Columns[3].HeaderText = "Mô tả";
+                dtview.Columns[0].HeaderText = "ID dịp";
+                dtview.Columns[1].HeaderText = "Năm";
+                dtview.Columns[2].HeaderText = "Số người chưa được trao thưởng";
+                dtview.Columns[3].HeaderText = "Mô tả";
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            
         }
 
         public static async void traCuuDipHSG(DataGridView dtview, String headText, String value)

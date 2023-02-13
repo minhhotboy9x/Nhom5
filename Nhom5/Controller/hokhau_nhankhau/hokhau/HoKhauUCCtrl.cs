@@ -28,7 +28,9 @@ namespace Nhom5.Controller.hokhau_nhankhau.hokhau
         private static object _lock = new object();
         public static void loadHoKhau(DataGridView dtview)
         {
-            dtview.DataSource = dbContext.db.ho_khau
+            try 
+            {
+                dtview.DataSource = dbContext.db.ho_khau
                     .Join(dbContext.db.nhan_khau, p => p.idChuHo,
                     q => q.idNhanKhau,
                     (p, q) => new { hokhau = p, nhankhau = q })
@@ -40,12 +42,18 @@ namespace Nhom5.Controller.hokhau_nhankhau.hokhau
                         a.hokhau.ngayTao,
                         a.hokhau.trangThai
                     }).ToList();
-            dtview.Columns[0].HeaderText = "Mã hộ khẩu";
-            dtview.Columns[1].HeaderText = "Mã chủ hộ";
-            dtview.Columns[2].HeaderText = "Tên chủ hộ";
-            dtview.Columns[3].HeaderText = "Địa chỉ";
-            dtview.Columns[4].HeaderText = "Ngày tạo";
-            dtview.Columns[5].HeaderText = "Trạng thái";
+                dtview.Columns[0].HeaderText = "Mã hộ khẩu";
+                dtview.Columns[1].HeaderText = "Mã chủ hộ";
+                dtview.Columns[2].HeaderText = "Tên chủ hộ";
+                dtview.Columns[3].HeaderText = "Địa chỉ";
+                dtview.Columns[4].HeaderText = "Ngày tạo";
+                dtview.Columns[5].HeaderText = "Trạng thái";
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            
         }
 
         public static async void traCuuHoKhau(DataGridView dtview, String headText, String value)

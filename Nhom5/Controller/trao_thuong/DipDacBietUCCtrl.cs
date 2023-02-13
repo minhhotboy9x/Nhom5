@@ -12,7 +12,9 @@ namespace Nhom5.Controller.trao_thuong
     {
         public static void load_Dip(DataGridView dtview)
         {
-            dtview.DataSource = dbContext.db.dip_dac_biet
+            try
+            {
+                dtview.DataSource = dbContext.db.dip_dac_biet
                 .GroupJoin(dbContext.db.chi_tiet_dip_dac_biet, p => p.idDip,
                     q => q.idDip,
                     (p, q) => new { dip_db = p, chitiet_dip = q.DefaultIfEmpty() })
@@ -24,11 +26,17 @@ namespace Nhom5.Controller.trao_thuong
                     count = t.chitiet_dip.Count(c => c.kiemtra == false),
                     t.dip_db.moTa
                 }).ToList();
-            dtview.Columns[0].HeaderText = "ID dịp";
-            dtview.Columns[1].HeaderText = "Tên dịp";
-            dtview.Columns[2].HeaderText = "Năm";
-            dtview.Columns[3].HeaderText = "Số người chưa được trao thưởng";
-            dtview.Columns[4].HeaderText = "Mô tả";
+                dtview.Columns[0].HeaderText = "ID dịp";
+                dtview.Columns[1].HeaderText = "Tên dịp";
+                dtview.Columns[2].HeaderText = "Năm";
+                dtview.Columns[3].HeaderText = "Số người chưa được trao thưởng";
+                dtview.Columns[4].HeaderText = "Mô tả";
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            
         }
 
         public static async void traCuuDipDacBiet(DataGridView dtview, String headText, String value)
