@@ -217,7 +217,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             this.ngayMatDateTime.CustomFormat = "dd-MM-yyyy";
             this.ngayMatDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ngayMatDateTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ngayMatDateTime.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.ngayMatDateTime.Location = new System.Drawing.Point(155, 18);
             this.ngayMatDateTime.Name = "ngayMatDateTime";
             this.ngayMatDateTime.Size = new System.Drawing.Size(133, 27);
@@ -258,7 +258,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             this.ngayKhaiBaoDateTime.CustomFormat = "dd-MM-yyyy";
             this.ngayKhaiBaoDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ngayKhaiBaoDateTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ngayKhaiBaoDateTime.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.ngayKhaiBaoDateTime.Location = new System.Drawing.Point(155, 18);
             this.ngayKhaiBaoDateTime.Name = "ngayKhaiBaoDateTime";
             this.ngayKhaiBaoDateTime.Size = new System.Drawing.Size(133, 27);

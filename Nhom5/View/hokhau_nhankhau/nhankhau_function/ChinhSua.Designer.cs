@@ -220,7 +220,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             this.chuyenDenDateTime.CustomFormat = "dd-MM-yyyy";
             this.chuyenDenDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chuyenDenDateTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.chuyenDenDateTime.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.chuyenDenDateTime.Location = new System.Drawing.Point(258, 15);
             this.chuyenDenDateTime.Name = "chuyenDenDateTime";
             this.chuyenDenDateTime.Size = new System.Drawing.Size(133, 27);
@@ -263,7 +263,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             this.ngayCapDateTime.CustomFormat = "dd-MM-yyyy";
             this.ngayCapDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ngayCapDateTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ngayCapDateTime.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.ngayCapDateTime.Location = new System.Drawing.Point(258, 18);
             this.ngayCapDateTime.Name = "ngayCapDateTime";
             this.ngayCapDateTime.Size = new System.Drawing.Size(133, 27);
@@ -596,7 +596,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             this.ngaySinhDateTime.CustomFormat = "dd-MM-yyyy";
             this.ngaySinhDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ngaySinhDateTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ngaySinhDateTime.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.ngaySinhDateTime.Location = new System.Drawing.Point(258, 15);
             this.ngaySinhDateTime.Name = "ngaySinhDateTime";
             this.ngaySinhDateTime.Size = new System.Drawing.Size(133, 27);

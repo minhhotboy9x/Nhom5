@@ -226,7 +226,7 @@ namespace Nhom5.View.hokhau_nhankhau.hokhau_function
             // 
             this.ngayDateTime.CustomFormat = "dd-mm-yyyy";
             this.ngayDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ngayDateTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ngayDateTime.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.ngayDateTime.Location = new System.Drawing.Point(170, 13);
             this.ngayDateTime.Name = "ngayDateTime";
             this.ngayDateTime.Size = new System.Drawing.Size(220, 27);

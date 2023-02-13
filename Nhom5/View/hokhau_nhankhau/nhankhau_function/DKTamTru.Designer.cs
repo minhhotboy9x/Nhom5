@@ -186,7 +186,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             this.toDateTime.CustomFormat = "dd-MM-yyyy";
             this.toDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toDateTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.toDateTime.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.toDateTime.Location = new System.Drawing.Point(157, 15);
             this.toDateTime.Name = "toDateTime";
             this.toDateTime.Size = new System.Drawing.Size(133, 27);
@@ -229,7 +229,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             // 
             this.fromDateTime.CustomFormat = "dd-MM-yyyy";
             this.fromDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fromDateTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.fromDateTime.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.fromDateTime.Location = new System.Drawing.Point(157, 18);
             this.fromDateTime.Name = "fromDateTime";
             this.fromDateTime.Size = new System.Drawing.Size(133, 27);
