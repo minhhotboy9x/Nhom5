@@ -29,6 +29,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
                 tenNguoiMatLabel.Text = NK.hoTen;
                 ngaySinhNguoiMatLabel.Text = NK.ngaySinh.ToString("dd/mm/yyyy");
             });
+            
             NhanKhauUCCtrl.loadNguoiKhaiBao(dataGridView1, ID);
         }
 

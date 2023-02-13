@@ -42,6 +42,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             danTocLabel.Text = NK.danToc;
             tonGiaoLabel.Text = NK.tonGiao;
             trangThaiLabel.Text = NK.trangThai;
+            noiThuongTruTruocLabel.Text = NK.noiThuongTruTruoc;
             });
         }
     }

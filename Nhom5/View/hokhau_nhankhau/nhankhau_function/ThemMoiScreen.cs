@@ -42,7 +42,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             var ngaycap = ngayCapDateTime.Value;
             var chuyendenngay = chuyenDenDateTime.Value;
             var noithuongtrutruoc = noiThuongTruTruocTextBox.Text.Trim();
-            String trangthai = null;
+            String trangthai = trangThaiTextBox.Text.Trim();
             bool ok = NhanKhauUCCtrl.themNhanKhau(
                 hoten,
                 bidanh,

@@ -91,7 +91,12 @@ namespace Nhom5.Controller.hokhau_nhankhau.nhankhau
             String noithuongtrutruoc,
             String trangthai
             )
-        {
+        {       
+            if(hoten=="" || quoctich==""  || noisinh==""  || nguyenquan == ""
+               || dantoc=="" || tongiao == "" )
+            {
+                return false;
+            }
             dbContext.db.nhan_khau.Add(
                 new nhan_khau()
                 {
@@ -112,11 +117,6 @@ namespace Nhom5.Controller.hokhau_nhankhau.nhankhau
                     noiThuongTruTruoc = noithuongtrutruoc,
                     trangThai = trangthai
                 });
-            if(hoten=="" || quoctich==""  || noisinh==""  || nguyenquan == ""
-               || dantoc=="" || tongiao == "" )
-            {
-                return false;
-            }    
             try
             {
                 dbContext.db.SaveChanges();

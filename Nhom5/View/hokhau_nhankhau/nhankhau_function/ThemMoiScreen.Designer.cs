@@ -37,9 +37,11 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label16 = new System.Windows.Forms.Label();
             this.tonGiaoTextBox = new System.Windows.Forms.TextBox();
             this.sPanel11 = new Nhom5.Utility.SPanel();
+            this.label22 = new System.Windows.Forms.Label();
             this.chuyenDenDateTime = new System.Windows.Forms.DateTimePicker();
             this.label17 = new System.Windows.Forms.Label();
             this.sPanel12 = new Nhom5.Utility.SPanel();
+            this.label24 = new System.Windows.Forms.Label();
             this.ngayCapDateTime = new System.Windows.Forms.DateTimePicker();
             this.label19 = new System.Windows.Forms.Label();
             this.sPanel13 = new Nhom5.Utility.SPanel();
@@ -89,8 +91,9 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label20 = new System.Windows.Forms.Label();
             this.huyBtn = new System.Windows.Forms.Button();
             this.xacNhanBtn = new System.Windows.Forms.Button();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
+            this.sPanel18 = new Nhom5.Utility.SPanel();
+            this.trangThaiLabel = new System.Windows.Forms.Label();
+            this.trangThaiTextBox = new System.Windows.Forms.TextBox();
             this.panelTitleBar.SuspendLayout();
             this.sPanel9.SuspendLayout();
             this.sPanel10.SuspendLayout();
@@ -109,6 +112,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel1.SuspendLayout();
             this.sPanel3.SuspendLayout();
             this.sPanel17.SuspendLayout();
+            this.sPanel18.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTitleBar
@@ -200,6 +204,18 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel11.Size = new System.Drawing.Size(436, 57);
             this.sPanel11.TabIndex = 11;
             // 
+            // label22
+            // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Red;
+            this.label22.Location = new System.Drawing.Point(397, 18);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(27, 20);
+            this.label22.TabIndex = 11;
+            this.label22.Text = "(*)";
+            // 
             // chuyenDenDateTime
             // 
             this.chuyenDenDateTime.CustomFormat = "dd-MM-yyyy";
@@ -230,6 +246,18 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel12.Name = "sPanel12";
             this.sPanel12.Size = new System.Drawing.Size(436, 57);
             this.sPanel12.TabIndex = 9;
+            // 
+            // label24
+            // 
+            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Red;
+            this.label24.Location = new System.Drawing.Point(397, 18);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(27, 20);
+            this.label24.TabIndex = 11;
+            this.label24.Text = "(*)";
             // 
             // ngayCapDateTime
             // 
@@ -714,7 +742,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Red;
-            this.label20.Location = new System.Drawing.Point(53, 562);
+            this.label20.Location = new System.Drawing.Point(53, 621);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(343, 60);
             this.label20.TabIndex = 12;
@@ -728,7 +756,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.huyBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.huyBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.huyBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.huyBtn.Location = new System.Drawing.Point(776, 577);
+            this.huyBtn.Location = new System.Drawing.Point(779, 639);
             this.huyBtn.Name = "huyBtn";
             this.huyBtn.Size = new System.Drawing.Size(140, 55);
             this.huyBtn.TabIndex = 16;
@@ -743,7 +771,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.xacNhanBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.xacNhanBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xacNhanBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.xacNhanBtn.Location = new System.Drawing.Point(552, 577);
+            this.xacNhanBtn.Location = new System.Drawing.Point(552, 639);
             this.xacNhanBtn.Name = "xacNhanBtn";
             this.xacNhanBtn.Size = new System.Drawing.Size(140, 55);
             this.xacNhanBtn.TabIndex = 15;
@@ -751,35 +779,40 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.xacNhanBtn.UseVisualStyleBackColor = false;
             this.xacNhanBtn.Click += new System.EventHandler(this.xacNhanBtn_Click);
             // 
-            // label22
+            // sPanel18
             // 
-            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.Red;
-            this.label22.Location = new System.Drawing.Point(397, 18);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(27, 20);
-            this.label22.TabIndex = 11;
-            this.label22.Text = "(*)";
+            this.sPanel18.Controls.Add(this.trangThaiLabel);
+            this.sPanel18.Controls.Add(this.trangThaiTextBox);
+            this.sPanel18.Location = new System.Drawing.Point(50, 554);
+            this.sPanel18.Name = "sPanel18";
+            this.sPanel18.Size = new System.Drawing.Size(938, 55);
+            this.sPanel18.TabIndex = 17;
             // 
-            // label24
+            // trangThaiLabel
             // 
-            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.Red;
-            this.label24.Location = new System.Drawing.Point(397, 18);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(27, 20);
-            this.label24.TabIndex = 11;
-            this.label24.Text = "(*)";
+            this.trangThaiLabel.AutoSize = true;
+            this.trangThaiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trangThaiLabel.Location = new System.Drawing.Point(3, 18);
+            this.trangThaiLabel.Name = "trangThaiLabel";
+            this.trangThaiLabel.Size = new System.Drawing.Size(89, 20);
+            this.trangThaiLabel.TabIndex = 4;
+            this.trangThaiLabel.Text = "Trạng thái:";
+            // 
+            // trangThaiTextBox
+            // 
+            this.trangThaiTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.trangThaiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trangThaiTextBox.Location = new System.Drawing.Point(287, 15);
+            this.trangThaiTextBox.Name = "trangThaiTextBox";
+            this.trangThaiTextBox.Size = new System.Drawing.Size(606, 27);
+            this.trangThaiTextBox.TabIndex = 5;
             // 
             // ThemMoiScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1030, 673);
+            this.ClientSize = new System.Drawing.Size(1030, 733);
+            this.Controls.Add(this.sPanel18);
             this.Controls.Add(this.huyBtn);
             this.Controls.Add(this.xacNhanBtn);
             this.Controls.Add(this.label20);
@@ -826,6 +859,8 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
             this.sPanel3.PerformLayout();
             this.sPanel17.ResumeLayout(false);
             this.sPanel17.PerformLayout();
+            this.sPanel18.ResumeLayout(false);
+            this.sPanel18.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -895,5 +930,8 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
         private System.Windows.Forms.Button xacNhanBtn;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label24;
+        private Utility.SPanel sPanel18;
+        private System.Windows.Forms.Label trangThaiLabel;
+        private System.Windows.Forms.TextBox trangThaiTextBox;
     }
 }
