@@ -204,6 +204,7 @@ namespace Nhom5.Controller.traothuong
                 .Where(p=>p.idDip==iddip)
                 .Select(p=>p.nhan_khau)
                 .Any(p=> a.idNhanKhau==p.idNhanKhau)
+                && DateTime.Now.Year - a.ngaySinh.Year < 20
                 );
             dtview.Invoke((MethodInvoker)delegate
             {
@@ -300,6 +301,7 @@ namespace Nhom5.Controller.traothuong
                 .Where(p => p.idDip == iddip)
                 .Select(p => p.nhan_khau)
                 .Any(p => a.idNhanKhau == p.idNhanKhau)
+                && DateTime.Now.Year - a.ngaySinh.Year <20
                 ).ToList();
 
             int Index = 0;
