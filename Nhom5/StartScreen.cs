@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Text.RegularExpressions;
 using Nhom5.Utility;
+using System.Configuration;
+using Nhom5.Controller;
 
 namespace Nhom5
 {

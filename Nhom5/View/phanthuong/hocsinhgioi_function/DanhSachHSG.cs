@@ -39,7 +39,7 @@ namespace Nhom5.View.hokhau_nhankhau.nhankhau_function
         }
         private void themMinhChungBtn_Click(object sender, EventArgs e)
         {
-            if (!complete || dataGridView2.Rows.Count==0)
+            if (!complete)
                 return;
             int idnk = 0;
             if (dataGridView2.SelectedRows.Count > 0)

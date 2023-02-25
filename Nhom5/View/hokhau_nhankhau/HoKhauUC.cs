@@ -38,6 +38,8 @@ namespace Nhom5.View.hokhau_nhankhau
         #region SPanel click
         private void searchSPanel_Click(object sender, EventArgs e)
         {
+            if (!complete)
+                return;
             HoKhauUCCtrl.traCuuHoKhau(dataGridView1,
                 featureSearchBox.SelectedItem.ToString(), searchTextBox1.Text);
         }
@@ -50,6 +52,8 @@ namespace Nhom5.View.hokhau_nhankhau
         }
         private void reLoadSPanel_Click(object sender, EventArgs e)
         {
+            if (!complete)
+                return;
             HoKhauUCCtrl.loadHoKhau(dataGridView1);
         }
         private void reLoadPic_Click(object sender, EventArgs e)

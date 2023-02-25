@@ -38,7 +38,7 @@ namespace Nhom5.View.hokhau_nhankhau
         #region SPanel click
         private void searchSPanel_Click(object sender, EventArgs e)
         {
-            if (!complete || dataGridView1.Rows.Count == 0)
+            if (!complete)
                 return;
             NhanKhauUCCtrl.traCuuNhanKhau(dataGridView1, 
                 featureSearchBox.SelectedItem.ToString(), searchTextBox1.Text);
@@ -52,7 +52,7 @@ namespace Nhom5.View.hokhau_nhankhau
 
         private void reLoadSPanel_Click(object sender, EventArgs e)
         {
-            if (!complete || dataGridView1.Rows.Count == 0)
+            if (!complete)
                 return;
             //Console.WriteLine("click");
             NhanKhauUCCtrl.loadNhanKhau(this.dataGridView1);
@@ -68,7 +68,7 @@ namespace Nhom5.View.hokhau_nhankhau
         #endregion
         private void themMoiBtn_Click(object sender, EventArgs e)
         {
-            if (!complete || dataGridView1.Rows.Count == 0)
+            if (!complete)
                 return;
             ThemMoiScreen themMoiScreen = new ThemMoiScreen();
             OpenScreen.openFunctionForm(this, themMoiScreen, 1);

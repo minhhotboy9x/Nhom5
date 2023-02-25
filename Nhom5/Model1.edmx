@@ -132,7 +132,7 @@
           <Property Name="tonGiao" Type="nvarchar" MaxLength="255" Nullable="false" />
           <Property Name="quocTich" Type="nvarchar" MaxLength="255" Nullable="false" />
           <Property Name="ngheNghiep" Type="nvarchar" MaxLength="255" />
-          <Property Name="noiLamViec" Type="varchar" MaxLength="255" />
+          <Property Name="noiLamViec" Type="nvarchar" MaxLength="255" />
           <Property Name="cmnd" Type="varchar" MaxLength="255" />
           <Property Name="ngayCap" Type="date" />
           <Property Name="chuyenDenNgay" Type="date" />
@@ -580,7 +580,7 @@
           <Property Name="tonGiao" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="quocTich" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="ngheNghiep" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="noiLamViec" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="noiLamViec" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="cmnd" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="ngayCap" Type="DateTime" Precision="0" />
           <Property Name="chuyenDenNgay" Type="DateTime" Precision="0" />
