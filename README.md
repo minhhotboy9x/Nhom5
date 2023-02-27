@@ -18,7 +18,7 @@ Mở file [SQLQuery3.sql](SQLQuery3.sql) bằng Microsoft SQL Server Management 
 Chuột phải vào database nmcnpm_teamAKAM > Propertise > Chọn Files trong mục select a page > copy path của file nmcnpm_teamAKAM.
 Vào đường link đã copy và copy 2 file nmcnpm_teamAKAM.mdf và nmcnpm_teamAKAM_log.ldf. Dán 2 file đã copy vào project Nhom5.csproj trong Visual Studio.
 
-Mở Visual Studio mở Package Manager Console và chạy lệnh:
+Mở  Package Manager Console trong Visual Studio và chạy lệnh:
 ```
 Install-Package System.Linq.Dynamic.Core
 ```

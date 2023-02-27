@@ -5,6 +5,12 @@ VisualStudioVersion = 16.0.32407.337
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nhom5", "Nhom5\Nhom5.csproj", "{0ABA860D-8920-4480-91DD-E97E243ADFFD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4CAF7F25-6EF3-4749-8064-68E2CE7BDE15}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		testNhom5.rar = testNhom5.rar
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
